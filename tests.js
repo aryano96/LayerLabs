@@ -89,6 +89,14 @@ function runTests(L, courses, programs, print) {
   check("requiredCodes lists the degree's required courses that exist",
     L.requiredCodes(courses, p3), ["COSC 1000", "MATH 1000", "COSC 2000"]);
 
+  // ---- daysOff filter (any set of weekdays) ----
+  const off = (days) => L.filterSchedules(two, { noBefore: null, noAfter: null, fridaysOff: false, daysOff: days });
+  check("daysOff Monday keeps only the all-Tue/Thu schedule", names(off(["Mon"])), ["COSC 1000B+MATH 1000B"]);
+  check("daysOff Mon and Wed gives the same single schedule", names(off(["Mon", "Wed"])), ["COSC 1000B+MATH 1000B"]);
+  check("daysOff Tuesday leaves nothing (every schedule meets Tuesday)", off(["Tue"]).length, 0);
+  check("daysOff Friday keeps everything (no Friday classes)", off(["Fri"]).length, 3);
+  check("empty or missing daysOff keeps everything", [off([]).length, L.filterSchedules(two, { noBefore: null, fridaysOff: false }).length], [3, 3]);
+
   // ---- noAfter filter ("evenings off") ----
   const late = { code: "L 1", sections: [{ id: "A", meetings: [m("Mon", "16:00", "17:30")] }, { id: "B", meetings: [m("Mon", "13:00", "14:30")] }] };
   const lateSchedules = L.buildSchedules([late]);

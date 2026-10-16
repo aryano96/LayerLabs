@@ -77,7 +77,7 @@ CourseLogic.findClashes = function (courses) {
 };
 
 // Keep only schedules that satisfy the filters:
-// noBefore ("10:00" or null), noAfter ("17:00" or null) and fridaysOff (true/false).
+// noBefore ("10:00" or null), noAfter ("17:00" or null), fridaysOff (true/false) and daysOff (a list of weekdays).
 CourseLogic.filterSchedules = function (schedules, filters) {
   const meetingsOf = (sched) => sched.flatMap((p) => p.section.meetings);
   return schedules.filter((sched) => {
@@ -91,6 +91,8 @@ CourseLogic.filterSchedules = function (schedules, filters) {
       if (meetings.some((mt) => CourseLogic.toMinutes(mt.end) > limit)) return false;
     }
     if (filters.fridaysOff && meetings.some((mt) => mt.day === "Fri")) return false;
+    // daysOff: any list of weekdays ("Mon".."Fri") that must have no classes at all.
+    if (filters.daysOff && filters.daysOff.length && meetings.some((mt) => filters.daysOff.includes(mt.day))) return false;
     return true;
   });
 };

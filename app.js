@@ -6,7 +6,7 @@
 // blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
-const VERSION = "7";
+const VERSION = "8";
 const SCREENS = ["degree", "passed", "options", "schedules"];
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
@@ -30,7 +30,8 @@ const state = {
   programId: null,
   passed: new Set(),       // codes the student has passed
   picked: [],              // codes the student wants this term
-  filters: { noBefore: null, noAfter: null, fridaysOff: false },
+  filters: { noBefore: null, noAfter: null, daysOff: [] },
+  daysOpen: false,         // is the Days off dropdown open?
   scheduleIndex: 0,
   startTime: null,         // set at the first choice, drives the plan clock
   elapsed: null,           // seconds until the first timetable appeared
@@ -254,6 +255,7 @@ function route(initial = false) {
   if (screen !== "degree" && !state.programId) screen = "degree";
   if (screen === "schedules" && state.picked.length === 0) screen = "options";
   state.screen = screen;
+  state.daysOpen = false;
 
   for (const name of SCREENS) {
     const section = $("screen-" + name);
@@ -381,7 +383,7 @@ function restart() {
   if (hasWork && !window.confirm("Start over? This clears your degree, passed courses and picks.")) return;
   state.programId = null; state.passed = new Set(); state.picked = [];
   state.startTime = null; state.elapsed = null; state.scheduleIndex = 0;
-  state.filters = { noBefore: null, noAfter: null, fridaysOff: false };
+  state.filters = { noBefore: null, noAfter: null, daysOff: [] };
   state.queries = { degree: "", passed: "", options: "" }; state.tag = "all";
   store.remove(KEY_SESSION);
   history.replaceState(null, "", "#degree?d=&p=&k=");
@@ -645,7 +647,7 @@ function renderSchedules() {
   const filters = el("div", { class: "switches", role: "group", "aria-label": "Filters" },
     switchBox("filter-early", "No classes before 10 AM", state.filters.noBefore === "10:00", (on) => { state.filters.noBefore = on ? "10:00" : null; }),
     switchBox("filter-late", "Done by 5 PM", state.filters.noAfter === "17:00", (on) => { state.filters.noAfter = on ? "17:00" : null; }),
-    switchBox("filter-fri", "Fridays off", state.filters.fridaysOff, (on) => { state.filters.fridaysOff = on; }));
+    daysDropdown());
 
   if (shown.length === 0) {
     root.replaceChildren(head, filters, emptySchedules(picked, all.length),
@@ -674,6 +676,35 @@ function renderSchedules() {
         el("button", { type: "button", class: "btn primary", id: "print", onclick: () => printSummary(sched) }, icon("printer"), "Bring to advisor"))));
 }
 
+const DAY_NAMES = { Mon: "Monday", Tue: "Tuesday", Wed: "Wednesday", Thu: "Thursday", Fri: "Friday" };
+
+// "Days off" dropdown: tick any weekdays that must have no classes. Stays open while you tick.
+function daysDropdown() {
+  const chosen = state.filters.daysOff;
+  const reopen = (focusId) => { state.scheduleIndex = 0; state.daysOpen = true; renderSchedules(); renderChrome(); document.getElementById(focusId).focus(); };
+  const details = el("details", { class: "dropdown", open: state.daysOpen });
+  const summary = el("summary", { class: "dropdown-btn", id: "days-off-btn" },
+    "Days off",
+    el("span", { class: chosen.length ? "dropdown-count" : "dropdown-hint" }, chosen.length ? chosen.join(", ") : "None"),
+    el("span", { class: "chev" }, icon("right")));
+  const panel = el("div", { class: "dropdown-panel" },
+    el("fieldset", { style: { border: "0", margin: "0", padding: "0", minWidth: "0" } },
+      el("legend", {}, "No classes on these days"),
+      DAYS.map((day) => {
+        const id = "dayoff-" + day;
+        return el("label", { class: "day-row", for: id },
+          el("input", {
+            type: "checkbox", id, checked: chosen.includes(day),
+            onchange: (e) => { state.filters.daysOff = DAYS.filter((d) => (d === day ? e.target.checked : state.filters.daysOff.includes(d))); reopen(id); },
+          }),
+          DAY_NAMES[day]);
+      })),
+    chosen.length ? el("button", { type: "button", class: "btn quiet", id: "days-off-clear", onclick: () => { state.filters.daysOff = []; reopen("days-off-btn"); } }, "Clear days off") : null);
+  details.append(summary, panel);
+  details.addEventListener("toggle", () => { state.daysOpen = details.open; });
+  return details;
+}
+
 function stepSchedule(delta, total) {
   state.scheduleIndex = (state.scheduleIndex + delta + total) % total;
   renderSchedules();
@@ -684,7 +715,7 @@ function emptySchedules(picked, totalBeforeFilters) {
   if (totalBeforeFilters > 0) {
     announce("No schedules match your filters.");
     return el("div", { class: "empty" }, el("strong", {}, "No schedule fits all your filters"), "Turn one off to see the options.",
-      el("div", { style: { marginTop: "0.75rem" } }, el("button", { type: "button", class: "btn", onclick: () => { state.filters = { noBefore: null, noAfter: null, fridaysOff: false }; renderSchedules(); } }, "Clear filters")));
+      el("div", { style: { marginTop: "0.75rem" } }, el("button", { type: "button", class: "btn", onclick: () => { state.filters = { noBefore: null, noAfter: null, daysOff: [] }; renderSchedules(); renderChrome(); } }, "Clear filters")));
   }
   const clashes = L.findClashes(picked);
   const text = clashes.length
@@ -818,10 +849,20 @@ function initChrome() {
     applyTheme(next); store.set(KEY_THEME, next);
   });
   setInterval(tickClock, 500);
+  document.addEventListener("click", (e) => {
+    const open = document.querySelector("details.dropdown[open]");
+    if (open && !open.contains(e.target)) open.open = false;
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const open = document.querySelector("details.dropdown[open]");
+    if (open) { open.open = false; open.querySelector("summary").focus(); }
+  });
   // Left/Right arrows flip through schedules.
   document.addEventListener("keydown", (e) => {
     if (state.screen !== "schedules" || e.altKey || e.ctrlKey || e.metaKey) return;
     if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName) && e.target.type !== "checkbox") return;
+    if (e.target.closest && e.target.closest(".dropdown")) return;
     const shown = L.filterSchedules(L.buildSchedules(state.picked.map(byCode)), state.filters);
     if (shown.length < 2) return;
     if (e.key === "ArrowRight") { e.preventDefault(); stepSchedule(1, shown.length); }
