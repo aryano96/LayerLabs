@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Course Planner 2.0: the ThunderHacks 2026 presentation. From waiting days for an advisor to a valid course plan in minutes.">
+  <title>Course Planner 2.0: Presentation</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="deck.css?v=1">
+</head>
+<body>
+  <a class="skip" href="#stage">Skip to the slides</a>
+
+  <div id="viewport">
+    <main id="stage" aria-label="Presentation slides">
+
+      <!-- 1. Title -->
+      <section class="slide s-title" aria-roledescription="slide" aria-label="Slide 1 of 9: Course Planner 2.0">
+        <img class="mark" src="../assets/favicon.svg" alt="" width="96" height="96">
+        <h1>Course Planner 2.0</h1>
+        <p class="tagline">From waiting days for an advisor to a valid course plan in minutes.</p>
+        <p class="meta">ThunderHacks 2026 &middot; Main Track &middot; Version 2.0</p>
+        <p class="link">aryano96.github.io/LayerLabs</p>
+      </section>
+
+      <!-- 2. Version 1.0 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 2 of 9: Version 1.0">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body">
+          <p class="kicker">01 &middot; Name the Version 1.0</p>
+          <h2>Today: plan by hand, then email an advisor</h2>
+          <p class="lead">Every Algoma student does this, every term.</p>
+          <div class="flow">
+            <div class="col sources">
+              <div class="card"><strong>Academic calendar</strong><span>prerequisites</span></div>
+              <div class="card"><strong>Degree requirements</strong><span>a different chapter</span></div>
+              <div class="card"><strong>Self-Service timetable</strong><span>behind student login</span></div>
+            </div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="card big"><strong>The student cross-checks by hand</strong><span>Which courses can I take, and will they fit?</span></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="card big warn"><strong>Email an advisor</strong><span>and wait 2&ndash;3 business days</span></div>
+          </div>
+        </div>
+        <footer class="num">2 / 9</footer>
+      </section>
+
+      <!-- 3. What is broken -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 3 of 9: What is broken">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body">
+          <p class="kicker">02 &middot; Show what is broken</p>
+          <h2>Four specific problems</h2>
+          <div class="grid2 three">
+            <div class="tile"><span class="stat">2&ndash;3</span><strong>business days</strong><p>The reply time on Algoma&rsquo;s own course-registration support page.</p></div>
+            <div class="tile"><span class="stat">3</span><strong>places to check</strong><p>Prerequisites, degree rules and section times each live somewhere different.</p></div>
+            <div class="tile"><span class="stat">243</span><strong>combinations</strong><p>Five courses with three sections each, checked for clashes by eye.</p></div>
+            <div class="tile quote"><strong>Rules written for people, not checked for them</strong><blockquote>&ldquo;Completion of second year core program in Computer Science or permission of the Department.&rdquo; <cite>COSC 3506 Software Engineering, academic calendar</cite></blockquote></div>
+          </div>
+        </div>
+        <footer class="num">3 / 9</footer>
+      </section>
+
+      <!-- 4. Version 2.0 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 4 of 9: Version 2.0">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body">
+          <p class="kicker">03 &middot; Build the Version 2.0</p>
+          <h2>Four steps from degree to timetable</h2>
+          <div class="steps4">
+            <figure><img src="../docs/screenshots/01-choose-degree.png" alt="The degree screen: nine Algoma degrees with a search box"><figcaption><b>1</b> Choose your degree</figcaption></figure>
+            <figure><img src="../docs/screenshots/02-what-have-you-passed.png" alt="The passed screen: courses by year with Required courses first"><figcaption><b>2</b> Tick what you have passed</figcaption></figure>
+            <figure><img src="../docs/screenshots/03b-not-available-yet.png" alt="The choose screen: blocked courses with the missing prerequisite"><figcaption><b>3</b> See what you can take, and why not</figcaption></figure>
+            <figure><img src="../docs/screenshots/04-your-timetable.png" alt="The timetable screen: a weekly grid of conflict-free options"><figcaption><b>4</b> Get clash-free timetables</figcaption></figure>
+          </div>
+          <p class="foot">9 degrees &middot; 307 courses &middot; real prerequisites from the 2026&ndash;2027 academic calendar</p>
+        </div>
+        <footer class="num">4 / 9</footer>
+      </section>
+
+      <!-- 5. Live demo -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 5 of 9: Live demo">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body split">
+          <div>
+            <p class="kicker">Live demo</p>
+            <h2>One student, one term</h2>
+            <ol class="demo">
+              <li>Pick <b>Computer Science (Honours)</b></li>
+              <li>Tick the 8 courses already passed</li>
+              <li>See Required courses first</li>
+              <li><b>COSC 3106</b> is &ldquo;1 step away&rdquo;: it needs MATH 2056</li>
+              <li>Pick 4 courses: <b>41</b> clash-free timetables</li>
+              <li>Filter early mornings, late days, Fridays</li>
+            </ol>
+          </div>
+          <img class="shot" src="../docs/screenshots/04-your-timetable.png" alt="The timetable screen showing a conflict-free weekly grid and the plan panel">
+        </div>
+        <footer class="num">5 / 9</footer>
+      </section>
+
+      <!-- 6. Proof -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 6 of 9: Proof it is better">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body">
+          <p class="kicker">04 &middot; Prove it is better</p>
+          <h2>Before and after</h2>
+          <table class="proof">
+            <thead><tr><th scope="col"></th><th scope="col">Today (Version 1.0)</th><th scope="col">Course Planner 2.0</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Time</th><td>2&ndash;3 business days for a reply</td><td class="good">Minutes, measured by an on-screen plan clock</td></tr>
+              <tr><th scope="row">Steps</th><td>8 manual steps</td><td class="good">4 steps</td></tr>
+              <tr><th scope="row">Errors</th><td>Mistakes found by the advisor, days later</td><td class="good">No ineligible picks, no clashes: both covered by automated tests</td></tr>
+              <tr><th scope="row">Access</th><td>Calendar PDFs and a login portal</td><td class="good">Any device, keyboard only, screen-reader table, light and dark</td></tr>
+            </tbody>
+          </table>
+          <p class="foot">The 8 steps are the team&rsquo;s walkthrough of today&rsquo;s process.</p>
+        </div>
+        <footer class="num">6 / 9</footer>
+      </section>
+
+      <!-- 7. Advisor sheet -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 7 of 9: A sheet for the advisor">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body split sheet">
+          <div>
+            <p class="kicker">The advisor&rsquo;s side</p>
+            <h2>A confirmed plan, not a blank page</h2>
+            <ul class="ticks">
+              <li>Progress in credits and required courses</li>
+              <li>The planned courses and weekly timetable</li>
+              <li>What is still required</li>
+              <li>The student&rsquo;s own questions</li>
+            </ul>
+            <p class="lead">The advisor confirms a plan instead of building one.</p>
+          </div>
+          <img class="shot wide" src="../docs/screenshots/09-advisor-sheet.png" alt="The printed advisor sheet, two pages: plan and timetable, then courses passed, courses still required and questions">
+        </div>
+        <footer class="num">7 / 9</footer>
+      </section>
+
+      <!-- 8. Bonus -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 8 of 9: Real data, built to last">
+        <header class="bar"><span>Course Planner 2.0</span><span>ThunderHacks 2026</span></header>
+        <div class="body">
+          <p class="kicker">Real data &middot; accessible &middot; ready to switch</p>
+          <h2>Built to be used after the weekend</h2>
+          <div class="grid2 small">
+            <div class="tile"><strong>Real data</strong><p>Courses, prerequisites, credits and degree rules come from the 2026&ndash;2027 calendar. Only section days and start times are invented, and every screen says so.</p></div>
+            <div class="tile"><strong>Accessible</strong><p>Keyboard only, visible focus, a high-legibility typeface, strong contrast, and a text table beside the timetable for screen readers.</p></div>
+            <div class="tile"><strong>Trustworthy</strong><p>46 automated rule tests and over 100 browser checks. No server, no accounts, nothing leaves the browser.</p></div>
+            <div class="tile"><strong>Ready to switch</strong><p>Students open a link. The registrar updates two data files each term. Another school swaps those files and it works unchanged.</p></div>
+          </div>
+        </div>
+        <footer class="num">8 / 9</footer>
+      </section>
+
+      <!-- 9. Close -->
+      <section class="slide s-title s-close" aria-roledescription="slide" aria-label="Slide 9 of 9: Thank you">
+        <h1>A wait of days, reduced to minutes.</h1>
+        <p class="tagline">Try it, and read the code.</p>
+        <p class="link">Live app &nbsp; aryano96.github.io/LayerLabs</p>
+        <p class="link">Code &nbsp; github.com/aryano96/LayerLabs</p>
+        <p class="meta">Thank you &middot; Questions welcome</p>
+      </section>
+    </main>
+  </div>
+
+  <nav id="controls" aria-label="Slide controls">
+    <button type="button" id="prev" aria-label="Previous slide">&larr;</button>
+    <span id="counter" aria-hidden="true">1 / 9</span>
+    <button type="button" id="next" aria-label="Next slide">&rarr;</button>
+    <a id="pdf" href="Course-Planner-2.0-slides.pdf">PDF</a>
+    <a id="app" href="../">Open the app</a>
+  </nav>
+  <div id="live" class="sr" role="status" aria-live="polite"></div>
+  <script src="deck.js?v=1"></script>
+</body>
+</html>

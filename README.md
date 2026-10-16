@@ -4,6 +4,8 @@
 
 **Live demo:** https://aryano96.github.io/LayerLabs/
 
+**Presentation:** [open the slides](https://aryano96.github.io/LayerLabs/presentation/) (arrow keys to move) or [download the PDF](presentation/Course-Planner-2.0-slides.pdf).
+
 A prerequisite- and degree-aware course planner for Algoma University students. Pick a degree, tick the courses you've passed, choose up to five for the term, and get conflict-free timetables with a printable sheet for your advisor.
 
 ## The brief, in four parts
@@ -111,6 +113,6 @@ Keyboard-only use, visible focus, a high-legibility typeface (Atkinson Hyperlegi
 
 ## Files
 
-`index.html`, `styles.css`, `app.js` (screens and state), `logic.js` (the rules), `theme-init.js`, `assets/`, `data/`.
+`index.html`, `styles.css`, `app.js` (screens and state), `logic.js` (the rules), `theme-init.js`, `assets/`, `data/`, `presentation/` (the slides), `docs/screenshots/`.
 
 Prototype built during ThunderHacks 2026. Not an official Algoma University service. Always confirm a plan with an academic advisor.
