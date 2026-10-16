@@ -26,6 +26,26 @@ def spans_of(pdf_path):
                     yield span["font"], span["text"]
 
 
+
+KINDS = r"(?:LEC|SEM|LAB|TUT|EXP|WIL|CST|IND)"
+GROUP = re.compile("(" + KINDS + "(?:[-/]" + KINDS + ")*)(?:\\s+(\\d+(?:\\.\\d+)?))?")
+
+
+def parse_hours(contact):
+    """'LEC 3, LAB 1.5' -> {'LEC': 3.0, 'LAB': 1.5}. LEC-SEM and LEC/EXP groups count as lecture hours.
+    A kind written without a number gets a typical default (lecture 3, lab 1.5, tutorial 1)."""
+    hours = {}
+    for kinds, number in GROUP.findall(contact or ""):
+        parts = re.split(r"[-/]", kinds)
+        value = float(number) if number else None
+        if "LEC" in parts or "SEM" in parts:
+            hours.setdefault("LEC", value if value is not None else 3.0)
+        if "LAB" in parts:
+            hours.setdefault("LAB", value if value is not None else 1.5)
+        if "TUT" in parts:
+            hours.setdefault("TUT", value if value is not None else 1.0)
+    return hours
+
 # ---------- Chapter 4: course list ----------
 
 def parse_courses(pdf_path):
@@ -59,6 +79,7 @@ def parse_courses(pdf_path):
             "credits": float(credits.group(1)) if credits else None,
             "prereqs": groups,
             "has_lab": bool(contact and "LAB" in contact.group(0)),
+            "hours": parse_hours(contact.group(0)[1:-1]) if contact else {},
             "prereq_text": prereq_text,
             "needs_review": review,
         }

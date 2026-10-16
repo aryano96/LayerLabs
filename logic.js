@@ -134,5 +134,17 @@ CourseLogic.requiredCodes = function (courses, program) {
     .map((c) => c.code);
 };
 
+// ---- questions for the advisor ----
+// Turns what the student typed into a clean list: one question per line, no blank lines, no typed
+// bullets or numbers (the printed sheet adds its own numbering), at most 8 questions of 200 characters.
+CourseLogic.parseQuestions = function (text) {
+  return String(text || "")
+    .split(/\r?\n/)
+    .map((line) => line.trim().replace(/^(?:[-*\u2022]|\d+[.)])\s*/, "").trim())
+    .filter(Boolean)
+    .slice(0, 8)
+    .map((line) => line.slice(0, 200));
+};
+
 if (typeof module !== "undefined") module.exports = CourseLogic;
 else window.CourseLogic = CourseLogic;

@@ -26,7 +26,8 @@ then open http://localhost:8000 . (Browsers block loading the data files from a 
 
 - **Real:** course codes, titles, credits, prerequisites, and each degree's named required courses, all parsed from Algoma's 2026-2027 academic calendar (`data/raw/parse-calendar.py`).
 - **Simplified:** the calendar's "N credits from this list" rules are treated as electives.
-- **Invented:** every **section time**. The public site has no timetable (sections are only inside student login), so the demo uses made-up times. This is labelled on every screen.
+- **Real weekly hours:** each course's lecture, lab and tutorial hours per week come from the calendar (for example "LEC 3, LAB 1.5").
+- **Invented:** the **days and start times** of every section. The public site has no timetable (sections are only inside student login), so the demo uses made-up days and times. A course always meets as one 3-hour block or two 1.5-hour sessions, labs and tutorials are separate sessions, and nothing runs past 17:30. This is labelled on every screen.
 - To use real sections, replace the `sections` in `data/courses.json` (format below). Everything else keeps working.
 
 ```json

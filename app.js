@@ -6,7 +6,7 @@
 // blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
-const VERSION = "12";
+const VERSION = "14";
 const SCREENS = ["degree", "passed", "options", "schedules"];
 const PAGES = [...SCREENS, "why"];   // "why" is the Before & after page, outside the step rail
 const SUPPORT_URL = "https://algomauniversity.freshservice.com/support/solutions/articles/17000006724-for-course-registration-issue";
@@ -39,6 +39,7 @@ const state = {
   startTime: null,         // set at the first choice, drives the plan clock
   elapsed: null,           // seconds until the first timetable appeared
   queries: { degree: "", passed: "", options: "" },
+  questions: "",           // typed questions for the advisor (printed on the sheet)
   tag: "all",
   openYears: new Set([1, 2]),
   pickOpen: null,          // which year groups are open on the Choose screen (null = all)
@@ -212,7 +213,7 @@ function hashParams() {
 }
 
 function saveSession() {
-  store.set(KEY_SESSION, JSON.stringify({ d: state.programId, p: [...state.passed], k: state.picked }));
+  store.set(KEY_SESSION, JSON.stringify({ d: state.programId, p: [...state.passed], k: state.picked, q: state.questions }));
 }
 
 // Update the address bar (no new history entry) and remember the session on this device.
@@ -392,7 +393,7 @@ function restart() {
   state.programId = null; state.passed = new Set(); state.picked = [];
   state.startTime = null; state.elapsed = null; state.scheduleIndex = 0;
   state.filters = { noBefore: null, noAfter: null, daysOff: [] };
-  state.queries = { degree: "", passed: "", options: "" }; state.tag = "all";
+  state.queries = { degree: "", passed: "", options: "" }; state.tag = "all"; state.questions = "";
   store.remove(KEY_SESSION);
   history.replaceState(null, "", "#degree?d=&p=&k=");
   route();
@@ -698,7 +699,7 @@ function renderWhy() {
     el("section", { class: "why-bonus" },
       el("h3", {}, "Beyond the basics"),
       el("div", { class: "why-grid" },
-        el("div", {}, el("h4", {}, "Real data"), el("p", {}, "Course codes, titles, credits, prerequisites and degree requirements are from Algoma's 2026–2027 academic calendar. The one invented part is section times: the public site has no timetable, so the demo uses made-up times, labelled on every screen.")),
+        el("div", {}, el("h4", {}, "Real data"), el("p", {}, "Course codes, titles, credits, prerequisites and degree requirements are from Algoma's 2026–2027 academic calendar. The invented part is the days and start times of sections: the public site has no timetable, so the demo uses made-up days and times, labelled on every screen. Each course’s weekly lecture and lab hours do come from the calendar.")),
         el("div", {}, el("h4", {}, "Accessibility"), el("p", {}, "Built for keyboard and screen-reader use, with a high-legibility typeface, strong contrast, reduced-motion support and a layout that works on a phone.")),
         el("div", {}, el("h4", {}, "A realistic switch"), el("p", {}, "Nothing to install and no account: students open a link. Each term the registrar updates two data files. Advisors accept the printed sheet instead of starting from scratch. A first pilot could be one program.")),
         el("div", {}, el("h4", {}, "Beyond one institution"), el("p", {}, "All rules and courses live in two data files. Another school replaces them and the planner works unchanged.")))));
@@ -747,6 +748,7 @@ function renderSchedules() {
     weeklyGrid(sched),
     planTable(sched),
     comparePanel(),
+    questionsPanel(),
     el("div", { class: "actionbar flow" },
       el("button", { type: "button", class: "btn", onclick: () => go("options") }, icon("left"), "Back"),
       el("div", { class: "actions" },
@@ -812,7 +814,7 @@ function weeklyGrid(sched) {
   const endMin = Math.ceil(Math.max(...meetings.map((m) => L.toMinutes(m.end))) / 60) * 60;
   const rows = (endMin - startMin) / GRID_STEP;
   const rowOf = (minutes) => Math.round((minutes - startMin) / GRID_STEP) + 2; // row 1 holds the day names
-  const grid = el("div", { class: "grid", "aria-hidden": "true", style: { gridTemplateRows: `auto repeat(${rows}, 0.3rem)` } });
+  const grid = el("div", { class: "grid", "aria-hidden": "true", style: { gridTemplateRows: `auto repeat(${rows}, var(--row-h, 0.3rem))` } });
   DAYS.forEach((d, i) => {
     grid.append(el("div", { class: "grid-head", style: { gridColumn: String(i + 2), gridRow: "1" } }, d));
     grid.append(el("div", { class: "day-col", style: { gridColumn: String(i + 2), gridRow: `2 / span ${rows}` } }));
@@ -849,6 +851,24 @@ function planTable(sched) {
         el("td", {}, formatMeetings(p.section.meetings)),
         el("td", {}, String(creditsOf(p.course))))),
         el("tr", {}, el("td", { colspan: "3", style: { textAlign: "right", fontWeight: "700" } }, "Total credits this term"), el("td", {}, el("strong", {}, String(total)))))));
+}
+
+// Optional questions the student wants to ask; they are printed on the "Bring to advisor" sheet.
+const MAX_QUESTION_CHARS = 600;
+function questionsPanel() {
+  const box = el("textarea", {
+    id: "advisor-questions", rows: "4", maxlength: String(MAX_QUESTION_CHARS), "aria-describedby": "advisor-questions-hint",
+    placeholder: "For example:\nCan I take COSC 3106 before MATH 2056?\nDoes this plan leave room for a minor?",
+  });
+  box.value = state.questions;
+  const count = el("span", { class: "counter", id: "advisor-questions-count" });
+  const refresh = () => { count.textContent = `${box.value.length} of ${MAX_QUESTION_CHARS} characters`; };
+  box.addEventListener("input", () => { state.questions = box.value.slice(0, MAX_QUESTION_CHARS); saveSession(); refresh(); });
+  refresh();
+  return el("div", { class: "panel questions" },
+    el("label", { for: "advisor-questions" }, el("strong", {}, "Questions for your advisor"), " (optional)"),
+    el("p", { class: "muted", id: "advisor-questions-hint" }, "Type one question per line. They are printed on your “Bring to advisor” sheet."),
+    box, count);
 }
 
 // Before / after, with the real clock once results exist.
@@ -897,6 +917,7 @@ function printSummary(sched) {
   const termCredits = sched.reduce((sum, p) => sum + creditsOf(p.course), 0);
   const earned = L.creditsPassed(visibleCourses(), state.passed);
   const today = new Date().toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" });
+  const questions = L.parseQuestions(state.questions);
 
   const stat = (value, label) => el("div", { class: "ps-stat" }, el("strong", {}, value), el("span", {}, label));
   const courseList = (courses, extra) => el("ul", { class: "ps-list" }, courses.map((c) =>
@@ -935,7 +956,8 @@ function printSummary(sched) {
           : el("p", {}, "All required courses are passed."))),
 
     el("section", { class: "ps-notes" }, el("h2", {}, "Questions for my advisor"),
-      el("div", { class: "ps-line" }), el("div", { class: "ps-line" }), el("div", { class: "ps-line" }), el("div", { class: "ps-line" })),
+      questions.length ? el("ol", { class: "ps-questions" }, questions.map((q) => el("li", {}, q))) : null,
+      Array.from({ length: questions.length ? 2 : 4 }, () => el("div", { class: "ps-line" }))),
     el("p", { class: "ps-foot" }, "Generated by Course Planner 2.0 (ThunderHacks 2026 prototype, not an official Algoma University document). Course names, prerequisites and degree requirements follow the 2026-2027 academic calendar in simplified form; section times are demo data. Please confirm everything with an academic advisor before registering."));
   window.print();
 }
@@ -1003,7 +1025,7 @@ function loadSavedSession() {
     const saved = JSON.parse(store.get(KEY_SESSION) || "null");
     if (!saved || !state.programs.some((p) => p.id === saved.d)) return null;
     const ok = (list) => Array.isArray(list) ? list.filter((code) => typeof code === "string" && state.byCode.has(code)) : [];
-    return { d: saved.d, p: ok(saved.p), k: ok(saved.k) };
+    return { d: saved.d, p: ok(saved.p), k: ok(saved.k), q: typeof saved.q === "string" ? saved.q.slice(0, MAX_QUESTION_CHARS) : "" };
   } catch { return null; }
 }
 
@@ -1022,8 +1044,9 @@ async function start() {
   $("loading").hidden = true;
 
   let welcomeBack = false;
+  const saved = loadSavedSession();
+  if (saved) state.questions = saved.q;
   if (!location.hash.includes("?")) {
-    const saved = loadSavedSession();
     if (saved && (saved.p.length || saved.k.length)) {
       const params = new URLSearchParams({ d: saved.d, p: saved.p.join(","), k: saved.k.join(",") });
       history.replaceState(null, "", "#" + (saved.k.length ? "options" : "passed") + "?" + params.toString());

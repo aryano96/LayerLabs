@@ -529,7 +529,7 @@ input:active:not(:disabled) { transform: scale(0.9); }
   .ps-table .swatch { display: inline-block; width: 8pt; height: 8pt; margin-right: 5pt; border: 1.5pt solid; border-radius: 2pt; }
   .ps-grid { break-inside: avoid; }
   .ps-grid .grid-wrap { overflow: visible; border: 1pt solid #9aa4ae; border-radius: 3pt; margin: 0; }
-  .ps-grid .grid { min-width: 0; grid-template-columns: 2.6rem repeat(5, 1fr); }
+  .ps-grid .grid { min-width: 0; grid-template-columns: 2.6rem repeat(5, 1fr); --row-h: 0.19rem; }
   .ps-grid .block { animation: none; font-size: 7.5pt; }
   .ps-grid .block span { font-size: 7pt; }
   .ps-grid .grid-time { font-size: 7.5pt; }
@@ -538,7 +538,9 @@ input:active:not(:disabled) { transform: scale(0.9); }
   .ps-list { margin: 0; padding-left: 12pt; font-size: 9.5pt; }
   .ps-list li { margin-bottom: 2pt; }
   .ps-notes { break-inside: avoid; }
-  .ps-line { height: 20pt; border-bottom: 0.75pt solid #777; }
+  .ps-line { height: 17pt; border-bottom: 0.75pt solid #777; }
+  .ps-questions { margin: 0 0 4pt; padding-left: 16pt; }
+  .ps-questions li { margin-bottom: 3pt; }
   .ps-foot { margin-top: 14pt; padding-top: 6pt; border-top: 1pt solid #9aa4ae; font-size: 8pt; color: #444; }
 }
 
@@ -633,3 +635,14 @@ main { position: relative; z-index: 2; }
 /* when the plan panel is hidden (degree, Before & after) let the content use the full width */
 .layout:has(> .summary[hidden]) { grid-template-columns: minmax(0, 1fr); }
 .layout:has(> .summary[hidden]) main { max-width: 64rem; }
+
+/* ---------- questions for the advisor ---------- */
+.questions { display: grid; gap: 0.5rem; padding: 1rem 1.25rem; }
+.questions textarea {
+  width: 100%; min-height: 6rem; padding: 0.6rem 0.85rem; font: inherit; line-height: 1.5; color: var(--text); background: var(--surface);
+  border: 2px solid var(--line); border-radius: 0.6rem; resize: vertical; transition: border-color 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+.questions textarea:hover { border-color: var(--line-strong); }
+.questions textarea:focus { outline: none; border-color: var(--action); box-shadow: 0 0 0 3px var(--action-soft); }
+.questions textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.questions .counter { justify-self: end; }

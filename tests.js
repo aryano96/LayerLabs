@@ -89,6 +89,15 @@ function runTests(L, courses, programs, print) {
   check("requiredCodes lists the degree's required courses that exist",
     L.requiredCodes(courses, p3), ["COSC 1000", "MATH 1000", "COSC 2000"]);
 
+  // ---- questions for the advisor (typed by the student, printed on the sheet) ----
+  check("one question per line", L.parseQuestions("Can I take COSC 3106 early?\nIs MATH 2056 required?"), ["Can I take COSC 3106 early?", "Is MATH 2056 required?"]);
+  check("blank lines and extra spaces are dropped", L.parseQuestions("  First  \n\n   \nSecond\n"), ["First", "Second"]);
+  check("typed bullets and numbers are removed (the sheet adds its own numbering)", L.parseQuestions("1. One\n2) Two\n- Three\n* Four\n• Five"), ["One", "Two", "Three", "Four", "Five"]);
+  check("empty or missing text gives no questions", [L.parseQuestions(""), L.parseQuestions(null), L.parseQuestions(undefined)], [[], [], []]);
+  check("at most 8 questions are kept", L.parseQuestions(Array.from({ length: 12 }, (_, i) => "Q" + i).join("\n")).length, 8);
+  check("a very long question is cut to 200 characters", L.parseQuestions("x".repeat(500))[0].length, 200);
+  check("angle brackets stay as plain characters (they are shown as text, never as HTML)", L.parseQuestions("<b>hi</b>"), ["<b>hi</b>"]);
+
   // ---- daysOff filter (any set of weekdays) ----
   const off = (days) => L.filterSchedules(two, { noBefore: null, noAfter: null, fridaysOff: false, daysOff: days });
   check("daysOff Monday keeps only the all-Tue/Thu schedule", names(off(["Mon"])), ["COSC 1000B+MATH 1000B"]);

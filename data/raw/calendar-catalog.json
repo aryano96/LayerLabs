@@ -5,6 +5,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "successful completion of all program entry requirements.",
 "needs_review": true
 },
@@ -14,6 +17,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "successful completion of all program entry requirements.",
 "needs_review": true
 },
@@ -27,6 +34,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "ADMN-1126.",
 "needs_review": false
 },
@@ -36,6 +47,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -49,6 +64,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "successful completion of all program entry requirements. This course may be taken concurrently with ADMN-1206. (CST/EXP/TUT 1) (3 cr)",
 "needs_review": true
 },
@@ -58,6 +74,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "successful completion of all program entry requirements.",
 "needs_review": true
 },
@@ -67,6 +86,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "A minimum overall average of 70% or above or permission of the School of Business and Economics. Completion of a mandatory non-credit career skills seminar in the semester prior to the internship. Completion of the mandatory non-credit career skills seminar requires students to: 1.Attend all scheduled seminar sessions. 2.Receive a grade of at least 75% on the internship application package rubric.",
 "needs_review": true
 },
@@ -76,6 +96,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -89,6 +112,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206. (CST/WIL 3) ( 3 cr)",
 "needs_review": false
 },
@@ -102,6 +128,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1127.",
 "needs_review": false
 },
@@ -115,6 +144,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2106.",
 "needs_review": false
 },
@@ -128,6 +160,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "successful completion of ADMN-1206. This course cannot be used by college transfer students toward the B.B.A. degree.",
 "needs_review": true
 },
@@ -141,6 +176,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "successful completion of ADMN-1207.",
 "needs_review": true
 },
@@ -154,6 +193,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "ADMN-2506",
 "needs_review": false
 },
@@ -163,6 +206,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -177,6 +224,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "ADMN-2506 or ECON-2126.",
 "needs_review": false
 },
@@ -186,6 +237,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -195,6 +249,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -204,6 +261,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -217,6 +277,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206.",
 "needs_review": false
 },
@@ -230,6 +293,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206.",
 "needs_review": false
 },
@@ -243,6 +309,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206.",
 "needs_review": false
 },
@@ -260,6 +329,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "ADMN-1126 or ADMN-1127. ADMN-2506 is recommended.",
 "needs_review": false
 },
@@ -276,6 +349,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "ADMN-3106. ADMN-2506 (3 cr) is recommended.",
 "needs_review": false
 },
@@ -290,6 +367,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2506 or ECON-2126.",
 "needs_review": false
 },
@@ -303,6 +383,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3116.",
 "needs_review": false
 },
@@ -316,6 +399,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1207.",
 "needs_review": false
 },
@@ -329,6 +415,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0
+},
 "prereq_text": "ADMN-3126.",
 "needs_review": false
 },
@@ -342,6 +431,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206.",
 "needs_review": false
 },
@@ -355,6 +447,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3136.",
 "needs_review": false
 },
@@ -371,6 +466,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3136, ADMN-3137.",
 "needs_review": false
 },
@@ -387,6 +485,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3136, ADMN-3137.",
 "needs_review": false
 },
@@ -396,6 +497,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Completion of the first two years of the Business Administration program with a minimum overall average of 70% or above or permission of the School of Business and Economics. Completion of a mandatory non-credit career skills seminar in the semester prior to the internship. Completion of the mandatory non-credit career skills seminar requires students to: 1.Attend all scheduled seminar sessions. 2.Receive a grade of at least 75% on the internship application package rubric. WIL3 (3 cr)",
 "needs_review": true
 },
@@ -405,6 +507,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -414,6 +519,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -423,6 +531,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -439,6 +550,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Successful completion of ADMN-2506, ADMN-2607.",
 "needs_review": true
 },
@@ -479,6 +593,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127. Antirequisite: ECON3296",
 "needs_review": false
 },
@@ -492,6 +609,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3127.",
 "needs_review": false
 },
@@ -505,6 +625,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3127.",
 "needs_review": false
 },
@@ -524,6 +647,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3127, ADMN-2506, ADMN-2607.",
 "needs_review": false
 },
@@ -537,6 +663,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3127.",
 "needs_review": false
 },
@@ -574,6 +703,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Successful completion of ADMN-2506, ADMN-3106, ADMN-3107, ADMN-3116, ADMN-3117, ADMN-3126, ADMN-3127, ADMN-3136, ADMN-3137.",
 "needs_review": true
 },
@@ -587,6 +719,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-4606.",
 "needs_review": false
 },
@@ -600,6 +735,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2706 and ADMN- 2707",
 "needs_review": false
 },
@@ -613,6 +751,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-4706",
 "needs_review": false
 },
@@ -626,6 +767,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1126 or permission of the department.",
 "needs_review": false
 },
@@ -642,6 +786,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0
+},
 "prereq_text": "ADMN-3116 and ADMN-3117.",
 "needs_review": false
 },
@@ -655,6 +802,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2106 and ADMN- 2107.",
 "needs_review": false
 },
@@ -668,6 +818,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-4806.",
 "needs_review": false
 },
@@ -682,6 +835,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1126 or ADMN-1127 or permission of the department.",
 "needs_review": false
 },
@@ -695,6 +851,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-4816 with a minimum of 60%.",
 "needs_review": false
 },
@@ -711,6 +870,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2106, ADMN-2107.",
 "needs_review": false
 },
@@ -727,6 +889,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2106, ADMN-2107.",
 "needs_review": false
 },
@@ -743,6 +908,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "an introductory course and ADMN-3106, ADMN-3107.",
 "needs_review": false
 },
@@ -765,6 +933,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3106, ADMN-3107, ADMN-2506, ADMN-2607.",
 "needs_review": false
 },
@@ -805,6 +976,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207, ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127. (CST/WIL 3) (3 cr)",
 "needs_review": false
 },
@@ -845,6 +1017,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127 or permission of the instructor.",
 "needs_review": false
 },
@@ -885,6 +1060,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127 or permission of the instructor.",
 "needs_review": false
 },
@@ -925,6 +1103,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127 or permission of the instructor.",
 "needs_review": false
 },
@@ -941,6 +1122,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-2506, ADMN-3117.",
 "needs_review": false
 },
@@ -955,6 +1139,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-2126 or ADMN-2506.",
 "needs_review": false
 },
@@ -971,6 +1158,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-3126, ADMN-3127.",
 "needs_review": false
 },
@@ -990,6 +1180,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206, ADMN-3126, ADMN-3127.",
 "needs_review": false
 },
@@ -1009,6 +1202,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-1206, ADMN-3126, ADMN-3127.",
 "needs_review": false
 },
@@ -1022,6 +1218,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ADMN-4936.",
 "needs_review": false
 },
@@ -1035,6 +1234,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Successful completion of ADMN-3137.",
 "needs_review": true
 },
@@ -1044,6 +1246,7 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Fourth year status in the B.B.A. program, at least a 75% overall average, and permission of the department. (THESIS/WIL) (6 cr)",
 "needs_review": true
 },
@@ -1053,6 +1256,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1062,6 +1268,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -1071,6 +1280,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -1088,6 +1300,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANII-1006, ANII-1007, or ANII-1206 or permission of the instructor.",
 "needs_review": false
 },
@@ -1105,6 +1320,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANII-1006, ANII-1007, or ANII-1206.",
 "needs_review": false
 },
@@ -1114,6 +1332,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1130,6 +1351,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANII-2006, ANII-2007 or permission of the instructor.",
 "needs_review": false
 },
@@ -1146,6 +1370,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANII-2006, ANII-2007 or permission of the instructor.",
 "needs_review": false
 },
@@ -1162,6 +1389,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANII-2006, ANII-2007, or permission of the instructor.",
 "needs_review": false
 },
@@ -1178,6 +1408,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANII-2006, ANII-2007, or permission of the instructor.",
 "needs_review": false
 },
@@ -1187,6 +1420,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1196,6 +1432,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1205,6 +1444,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1214,6 +1456,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1223,6 +1468,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1232,6 +1478,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ANTR- 1007",
 "needs_review": false
 },
@@ -1241,6 +1490,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing.",
 "needs_review": true
 },
@@ -1250,6 +1502,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1259,6 +1512,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1268,6 +1524,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1277,6 +1534,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1286,6 +1544,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1295,6 +1554,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1304,6 +1564,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1313,6 +1574,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1322,6 +1584,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1331,6 +1594,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1340,6 +1606,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1349,6 +1618,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1358,6 +1630,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1367,6 +1643,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1376,6 +1656,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507",
 "needs_review": false
 },
@@ -1385,6 +1669,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1394,6 +1682,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1403,6 +1694,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1412,6 +1707,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1421,6 +1719,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1430,6 +1732,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507 or equivalent.",
 "needs_review": false
 },
@@ -1439,6 +1745,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507",
 "needs_review": false
 },
@@ -1448,6 +1758,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1457,6 +1770,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506 and BIOL- 2007.",
 "needs_review": false
 },
@@ -1466,6 +1783,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507; or BIOL- 3396 (or BIOL- 3356/7) recommended.",
 "needs_review": false
 },
@@ -1475,6 +1795,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1484,6 +1808,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1493,6 +1821,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1502,6 +1833,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1511,6 +1845,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1520,6 +1858,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "Completion of first two years of the Biology program or permission from the department.",
 "needs_review": true
 },
@@ -1529,6 +1870,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1549,6 +1893,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of PSYC-2127, PSYC-3256, PSYC-3286, BIOL- 2056, BIOL- 2996, or SOCI-2127 or permission of the department.",
 "needs_review": false
 },
@@ -1558,6 +1905,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1567,6 +1917,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 2426.",
 "needs_review": false
 },
@@ -1576,6 +1930,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 3016.",
 "needs_review": false
 },
@@ -1585,6 +1943,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of second year core program in Biology or permission from the instructor.",
 "needs_review": true
 },
@@ -1594,6 +1956,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of second year core program in Biology or permission from the instructor.",
 "needs_review": true
 },
@@ -1603,6 +1969,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1612,6 +1981,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "BIOL- 3396 (or BIOL- 3356/7) or permission from the instructor.",
 "needs_review": false
 },
@@ -1621,6 +1994,10 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "This course is restricted to students in the four-year program with a minimum average of 70% in Biology courses or by permission of the instructor.",
 "needs_review": true
 },
@@ -1630,6 +2007,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -1639,6 +2019,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 3396 (or BIOL- 3356/7) or permission of the instructor.",
 "needs_review": false
 },
@@ -1648,6 +2031,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 2026, CHMI- 3016",
 "needs_review": false
 },
@@ -1661,6 +2047,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506/1507. BIOL-3396 and ENVS- 1006.",
 "needs_review": false
 },
@@ -1670,6 +2059,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "BIOL- 2056, BIOL- 3396, or permission from the instructor.",
 "needs_review": false
 },
@@ -1679,6 +2072,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "Completion of the first three years of the Biology program.",
 "needs_review": true
 },
@@ -1688,6 +2084,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 3396 (or BIOL- 3356/7) or permission of the instructor.",
 "needs_review": false
 },
@@ -1697,6 +2097,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "third year standing in Biology",
 "needs_review": true
 },
@@ -1706,6 +2109,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "related 2000 series course or permission from the department.",
 "needs_review": false
 },
@@ -1715,6 +2121,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of the third-year core program in Biology or permission from the instructor.",
 "needs_review": true
 },
@@ -1724,6 +2134,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of the third-year core program in Biology or permission from the instructor.",
 "needs_review": true
 },
@@ -1733,6 +2147,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1742,6 +2160,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1756,6 +2178,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "CESD-1806 or CESD-1807 or permission of the Department",
 "needs_review": false
 },
@@ -1769,6 +2194,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "CESD-1206 or permission of the Department",
 "needs_review": false
 },
@@ -1778,6 +2206,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1787,6 +2218,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1796,6 +2230,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "One introductory course in a social science or professional course category (CESD, ADMN, ANII, ANTR, ECON, GEOG, JURI, POLI, PSYC, SOCI, or SWRK, see the options below) or permission of the department",
 "needs_review": false
 },
@@ -1805,6 +2242,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in their upper year in good academic standing.",
 "needs_review": true
 },
@@ -1814,6 +2254,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1823,6 +2266,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1832,6 +2278,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1841,6 +2290,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1850,6 +2302,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1859,6 +2314,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1890,6 +2348,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "CESD-1006, CESD-1007, CESD-2016, CESD-2106, CESD-2406, CESD-2607, and CESD-3016. Students must apply to enrol in CESD 3017 in the preceding semester by the deadline set by the department.",
 "needs_review": false
 },
@@ -1899,6 +2360,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1908,6 +2372,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1917,6 +2384,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1926,6 +2396,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1935,6 +2408,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1944,6 +2420,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1953,6 +2432,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -1966,6 +2446,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "CESD-4016. Restricted to students in year four of the program or permission of the department. (THESIS/WIL) (3 cr)",
 "needs_review": true
 },
@@ -1975,6 +2456,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1984,6 +2468,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Students must be in upper year in good academic standing.",
 "needs_review": true
 },
@@ -1993,6 +2480,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "4U in Chemistry or permission of the Department.",
 "needs_review": false
 },
@@ -2002,6 +2493,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 1006.",
 "needs_review": false
 },
@@ -2011,6 +2506,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 1006, CHMI- 1007.",
 "needs_review": false
 },
@@ -2020,6 +2519,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 2426.",
 "needs_review": false
 },
@@ -2029,6 +2532,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 2426.",
 "needs_review": false
 },
@@ -2038,6 +2545,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 3016.",
 "needs_review": false
 },
@@ -2047,6 +2558,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2056,6 +2570,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "OAC MATH/U-level Math or OAC Computer Science.",
 "needs_review": false
 },
@@ -2069,6 +2587,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "COSC-1046.",
 "needs_review": false
 },
@@ -2078,6 +2600,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2087,6 +2612,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2096,6 +2625,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2112,6 +2644,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "COSC-1047 and MATH-1056, or permission of the school.",
 "needs_review": false
 },
@@ -2125,6 +2661,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "COSC-2006.",
 "needs_review": false
 },
@@ -2138,6 +2678,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-1046.",
 "needs_review": false
 },
@@ -2147,6 +2690,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2160,6 +2706,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-1046 or equivalent programming experience.",
 "needs_review": false
 },
@@ -2173,6 +2722,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006",
 "needs_review": false
 },
@@ -2189,6 +2741,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "MATH-1056 and COSC-1047.",
 "needs_review": false
 },
@@ -2202,6 +2758,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-1046.",
 "needs_review": false
 },
@@ -2215,6 +2774,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-1046",
 "needs_review": false
 },
@@ -2232,6 +2794,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2947, MATH-1056/MATH-1057.",
 "needs_review": false
 },
@@ -2245,6 +2810,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-1036 or permission of the instructor.",
 "needs_review": false
 },
@@ -2254,6 +2822,7 @@
 "credits": 2.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Permission of the School.",
 "needs_review": false
 },
@@ -2267,6 +2836,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "The Java version of COSC-1047 or equivalent object-oriented programming experience in a language other than C++.",
 "needs_review": false
 },
@@ -2280,6 +2852,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-1046.",
 "needs_review": false
 },
@@ -2289,6 +2864,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing",
 "needs_review": true
 },
@@ -2305,6 +2883,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006 and COSC-2307.",
 "needs_review": false
 },
@@ -2318,6 +2899,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2036 (Computer Game Design I).",
 "needs_review": false
 },
@@ -2332,6 +2916,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "COSC-2006, MCV4U or MATH-1057.",
 "needs_review": false
 },
@@ -2345,6 +2933,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2036",
 "needs_review": false
 },
@@ -2361,6 +2952,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006, MATH-2056.",
 "needs_review": false
 },
@@ -2374,6 +2968,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2007.",
 "needs_review": false
 },
@@ -2390,6 +2987,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006 and COSC-2406.",
 "needs_review": false
 },
@@ -2403,6 +3003,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2007.",
 "needs_review": false
 },
@@ -2419,6 +3022,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2007, MATH-1057.",
 "needs_review": false
 },
@@ -2435,6 +3041,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006 and COSC-2406.",
 "needs_review": false
 },
@@ -2451,6 +3060,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006 and COSC-2406.",
 "needs_review": false
 },
@@ -2470,6 +3082,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-1057, MATH-2066, and COSC-1046.",
 "needs_review": false
 },
@@ -2479,6 +3094,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 2.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2488,6 +3107,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of second year core program in Computer Science or permission of the Department.",
 "needs_review": true
 },
@@ -2501,6 +3123,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006",
 "needs_review": false
 },
@@ -2510,6 +3135,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Permission of the school and of the prospective faculty member.",
 "needs_review": false
 },
@@ -2523,6 +3149,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006.",
 "needs_review": false
 },
@@ -2539,6 +3168,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006, COSC-2007",
 "needs_review": false
 },
@@ -2552,6 +3184,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006.",
 "needs_review": false
 },
@@ -2565,6 +3200,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006",
 "needs_review": false
 },
@@ -2578,6 +3216,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "COSC-2896 (Computer Science Co-Op Work Term I) or the permission of the school.",
 "needs_review": false
 },
@@ -2594,6 +3233,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3117, COSC-3036.",
 "needs_review": false
 },
@@ -2603,6 +3245,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2612,6 +3257,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Introduction to VR/AR, 3D modeling basics",
 "needs_review": false
 },
@@ -2621,6 +3269,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of third year core courses.",
 "needs_review": true
 },
@@ -2630,6 +3281,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of third year core courses.",
 "needs_review": true
 },
@@ -2646,6 +3300,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2007, COSC-3106.",
 "needs_review": false
 },
@@ -2662,6 +3319,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2507 and COSC-3117.",
 "needs_review": false
 },
@@ -2678,6 +3338,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2507 and COSC-3117.",
 "needs_review": false
 },
@@ -2687,6 +3350,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC3407",
 "needs_review": false
 },
@@ -2696,6 +3362,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "An average of 70% in the COSC-specialization courses upon entry to fourth year, or permission of the school. (6 cr/WIL) COSC4297 Machine Learning/AI for Cybersecurity This course explores the application of machine learning and AI in cybersecurity. Students will examine the fundamentals of machine learning and AI and their applications in detecting distributed denial-of-service attacks, network anomaly detection, fraud and malware threat detection, and adversarial machine learning. This 3-credit course includes lectures, case studies, and practical approaches for machine learning and AI in cybersecurity.",
 "needs_review": true
 },
@@ -2709,6 +3378,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3306.",
 "needs_review": false
 },
@@ -2722,6 +3394,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3407.",
 "needs_review": false
 },
@@ -2738,6 +3413,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3406, COSC-3407.",
 "needs_review": false
 },
@@ -2747,6 +3425,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of second year core program in Computer Science.",
 "needs_review": true
 },
@@ -2756,6 +3437,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "completion of second year core program in Computer Science.",
 "needs_review": true
 },
@@ -2769,6 +3453,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3406.",
 "needs_review": false
 },
@@ -2782,6 +3469,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3407.",
 "needs_review": false
 },
@@ -2795,6 +3485,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-3596.",
 "needs_review": false
 },
@@ -2804,6 +3497,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of second year core courses.",
 "needs_review": true
 },
@@ -2813,6 +3509,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Permission of the department. (3 cr/EXP). COSC4726 Cloud and IoT Security This course explores security challenges and solutions in Cloud Computing and the Internet of Things (IoT). Students will examine threats, vulnerabilities, and countermeasures for securing cloud services, IoT devices, and edge computing environments. Topics include cloud security architecture, IoT security protocols, privacy concerns, and secure communication strategies. This 3-credit course includes lectures, case studies, and practical security assessments.",
 "needs_review": false
 },
@@ -2829,6 +3528,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2307, COSC-2956.",
 "needs_review": false
 },
@@ -2842,6 +3544,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "COSC-3896 (Computer Science Co-Op Work Term II) or the permission of the school.",
 "needs_review": false
 },
@@ -2851,6 +3554,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of 2nd year core program in Computer Science, or completion of 3rd year core program in E-Business Science, or school\u2019s permission.",
 "needs_review": true
 },
@@ -2864,6 +3570,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Prerequisite: ADMN2506 or ECON2126 or instructor approval. If students have taken ADMN-2607 prior to this course, they also met the pre-requisite requirement. (3cr)",
 "needs_review": true
 },
@@ -2873,6 +3580,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2882,6 +3593,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -2898,6 +3613,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -2914,6 +3632,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -2930,6 +3651,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -2946,6 +3670,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -2962,6 +3689,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -2978,6 +3708,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006, ECON-1007",
 "needs_review": false
 },
@@ -2994,6 +3727,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006, ECON-1007",
 "needs_review": false
 },
@@ -3010,6 +3746,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -3026,6 +3765,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -3042,6 +3784,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "ECON-1006, ECON-1007. Anti-requisite: any other introductory Statistics course. (3 cr)",
 "needs_review": false
 },
@@ -3058,6 +3801,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -3074,6 +3820,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
 "needs_review": false
 },
@@ -3087,6 +3836,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-2106 or permission of the department.",
 "needs_review": false
 },
@@ -3100,6 +3852,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-3016 or permission of the department.",
 "needs_review": false
 },
@@ -3109,6 +3864,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON 2106, ECON 2107.",
 "needs_review": false
 },
@@ -3122,6 +3880,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-3076 or permission of the department.",
 "needs_review": false
 },
@@ -3131,6 +3892,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON 2106.",
 "needs_review": false
 },
@@ -3144,6 +3908,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-2107.",
 "needs_review": false
 },
@@ -3163,6 +3930,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006, ECON-1007, ECON-2106 recommended.",
 "needs_review": false
 },
@@ -3176,6 +3946,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-2106 or permission of the department. Prerequisite: ECON 2106 and ECON 2107.",
 "needs_review": false
 },
@@ -3185,6 +3958,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON 2126 or ADMN2506 (of the two), and ECON 2127.",
 "needs_review": false
 },
@@ -3201,6 +3977,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006, ECON-1007 or permission of the department.",
 "needs_review": false
 },
@@ -3217,6 +3996,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-1006, ECON-1007 or permission of the department.",
 "needs_review": false
 },
@@ -3233,6 +4015,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-3807, ADMN-4936, fourth year standing in the Finance and Economics program. To qualify for a supervisor/internship, students are required to achieve at least a 70% overall average.",
 "needs_review": true
 },
@@ -3246,6 +4031,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ECON-3446 or permission of the school.",
 "needs_review": false
 },
@@ -3255,6 +4043,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3268,6 +4059,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006.",
 "needs_review": false
 },
@@ -3277,6 +4071,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3286,6 +4081,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3295,6 +4091,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3304,6 +4101,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3313,6 +4113,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3326,6 +4129,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3339,6 +4145,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3348,6 +4157,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3357,6 +4169,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3366,6 +4181,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3375,6 +4193,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3397,6 +4218,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 OR ENGL-1007 OR HIST-1206 OR HIST-1207",
 "needs_review": false
 },
@@ -3410,6 +4234,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3423,6 +4250,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3436,6 +4266,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3449,6 +4282,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% and ENGL2536 or permission of the Department.",
 "needs_review": false
 },
@@ -3458,6 +4294,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3471,6 +4310,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "at least one of ENGL-1006, 1007, 1991 or 2546 or permission of the Department.",
 "needs_review": false
 },
@@ -3484,6 +4326,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "students must be in upper-year standing. [LEC-SEM 3] 3 cr ENGL2856 Literature and Film A study of the relationship between literature and film that focuses on film adaptations of literary texts from one or more genres by one or more writers. In addition to the texts and films, classic and contemporary theories of adaptation will be examined. One goal will be to see how rich the literary texts are, how they offer directors and adaptors multiple possibilities. Another will be to explore the films as critical readings of the literary texts they adapt. The course will also examine the films as rich and meaningful texts in themselves. Prerequisite: ENGL-1006/07 or ENGL/FILM- 1606/07 or permission of Department.",
 "needs_review": true
 },
@@ -3497,6 +4342,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3506,6 +4354,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3515,6 +4366,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3524,6 +4378,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 2.0
+},
 "prereq_text": "Open to any upper-year student who has completed successfully at least 24 credits.",
 "needs_review": true
 },
@@ -3546,6 +4403,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Any two of the following POLI-1006, POLI-1007, ENGL-1006, ENGL-1007.",
 "needs_review": false
 },
@@ -3555,6 +4415,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Open to any upper-year student who has completed successfully at least 24 credits.",
 "needs_review": true
 },
@@ -3564,6 +4427,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3577,6 +4441,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3590,6 +4457,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3603,6 +4473,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3616,6 +4489,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3629,6 +4505,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3642,6 +4521,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3656,6 +4538,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007, or ENGL-2546, or permission of the Department.",
 "needs_review": false
 },
@@ -3670,6 +4555,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-2546 or ENGL-3516 or permission of the Department.",
 "needs_review": false
 },
@@ -3679,6 +4567,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3695,6 +4586,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006, ENGL-1007, PHIL- 1116, or PHIL- 1117.",
 "needs_review": false
 },
@@ -3708,6 +4602,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": false
 },
@@ -3717,6 +4614,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3730,6 +4630,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": true
 },
@@ -3743,6 +4646,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": true
 },
@@ -3756,6 +4662,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": true
 },
@@ -3769,6 +4678,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": true
 },
@@ -3782,6 +4694,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "At least 24 credits in English courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": true
 },
@@ -3795,6 +4710,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "At least 24 credits in English courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
 "needs_review": true
 },
@@ -3804,6 +4722,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3813,6 +4734,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "BIOL- 1506, CHMI- 1006, CHMI- 1007.",
 "needs_review": false
 },
@@ -3822,6 +4746,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENVS- 1006 or permission of the instructor.",
 "needs_review": false
 },
@@ -3831,6 +4758,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "Completion of first two years of the Environmental Science program.",
 "needs_review": true
 },
@@ -3840,6 +4770,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "BIOL- 1506, BIOL- 1507.",
 "needs_review": false
 },
@@ -3849,6 +4783,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENVS- 1006.",
 "needs_review": false
 },
@@ -3858,6 +4795,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of second year core program in Environmental Science or permission from the instructor.",
 "needs_review": true
 },
@@ -3867,6 +4808,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of second year core program in Environmental Science or permission from the instructor.",
 "needs_review": true
 },
@@ -3876,6 +4821,10 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "Students must have a 70% average across core program courses to enter this course. This course is required for those seeking an Honours degree.",
 "needs_review": true
 },
@@ -3885,6 +4834,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "Completion of first three years of the Environmental Science program.",
 "needs_review": true
 },
@@ -3894,6 +4846,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "ENVS- 1006 and CHMI- 2426.",
 "needs_review": false
 },
@@ -3907,6 +4863,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "CHMI- 1006, CHMI- 1007, MATH-1036.",
 "needs_review": false
 },
@@ -3916,6 +4876,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of the third-year core program in Environmental Science or permission from the instructor.",
 "needs_review": true
 },
@@ -3925,6 +4889,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "completion of the third-year core program in Environmental Science or permission from the instructor.",
 "needs_review": true
 },
@@ -3934,6 +4902,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 2.0,
+"TUT": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3943,6 +4915,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 2.0,
+"TUT": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3952,6 +4928,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3965,6 +4942,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-1021, or Grade 9 French, or equivalent. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -3974,6 +4952,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3983,6 +4964,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -3996,6 +4978,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-1022, or Grade 10 French, or equivalent. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -4009,6 +4992,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-2021, or Grade 11 French, or equivalent. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -4022,6 +5006,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4035,6 +5022,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4048,6 +5038,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -4061,6 +5052,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -4074,6 +5066,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4087,6 +5082,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4100,6 +5098,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4113,6 +5114,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -4126,6 +5128,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -4139,6 +5142,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4152,6 +5158,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "FRAN-1406/1407 or permission of the instructor.",
 "needs_review": false
 },
@@ -4161,6 +5170,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4170,6 +5182,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4179,6 +5194,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4188,6 +5206,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Basic computer and operating system knowledge is needed. Basic math knowledge (addition, subtraction, multiplication, division) is also required.",
 "needs_review": false
 },
@@ -4197,6 +5218,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4206,6 +5231,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4220,6 +5248,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026 or GEOG-1027 or Level 1 PLMCP student or Permission of the Department.",
 "needs_review": false
 },
@@ -4233,6 +5264,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1027 preferred.",
 "needs_review": false
 },
@@ -4249,6 +5283,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "GEOG-1026, GEOG-1027. (ONLINE/EXP 3] (3 cr)",
 "needs_review": false
 },
@@ -4262,6 +5297,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1027 preferred.",
 "needs_review": false
 },
@@ -4271,6 +5309,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -4287,6 +5328,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 preferred.",
 "needs_review": false
 },
@@ -4296,6 +5340,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4305,6 +5352,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4321,6 +5371,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or upper year standing preferred.",
 "needs_review": true
 },
@@ -4330,6 +5383,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4339,6 +5396,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4348,6 +5406,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4357,6 +5418,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4373,6 +5438,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or Department\u2019s permission.",
 "needs_review": false
 },
@@ -4392,6 +5460,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "GEOG-1026, GEOG-1027; GEOG-2017; or Departmental permission.",
 "needs_review": false
 },
@@ -4408,6 +5477,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 1.0,
+"LAB": 2.0
+},
 "prereq_text": "GEOG-2017 required, GEOG-2016 recommended.",
 "needs_review": false
 },
@@ -4421,6 +5494,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 1.0,
+"LAB": 2.0
+},
 "prereq_text": "GEOG-2017.",
 "needs_review": false
 },
@@ -4430,6 +5507,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4439,6 +5519,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4452,6 +5535,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1027 or upper year standing preferred.",
 "needs_review": true
 },
@@ -4465,6 +5551,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "(s): GEOG-1027 or upper year standing preferred.",
 "needs_review": true
 },
@@ -4481,6 +5570,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or permission of the Department.",
 "needs_review": false
 },
@@ -4490,6 +5582,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4506,6 +5601,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 2.0,
+"LAB": 1.0
+},
 "prereq_text": "GEOG-2026 OR SOCI-3126.",
 "needs_review": false
 },
@@ -4515,6 +5614,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Permission of the Department.",
 "needs_review": false
 },
@@ -4524,6 +5626,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4540,6 +5645,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or permission of the Department.",
 "needs_review": false
 },
@@ -4549,6 +5657,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4565,6 +5676,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or permission from the Department.",
 "needs_review": false
 },
@@ -4581,6 +5695,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or upper year standing preferred.",
 "needs_review": true
 },
@@ -4590,6 +5707,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Permission of the Department.",
 "needs_review": false
 },
@@ -4599,6 +5719,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Permission of the Department.",
 "needs_review": false
 },
@@ -4615,6 +5738,9 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LAB": 3.0
+},
 "prereq_text": "GEOG-3076 Advanced GIS, GEOG-3096 Topics in GIS Applications recommended.",
 "needs_review": false
 },
@@ -4624,6 +5750,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4640,6 +5769,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-2027, GEOG-3046.",
 "needs_review": false
 },
@@ -4649,6 +5781,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Available only to 3rd and 4th year honours students with a cumulative average grade of B or higher.",
 "needs_review": true
 },
@@ -4662,6 +5795,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-2206 recommended.",
 "needs_review": false
 },
@@ -4676,6 +5812,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-3206 or GEOG-3207.",
 "needs_review": false
 },
@@ -4692,6 +5831,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1026, GEOG-1027 or permission of the Department.",
 "needs_review": false
 },
@@ -4705,6 +5847,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOG-1027 preferred or permission of the Department.",
 "needs_review": false
 },
@@ -4714,6 +5859,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "restricted to students in year three or four of the program or permission of the Department.",
 "needs_review": true
 },
@@ -4723,6 +5871,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "restricted to students in the four-year program or permission of the instructor.",
 "needs_review": true
 },
@@ -4732,6 +5883,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "restricted to students in the four-year program or permission of the instructor.",
 "needs_review": true
 },
@@ -4741,6 +5895,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4750,6 +5907,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4764,6 +5924,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "GEOL-1021 or GEOL-1022 or permission from the Department.",
 "needs_review": false
 },
@@ -4773,6 +5936,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4782,6 +5948,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4791,6 +5960,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -4804,6 +5976,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4817,6 +5993,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4830,6 +6010,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4843,6 +6027,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4856,6 +6044,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4869,6 +6060,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4882,6 +6076,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4895,6 +6092,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4908,6 +6108,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4921,6 +6125,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4934,6 +6141,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4947,6 +6157,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4960,6 +6173,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4973,6 +6189,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4986,6 +6205,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -4999,6 +6222,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5012,6 +6239,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5025,6 +6256,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5038,6 +6272,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5051,6 +6288,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5064,6 +6304,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5077,6 +6320,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5090,6 +6336,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5103,6 +6352,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
 "needs_review": true
 },
@@ -5112,6 +6364,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 6.0
+},
 "prereq_text": "permission from both the department and supervisor, and good academic standing in the final year of the HIST-Honours degree program.",
 "needs_review": true
 },
@@ -5121,6 +6376,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5130,6 +6388,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5139,6 +6400,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5148,6 +6412,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5157,6 +6424,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5166,6 +6436,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5175,6 +6448,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5184,6 +6460,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
 "needs_review": true
 },
@@ -5193,6 +6472,7 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5202,6 +6482,7 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5216,6 +6497,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "COSC-1046 or COSC-1702.",
 "needs_review": false
 },
@@ -5229,6 +6514,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ITEC-2706.",
 "needs_review": false
 },
@@ -5238,6 +6526,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5251,6 +6542,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2307",
 "needs_review": false
 },
@@ -5267,6 +6561,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006, COSC-2947 or permission of the school.",
 "needs_review": false
 },
@@ -5276,6 +6573,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of the second year COSC-program",
 "needs_review": true
 },
@@ -5285,6 +6585,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5294,6 +6597,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -5311,6 +6617,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106 with 60%, JURI-1107 with 60%.",
 "needs_review": false
 },
@@ -5320,6 +6629,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5337,6 +6649,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106, JURI-1107 or admission to year 2 of the B.B.A. program.",
 "needs_review": true
 },
@@ -5351,6 +6666,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106 / 1107 or enrolled in the Environmental Sciences Graduate Certificate.",
 "needs_review": false
 },
@@ -5365,6 +6683,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106/7.",
 "needs_review": false
 },
@@ -5382,6 +6703,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
 "needs_review": false
 },
@@ -5402,6 +6726,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006, POLI-1007, or JURI-1106, JURI-1107 or permission of the instructor.",
 "needs_review": false
 },
@@ -5411,6 +6738,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5428,6 +6758,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of JURI-2136, POLI-2707/JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -5448,6 +6781,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of JURI-2136, POLI-2706, POLI-2707/JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -5461,6 +6797,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in JURI. Anti-requisite: JURI-2136",
 "needs_review": true
 },
@@ -5470,6 +6809,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -5485,6 +6827,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105, or POLI-1006 or POLI-1007, or permission from the instructor.",
 "needs_review": false
 },
@@ -5494,6 +6839,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in a degree program. Antirequisites: POLI3236",
 "needs_review": true
 },
@@ -5503,6 +6851,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree program. Antirequisite: POLI3246",
 "needs_review": true
 },
@@ -5512,6 +6863,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree programme.",
 "needs_review": true
 },
@@ -5529,6 +6883,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
 "needs_review": false
 },
@@ -5538,6 +6895,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree program.",
 "needs_review": true
 },
@@ -5555,6 +6915,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
 "needs_review": false
 },
@@ -5564,6 +6927,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree program.",
 "needs_review": true
 },
@@ -5581,6 +6947,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
 "needs_review": false
 },
@@ -5598,6 +6967,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
 "needs_review": false
 },
@@ -5607,6 +6979,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in a degree program - Students must have completed at least 30 credits before beginning the course.",
 "needs_review": true
 },
@@ -5621,6 +6996,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-2106/JURI-2107.",
 "needs_review": false
 },
@@ -5635,6 +7013,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-2106/JURI-2107.",
 "needs_review": false
 },
@@ -5657,6 +7038,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "JURI-1105 or JURI-1106/JURI-1107, JURI-2106/JURI-2107, & JURI-2426 with a minimum grade of 60% or permission of the instructor.",
 "needs_review": false
 },
@@ -5677,6 +7059,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-2106/JURI-2107, JURI-2136, and JURI-2426 with a minimum grade of 60% or permission of the instructor.",
 "needs_review": false
 },
@@ -5686,6 +7071,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Upper year standing in a JURI-or POLI-degree programme.",
 "needs_review": true
 },
@@ -5695,6 +7081,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in a degree program",
 "needs_review": true
 },
@@ -5704,6 +7093,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "third or fourth year standing in the JURI/POLI-program(s) - students have to be a POLI-or JURI-major, and have completed at least 60 credits overall by the time they take the course; or permission of the instructor.",
 "needs_review": true
 },
@@ -5713,6 +7105,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in the Law & Justice or Political Science programmes - students must be a JURI-or POLI-major and have completed at least 30 credits overall by the time they take the course; or permission of the instructor.",
 "needs_review": true
 },
@@ -5736,6 +7131,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-2106/JURI-2107, JURI-2136, JURI-2426, JURI-3126 with a minimum grade of 60% or permission of the instructor.",
 "needs_review": false
 },
@@ -5753,6 +7151,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of POLI-2706, POLI-2707/JURI-2107, or permission of the instructor.",
 "needs_review": false
 },
@@ -5770,6 +7171,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of POLI-2706, POLI-2707/JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -5779,6 +7183,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in the programme.",
 "needs_review": true
 },
@@ -5792,6 +7199,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in the programme and JURI-2106.",
 "needs_review": true
 },
@@ -5801,6 +7211,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in a JURI-degree programme.",
 "needs_review": true
 },
@@ -5829,6 +7242,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Restricted to 4th year students in the thesis option, in their graduating year and with at least a 75% grade average and JURI-1106, JURI-1107, JURI-2106, JURI-2107, JURI-2856, JURI-2426, all with a minimum 60% average. (Thesis/WIL) (6 cr)",
 "needs_review": true
 },
@@ -5838,6 +7252,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "4U credit in Calculus or equivalent (MCV4U and/or MHF4U).",
 "needs_review": false
 },
@@ -5851,6 +7269,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "MATH-1036.",
 "needs_review": false
 },
@@ -5860,6 +7282,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "OAC or 4U MATH-credit or equivalent.",
 "needs_review": false
 },
@@ -5869,6 +7295,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "OAC or 4U MATH-credit or equivalent.",
 "needs_review": false
 },
@@ -5882,6 +7312,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "and Anti-requisites (cross listings): Grade 11 Mathematics (MCR3U or MCF3M); Anti-requisites: Students wishing to concentrate in Mathematics and/or Science will not be allowed a MATH-credit for MATH-1911.",
 "needs_review": false
 },
@@ -5896,6 +7330,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "and Anti-requisites (cross listings): MATH-1911 or MHF4U. Anti-requisite: Students wishing to concentrate in Mathematics and/or Science will not be allowed Mathematics credit for MATH-1912.",
 "needs_review": false
 },
@@ -5912,6 +7350,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "MATH-1037 and MATH-1057.",
 "needs_review": false
 },
@@ -5925,6 +7367,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0,
+"TUT": 1.0
+},
 "prereq_text": "MATH-1056.",
 "needs_review": false
 },
@@ -5941,6 +7387,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-1057 and MATH-2056.",
 "needs_review": false
 },
@@ -5954,6 +7403,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-1037.",
 "needs_review": false
 },
@@ -5970,6 +7422,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-1037 and MATH-1056.",
 "needs_review": false
 },
@@ -5986,6 +7441,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-2066 and MATH-2037.",
 "needs_review": false
 },
@@ -5999,6 +7457,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-2037.",
 "needs_review": false
 },
@@ -6012,6 +7473,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-2056.",
 "needs_review": false
 },
@@ -6028,6 +7492,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-2236 and MATH-2037.",
 "needs_review": false
 },
@@ -6047,6 +7514,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MATH-1057, MATH-2066, and COSC-1046.",
 "needs_review": false
 },
@@ -6063,6 +7533,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "COSC-2006, MATH-2056.",
 "needs_review": false
 },
@@ -6072,6 +7545,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Permission of the department and of the prospective faculty member.",
 "needs_review": false
 },
@@ -6081,6 +7555,10 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.0
+},
 "prereq_text": "Level 8 theory (R.C.M.T.) or equivalent, or permission of the department.",
 "needs_review": false
 },
@@ -6090,6 +7568,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6103,6 +7584,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC-1101 or level 4 theory (R.C.M.T) at 80% or higher or permission of the department.",
 "needs_review": false
 },
@@ -6119,6 +7603,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 4.0
+},
 "prereq_text": "MUSC-1101 and MUSC-1102 OR permission of the department.",
 "needs_review": false
 },
@@ -6128,6 +7615,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Audition and permission of the department.",
 "needs_review": false
 },
@@ -6141,6 +7629,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-1401 or audition and permission of the department.",
 "needs_review": false
 },
@@ -6150,6 +7639,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "audition and permission of the department. (3 cr)",
 "needs_review": false
 },
@@ -6159,6 +7649,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "audition and permission of the department. (3 cr)",
 "needs_review": false
 },
@@ -6168,6 +7659,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6177,6 +7669,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "permission of the department. (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6193,6 +7686,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-1451permission of department. (PER/EXP, LEC)( 3 cr) MUSC-1611 / 2611 / 3611/ 4611 - Algoma University Choir This course provides an opportunity to experience the unique joy of singing in a group. Available as a 1st, 2nd, or 3rd year 3-credit arts elective, or to faculty, staff and community members, AU Choir provides artistic mentoring and inspiration, resulting in heightened musical and communicative skills. The experience of working in a collaborative manner with fellow singers leads to increased comfort on stage. Choir members will heighten breath control and efficiency as part of a process involving cultivation of rich vocal tone. Ensemble work benefits choir members in their wider life, regardless of major. All are welcome and encouraged to join. Choral music in Classical, Jazz, Folk, Pop, and World Music styles will be explored across different languages in a light-hearted, positive, supportive rehearsal environment. The final project is a public concert in an attractive local venue. FALL TERM ONLY Prerequisite: None. Permission of Department: Required.",
 "needs_review": true
 },
@@ -6202,6 +7696,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6211,6 +7706,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6224,6 +7720,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC-1015 or permission of the department.",
 "needs_review": false
 },
@@ -6237,6 +7736,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC-1015 or permission of the department.",
 "needs_review": false
 },
@@ -6246,6 +7748,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6255,6 +7760,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6264,6 +7772,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6273,6 +7784,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6282,6 +7796,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC1101/1102",
 "needs_review": false
 },
@@ -6295,6 +7812,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 4.0
+},
 "prereq_text": "MUSC-1115 or equivalent.",
 "needs_review": false
 },
@@ -6304,6 +7824,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6313,6 +7836,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6326,6 +7852,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Permission of the department It is strongly recommended that students who have no music theory background also take MUSC-1101 \u201cIntroduction to Music I\u201d.",
 "needs_review": false
 },
@@ -6335,6 +7864,9 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "permission of department.",
 "needs_review": false
 },
@@ -6344,6 +7876,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "audition and permission of the department. (3 cr)",
 "needs_review": false
 },
@@ -6357,6 +7890,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-1452. (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6370,6 +7904,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-2451. (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6384,6 +7919,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC-1101/MUSC-1102 or departmental permission.",
 "needs_review": false
 },
@@ -6397,6 +7935,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC-1015 or permission of the department.",
 "needs_review": false
 },
@@ -6411,6 +7952,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 and/or first year MUSC-course.",
 "needs_review": true
 },
@@ -6424,6 +7968,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0
+},
 "prereq_text": "MUSC-1015 or permission of the department.",
 "needs_review": false
 },
@@ -6437,6 +7984,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0
+},
 "prereq_text": "MUSC-1015 or permission of the department.",
 "needs_review": false
 },
@@ -6450,6 +8000,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "MUSC-2216 or permission of the department.",
 "needs_review": false
 },
@@ -6464,6 +8017,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "MUSC-2255 or permission of the department. It is strongly recommended that students who have no music theory background also take MUSC-1101 \u201cIntroduction to Music\u201d.",
 "needs_review": false
 },
@@ -6480,6 +8036,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-1115, and MUSC-1406 or or permission of the department.",
 "needs_review": false
 },
@@ -6496,6 +8053,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-1115, and MUSC-1406 or permission of the department.",
 "needs_review": false
 },
@@ -6509,6 +8067,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-2452. (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6523,6 +8082,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-2451 or MUSC-2452. (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6532,6 +8092,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "Completion of the first two years and 70% average in the student\u2019s program, or permission of the department.",
 "needs_review": true
 },
@@ -6541,6 +8104,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "students must be in upper year standing",
 "needs_review": true
 },
@@ -6554,6 +8120,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-3452 (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6567,6 +8134,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-4406 (PER/EXP, LEC) (3 cr)",
 "needs_review": false
 },
@@ -6576,6 +8144,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6589,6 +8158,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "MUSC-1015 (THE)(6cr)",
 "needs_review": false
 },
@@ -6598,6 +8168,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6607,6 +8178,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6620,6 +8192,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "OJIB-1016. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -6629,6 +8202,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6645,6 +8219,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "OJIB-1016, OJIB-1017 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -6658,6 +8233,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "OJIB-2016 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -6667,6 +8243,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6683,6 +8260,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "OJIB-1016, OJIB-1017 or permission of the instructor.",
 "needs_review": false
 },
@@ -6696,6 +8276,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "OJIB-2906 or permission of the instructor.",
 "needs_review": false
 },
@@ -6712,6 +8295,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "OJIB-2016, OJIB-2017 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -6725,6 +8309,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "OJIB-3016 or permission of the instructor. (LANG 4) (3 cr)",
 "needs_review": false
 },
@@ -6741,6 +8326,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "OJIB-2016, OJIB-2017 or permission of the department.",
 "needs_review": false
 },
@@ -6757,6 +8345,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "OJIB-2016, OJIB-2017 or permission of the department.",
 "needs_review": false
 },
@@ -6766,6 +8357,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6775,6 +8367,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6784,6 +8379,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6793,6 +8391,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6802,6 +8403,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 2.0,
+"TUT": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6811,6 +8416,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 2.0,
+"TUT": 1.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6820,6 +8429,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PHIL- 1116, PHIL- 1117.",
 "needs_review": false
 },
@@ -6829,6 +8441,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6838,6 +8453,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6847,6 +8465,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "an introductory level course in Philosophy or permission of the department.",
 "needs_review": false
 },
@@ -6863,6 +8484,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "ENGL-1006, ENGL-1007 or PHIL- 1117.",
 "needs_review": false
 },
@@ -6872,6 +8496,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "4U Physics or equivalent.",
 "needs_review": false
 },
@@ -6881,6 +8509,10 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 3.0
+},
 "prereq_text": "PHYS- 1006 or equivalent.",
 "needs_review": false
 },
@@ -6890,6 +8522,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6899,6 +8534,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6908,6 +8546,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6917,6 +8558,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PHYS- 1906. This survey course is a suitable science elective",
 "needs_review": false
 },
@@ -6926,6 +8570,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6935,6 +8582,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6944,6 +8594,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6960,6 +8613,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007 except for students completing a minor in International Relations or a certificate program that does not require POLI-1006/POLI-1007.",
 "needs_review": false
 },
@@ -6969,6 +8625,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6978,6 +8637,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -6991,6 +8653,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2406",
 "needs_review": false
 },
@@ -7011,6 +8676,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "3 credits from POLI-1006, POLI-1007, HIST-1206, or JURI-1106, or permission of the instructor.",
 "needs_review": true
 },
@@ -7020,6 +8688,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7029,6 +8698,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7038,6 +8710,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7054,6 +8729,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007 or JURI-1106/JURI-1107 or permission of the instructor.",
 "needs_review": false
 },
@@ -7068,6 +8746,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "POLI-1006/POLI-1007, or permission of instructor.",
 "needs_review": false
 },
@@ -7086,6 +8767,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Any two of the following POLI-1006/POLI-1007, ENGL-1006/ENGL-1007.",
 "needs_review": false
 },
@@ -7103,6 +8787,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of JURI-2136, POLI-2707/JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -7120,6 +8807,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "one of JURI-2136, POLI-2707/JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -7135,6 +8825,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006 or POLI-1007 or POLI-2206 or permission of the instructor.",
 "needs_review": false
 },
@@ -7150,6 +8843,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006 or POLI-1007 or POLI-2206 or permission of the instructor.",
 "needs_review": false
 },
@@ -7165,6 +8861,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "JURI-1105, or POLI-1006 or POLI-1007, or permission from the instructor.",
 "needs_review": false
 },
@@ -7174,6 +8873,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree program",
 "needs_review": true
 },
@@ -7188,6 +8890,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1007 or POLI-2396.",
 "needs_review": false
 },
@@ -7206,6 +8911,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007, or POLI-2707, or JURI-2107, or POLI-2396, or POLI-3607, or permission of the instructor.",
 "needs_review": false
 },
@@ -7220,6 +8928,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007 or permission of the instructor.",
 "needs_review": false
 },
@@ -7234,6 +8945,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007 or instructor\u2019s permission or",
 "needs_review": false
 },
@@ -7248,6 +8962,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007 or permission of the instructor.",
 "needs_review": false
 },
@@ -7257,6 +8974,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "none.",
 "needs_review": false
 },
@@ -7266,6 +8986,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree program.",
 "needs_review": true
 },
@@ -7275,6 +8998,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year standing in a degree program.",
 "needs_review": true
 },
@@ -7288,6 +9014,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2707 or JURI2107 permission from the instructor",
 "needs_review": false
 },
@@ -7301,6 +9030,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2707 or JURI2107 permission from the instructor.",
 "needs_review": false
 },
@@ -7316,6 +9048,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2706 or POLI-2707 or JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -7334,6 +9069,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-1006/POLI-1007 or POLI-2707 or JURI-2107 or POLI-3606 or POLI-3607 or permission of instructor.",
 "needs_review": false
 },
@@ -7343,6 +9081,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7352,6 +9093,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing.",
 "needs_review": true
 },
@@ -7366,6 +9110,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2406/POLI-2407",
 "needs_review": false
 },
@@ -7380,6 +9127,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2396 or POLI-2206 or permission of the instructor.",
 "needs_review": false
 },
@@ -7394,6 +9144,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2396 or POLI-2206 or permission of the instructor.",
 "needs_review": false
 },
@@ -7403,6 +9156,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper-year standing.",
 "needs_review": true
 },
@@ -7412,6 +9168,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "third or fourth year standing in the JURI/POLI-program(s) or permission of the instructor.",
 "needs_review": true
 },
@@ -7425,6 +9184,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2396.",
 "needs_review": false
 },
@@ -7439,6 +9201,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2396 or POLI-2306.",
 "needs_review": false
 },
@@ -7448,6 +9213,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in the Law & Justice or Political Science programmes or permission of the instructor.",
 "needs_review": true
 },
@@ -7462,6 +9230,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2406/POLI-2407 or permission of the instructor.",
 "needs_review": false
 },
@@ -7478,6 +9249,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2406 or POLI-2407 or POLI-2707 or JURL 2107 or POLI-2396 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -7493,6 +9267,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2405 or POLI-2406/POLI-2407 or permission of the department.",
 "needs_review": false
 },
@@ -7507,6 +9284,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2406/POLI-2407.",
 "needs_review": false
 },
@@ -7516,6 +9296,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Restricted to students in an honours degree program offered by the Department of Law and Politics or permission of the department.",
 "needs_review": false
 },
@@ -7525,6 +9308,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in a JURI-or POLI-degree program.",
 "needs_review": true
 },
@@ -7539,6 +9325,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2707/JURI-2107, or permission of the instructor.",
 "needs_review": false
 },
@@ -7553,6 +9342,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "POLI-2707/JURI-2107 or permission of the instructor.",
 "needs_review": false
 },
@@ -7562,6 +9354,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7571,6 +9366,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Restricted to students in the four-year POLI-program or permission of the instructor.",
 "needs_review": true
 },
@@ -7580,6 +9378,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Restricted to students in the four-year POLI-program or permission of instructor.",
 "needs_review": true
 },
@@ -7589,6 +9390,9 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 6.0
+},
 "prereq_text": "Permission from both the department and supervisor, a minimum of 80% average entering 4th year of study.",
 "needs_review": true
 },
@@ -7598,6 +9402,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7607,6 +9414,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7616,6 +9426,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7629,6 +9442,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-2006 or permission from the department.",
 "needs_review": false
 },
@@ -7642,6 +9458,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-2006 or permission from the department.",
 "needs_review": false
 },
@@ -7651,6 +9470,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "PSYC- 1106/7",
 "needs_review": false
 },
@@ -7660,6 +9480,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7674,6 +9497,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107.",
 "needs_review": false
 },
@@ -7688,6 +9514,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107.",
 "needs_review": false
 },
@@ -7702,6 +9531,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107.",
 "needs_review": false
 },
@@ -7711,6 +9543,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year student in good standing",
 "needs_review": true
 },
@@ -7720,6 +9555,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7734,6 +9572,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107.",
 "needs_review": false
 },
@@ -7743,6 +9584,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "upper year student in good standing",
 "needs_review": true
 },
@@ -7756,6 +9600,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106.",
 "needs_review": false
 },
@@ -7769,6 +9616,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-2406 and 6 credits in Psychology at the upper year level.",
 "needs_review": true
 },
@@ -7783,6 +9633,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107 and 6 upper year credits in Psychology or permission of the department.",
 "needs_review": true
 },
@@ -7796,6 +9649,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-3106.",
 "needs_review": false
 },
@@ -7810,6 +9666,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
 "needs_review": true
 },
@@ -7823,6 +9682,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0,
+"TUT": 1.0
+},
 "prereq_text": "STAT 2126, PSYC-2127 or permission of the instructor.",
 "needs_review": false
 },
@@ -7836,6 +9699,10 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 2.0,
+"TUT": 1.0
+},
 "prereq_text": "A minimum grade of 70% in both STAT 2126 and PSYC-2127.",
 "needs_review": false
 },
@@ -7849,6 +9716,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "A minimum grade of 70% in STAT 2126, PSYC-2127.",
 "needs_review": false
 },
@@ -7862,6 +9732,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 1.0,
+"LAB": 2.0
+},
 "prereq_text": "STAT 2126 or equivalent and PSYC-2127.",
 "needs_review": false
 },
@@ -7876,6 +9750,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
 "needs_review": true
 },
@@ -7885,6 +9762,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Completion of the first two years of the Psychology program with a minimum overall average of 70%, a minimum overall average of 70% in Psychology courses, or permission of the Department of Psychology.",
 "needs_review": true
 },
@@ -7901,6 +9779,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-2606 and PSYC-2617 or permission of the department.",
 "needs_review": false
 },
@@ -7914,6 +9795,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-2606.",
 "needs_review": false
 },
@@ -7923,6 +9807,9 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -7937,6 +9824,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
 "needs_review": true
 },
@@ -7950,6 +9840,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-3606.",
 "needs_review": false
 },
@@ -7963,6 +9856,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 2.0,
+"LAB": 1.0
+},
 "prereq_text": "PSYC-2606.",
 "needs_review": false
 },
@@ -7977,6 +9874,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
 "needs_review": true
 },
@@ -7991,6 +9891,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107.",
 "needs_review": false
 },
@@ -8005,6 +9908,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107.",
 "needs_review": false
 },
@@ -8019,6 +9925,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-1106/PSYC-1107 and 6 upper year credits in psychology.",
 "needs_review": true
 },
@@ -8032,6 +9941,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "PSYC-3806.",
 "needs_review": false
 },
@@ -8041,6 +9953,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"TUT": 3.0
+},
 "prereq_text": "Restricted to third or fourth-year students in the specialized program with at least an overall \u201cB\u201d average in Psychology courses and permission of the department.",
 "needs_review": true
 },
@@ -8050,6 +9965,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"TUT": 3.0
+},
 "prereq_text": "Restricted to third- or fourth-year students in the specialized program with at least an overall \u201cB\u201d average in their Psychology courses and permission of the department.",
 "needs_review": true
 },
@@ -8059,6 +9977,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of at least 42 credits in Psychology in the specialized program or permission of the department.",
 "needs_review": true
 },
@@ -8068,6 +9989,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of at least 42 credits in Psychology in the specialized program or permission of the department.",
 "needs_review": true
 },
@@ -8077,6 +10001,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of at least 24 upper year credits in Psychology or permission of the department.",
 "needs_review": true
 },
@@ -8086,6 +10013,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Completion of at least 24 upper year credits in Psychology or permission of the department.",
 "needs_review": true
 },
@@ -8105,6 +10035,10 @@
 ]
 ],
 "has_lab": true,
+"hours": {
+"LEC": 3.0,
+"LAB": 1.5
+},
 "prereq_text": "This course is restricted to students in their fourth year of their Honours Psychology degree program, with a minimum average of 70% in Psychology courses or by permission of the instructor, including a minimum grade of 70% in STAT 2126 and PSYC-2127 and a minimum grade of 75% in PSYC-3256 and PSYC-3286.",
 "needs_review": true
 },
@@ -8114,6 +10048,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in Psychology or Biology.",
 "needs_review": true
 },
@@ -8123,6 +10060,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Upper year standing in Psychology or Biology.",
 "needs_review": true
 },
@@ -8132,6 +10072,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Completion of three years of the Psychology program with a minimum overall average of 70%, a minimum overall average of 70% in Psychology courses, or permission of the Department of Psychology.",
 "needs_review": true
 },
@@ -8141,6 +10082,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "related 2000 series course or permission from the department.",
 "needs_review": false
 },
@@ -8150,6 +10094,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8163,6 +10110,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016.",
 "needs_review": false
 },
@@ -8172,6 +10122,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8185,6 +10136,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "SOCI-1806 [online, synchronous, asynchronous] (3 cr)",
 "needs_review": false
 },
@@ -8194,6 +10146,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8203,6 +10158,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8217,6 +10175,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8231,6 +10192,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8240,6 +10204,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8249,6 +10216,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8263,6 +10233,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8276,6 +10249,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8285,6 +10261,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8294,6 +10273,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8308,6 +10290,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 and/or first year MUSC-course.",
 "needs_review": true
 },
@@ -8317,6 +10302,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8333,6 +10321,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "SOCI-1806 and SOCI-1807. (3 cr)",
 "needs_review": false
 },
@@ -8347,6 +10336,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-2016/SOCI-2017.",
 "needs_review": false
 },
@@ -8360,6 +10352,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-2127 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8380,6 +10375,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017, SOCI-2127, and SOCI-2016.",
 "needs_review": false
 },
@@ -8394,6 +10392,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8403,6 +10404,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8420,6 +10424,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017, SOCI-2016 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8434,6 +10441,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8450,6 +10460,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "SOCI-1016, SOCI- 1806 and SOCI-1807 (online, a/synchronous, LEC) (3 cr)",
 "needs_review": false
 },
@@ -8463,6 +10474,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "SOCI-2806 (online, a/synchronous, LEC) (3 cr)",
 "needs_review": false
 },
@@ -8477,6 +10489,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8491,6 +10506,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8505,6 +10523,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8524,6 +10545,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SOCI-2127, SOCI-3126, and SOCI-3127 or instructor\u2019s permission.",
 "needs_review": false
 },
@@ -8533,6 +10557,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Restricted to students in the four-year Sociology program or instructor\u2019s permission.",
 "needs_review": true
 },
@@ -8542,6 +10569,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "Restricted to students in the four-year Sociology program or instructor\u2019s permission.",
 "needs_review": true
 },
@@ -8551,6 +10581,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8560,6 +10593,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8573,6 +10609,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006.",
 "needs_review": false
 },
@@ -8586,6 +10625,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1007",
 "needs_review": false
 },
@@ -8602,6 +10644,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007.",
 "needs_review": false
 },
@@ -8618,6 +10663,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007. Admission may be restricted to students registered for a major in social work.",
 "needs_review": false
 },
@@ -8634,6 +10682,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007.",
 "needs_review": false
 },
@@ -8643,6 +10694,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8652,6 +10706,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8668,6 +10725,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007.",
 "needs_review": false
 },
@@ -8677,6 +10737,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8696,6 +10759,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506.",
 "needs_review": false
 },
@@ -8715,6 +10781,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506.",
 "needs_review": false
 },
@@ -8734,6 +10803,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007 OR SWRK-2506",
 "needs_review": false
 },
@@ -8753,6 +10825,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007; OR SWRK-2506.",
 "needs_review": false
 },
@@ -8769,6 +10844,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007.",
 "needs_review": false
 },
@@ -8788,6 +10866,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2106, SWRK-2107 and SWRK-2127. This course is restricted to students admitted into the professional years.",
 "needs_review": true
 },
@@ -8804,6 +10885,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007 or permission of the instructor.",
 "needs_review": false
 },
@@ -8826,6 +10910,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2356, SWRK-2106 and SWRK-2107 OR SWRK-2506 .",
 "needs_review": false
 },
@@ -8842,6 +10929,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007.",
 "needs_review": false
 },
@@ -8861,6 +10951,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006 and SWRK-1007; OR SWRK-2506.",
 "needs_review": false
 },
@@ -8880,6 +10973,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506",
 "needs_review": false
 },
@@ -8899,6 +10995,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506.",
 "needs_review": false
 },
@@ -8921,6 +11020,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006, SWRK-1007 and SWRK-2356; OR SWRK-2506",
 "needs_review": false
 },
@@ -8930,6 +11032,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8939,6 +11044,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -8970,6 +11078,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-3006, SWRK-3206, SWRK-3207, SWRK-3406, SWRK-3407, SWRK-3456, and SWRK-3596.",
 "needs_review": false
 },
@@ -8989,6 +11100,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-2106, SWRK-2107 and SWRK-3206 or in lieu of all three, SWRK 2506.",
 "needs_review": false
 },
@@ -9002,6 +11116,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-4206 and permission from the instructor.",
 "needs_review": false
 },
@@ -9011,6 +11128,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9063,6 +11183,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "SWRK-1006, SWRK-1007, SWRK-2106, SWRK-2107, SWRK-2356, SWRK-2127, SWRK-2406, SWRK-3006, SWRK-3206, SWRK-3207, SWRK-3456, SWRK-3596, SWRK-3406 and SWRK-3407. (Capstone)(3 cr)",
 "needs_review": false
 },
@@ -9115,6 +11236,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "SWRK-1006, SWRK-1007, SWRK-2106, SWRK-2107, SWRK-2356, SWRK-2127, SWRK-2406, SWRK-3206, SWRK-3006, SWRK-3207, SWRK-3456, SWRK-3596, SWRK-3406 and SWRK-3407 (Capstone/WIL) (6 cr)",
 "needs_review": false
 },
@@ -9171,6 +11293,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "SWRK-1006, SWRK-1007, SWRK-2106, SWRK-2107, SWRK-2356, SWRK-2127, SWRK-2406, SWRK-3006, SWRK-3206, SWRK-3207, SWRK-3456, SWRK-3596, SWRK-3406, SWRK-3407 and SWRK-4600 Field Practicum I. (Capstone/WIL)(6 cr) SWRK-4906/4907Advanced Topics in Social Work I & II These courses will examine advanced coverage of particular topics in social work. Specific content will vary from year to year depending on faculty expertise and research. This course is restricted to students in year four of the BSW program.",
 "needs_review": true
 },
@@ -9180,6 +11305,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9193,6 +11319,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-1026.",
 "needs_review": false
 },
@@ -9202,6 +11329,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9211,6 +11339,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9220,6 +11349,7 @@
 "credits": null,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9229,6 +11359,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9246,6 +11377,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407.",
 "needs_review": false
 },
@@ -9269,6 +11403,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407. It is recommended that students take VISA-2006 prior to VISA-2007.",
 "needs_review": false
 },
@@ -9278,6 +11415,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9287,6 +11427,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9307,6 +11450,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-1026/VISA-1027, VISA-1506, and VISA-2706.",
 "needs_review": false
 },
@@ -9327,6 +11471,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-1026/VISA-1027, VISA-1506, and VISA-2706.",
 "needs_review": false
 },
@@ -9340,6 +11485,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-1506.",
 "needs_review": false
 },
@@ -9353,6 +11499,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-2556.",
 "needs_review": false
 },
@@ -9362,6 +11509,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "",
 "needs_review": false
 },
@@ -9371,6 +11519,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -9385,6 +11536,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "VISA-1026/ VISA-1027 or permission of the department.",
 "needs_review": false
 },
@@ -9402,6 +11556,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407",
 "needs_review": false
 },
@@ -9419,6 +11574,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407.",
 "needs_review": false
 },
@@ -9428,6 +11586,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 1.0
+},
 "prereq_text": "Completion of the first two years and 70% average in the student\u2019s program, or permission of the department.",
 "needs_review": true
 },
@@ -9441,6 +11602,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-2706.",
 "needs_review": false
 },
@@ -9454,6 +11616,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-2746.",
 "needs_review": false
 },
@@ -9467,6 +11630,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-2586.",
 "needs_review": false
 },
@@ -9480,6 +11644,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-3587.",
 "needs_review": false
 },
@@ -9489,6 +11654,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -9505,6 +11673,9 @@
 ]
 ],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "VISA-1026, VISA-1506, and must be enrolled in BFA or be a Visual Art Major, Visual Art Minor or receive permission from the department.",
 "needs_review": false
 },
@@ -9514,6 +11685,9 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {
+"LEC": 3.0
+},
 "prereq_text": "None.",
 "needs_review": false
 },
@@ -9523,6 +11697,7 @@
 "credits": 6.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Admission to year four of the B.F.A. program and approval of a FINA proposal. In addition to an overall average of 70%, students must achieve a final grade of at least 70% in this course to graduate with honours standing.",
 "needs_review": true
 },
@@ -9532,6 +11707,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Restricted to 4th-year students of the specialized program or permission of the department.",
 "needs_review": true
 },
@@ -9541,6 +11717,7 @@
 "credits": 3.0,
 "prereqs": [],
 "has_lab": false,
+"hours": {},
 "prereq_text": "Restricted to 4th-year students of the specialized program or permission of the department.",
 "needs_review": true
 },
@@ -9554,6 +11731,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-3536.",
 "needs_review": false
 },
@@ -9567,6 +11745,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-4536.",
 "needs_review": false
 },
@@ -9581,6 +11760,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-3696 or VISA-4697.",
 "needs_review": false
 },
@@ -9595,6 +11775,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-4696 or VISA-4697.",
 "needs_review": false
 },
@@ -9608,6 +11789,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-3516.",
 "needs_review": false
 },
@@ -9621,6 +11803,7 @@
 ]
 ],
 "has_lab": false,
+"hours": {},
 "prereq_text": "VISA-4716.",
 "needs_review": false
 }

@@ -2,8 +2,9 @@
 
 REAL (parsed from Algoma's 2026-2027 academic calendar by parse-calendar.py):
   course codes, titles, credits, prerequisites, and each degree's named required courses.
-INVENTED for demonstration: every section time (the public site has no timetable;
-  sections only exist in the login-only Self-Service).
+INVENTED for demonstration: the DAYS and START TIMES of every section (the public site has no timetable;
+  sections only exist in the login-only Self-Service). The weekly hours per course (lecture, lab, tutorial)
+  are real, from the calendar, and the generator checks them.
 SIMPLIFIED: in a degree, courses named in the calendar table are "required"; courses inside
   "N credits from..." or "A or B" items, plus the rest of the degree's home subjects, are
   "electives". The calendar's elective-credit rules are not modelled.
@@ -71,31 +72,86 @@ for pid, name, area, years, subjects in PROGRAMS:
 
 all_codes = sorted(set().union(*program_codes.values()), key=lambda c: (c.split()[0], c))
 
-# ---------- invented section times ----------
-STARTS = ["08:30", "10:00", "11:30", "13:00", "14:30", "16:00"]
+# ---------- section times ----------
+# The weekly HOURS of every course are real (parsed from the calendar: "LEC 3, LAB 1.5").
+# Only the days and start times are invented, because the public site has no timetable.
+# A course meets either as one 3-hour block or as two 1.5-hour sessions (the same shape for every
+# section of that course); labs and tutorials are separate sessions; nothing runs past 17:30.
+DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 PAIRS = [("Mon", "Wed"), ("Tue", "Thu")]
+STARTS_90 = ["08:30", "10:00", "11:30", "13:00", "14:30", "16:00"]   # 1.5-hour sessions end by 17:30
+STARTS_180 = ["08:30", "10:00", "11:30", "13:00", "14:30"]           # 3-hour blocks end by 17:30
 
 
-def end_of(start, minutes=80):
-    h, m = map(int, start.split(":"))
-    t = h * 60 + m + minutes
-    return f"{t // 60:02d}:{t % 60:02d}"
+def to_min(t):
+    h, m = map(int, t.split(":"))
+    return h * 60 + m
 
 
-def sections_for(i, has_lab):
-    """Deterministic, invented: usually 3 sections, sometimes 2 or 1."""
+def to_str(m):
+    return f"{m // 60:02d}:{m % 60:02d}"
+
+
+def starts_for(minutes):
+    """Start times that let a session of this length finish by 17:30."""
+    return [t for t in STARTS_90 if to_min(t) + minutes <= 17 * 60 + 30]
+
+
+def meeting(day, start, minutes):
+    return {"day": day, "start": start, "end": to_str(to_min(start) + minutes)}
+
+
+def clashes(m, others):
+    return any(o["day"] == m["day"] and to_min(m["start"]) < to_min(o["end"]) and to_min(o["start"]) < to_min(m["end"]) for o in others)
+
+
+def place(minutes, taken, i, n, sessions):
+    """A lab or tutorial: one session, or two 1.5-hour sessions, placed so it never clashes with the course's own lecture."""
+    for shift in range(40):
+        options = starts_for(minutes)
+        start = options[(i + 2 * n + shift) % len(options)]
+        days = PAIRS[(i + n + shift) % 2] if sessions == 2 else (DAYS[(i + n + 1 + shift) % 5],)
+        candidate = [meeting(d, start, minutes) for d in days]
+        if not any(clashes(c, taken) for c in candidate):
+            return candidate
+    raise RuntimeError("could not place a session")
+
+
+def sections_for(i, hours, credits):
+    lec = min(hours.get("LEC") or min(credits, 3) or 3, 3)
+    lab, tut = hours.get("LAB", 0), hours.get("TUT", 0)
+    one_block = lec == 3 and i % 2 == 0          # per course: one 3-hour block, or two 1.5-hour sessions
     count = 1 if i % 7 == 6 else (2 if i % 3 == 0 else 3)
     out = []
     for n in range(count):
-        d1, d2 = PAIRS[(i + n) % 2]
-        start = STARTS[(i + 2 * n) % 6]
-        meetings = [{"day": d, "start": start, "end": end_of(start)} for d in (d1, d2)]
-        if has_lab:  # lecture + lab merged into one section
-            lab_day = "Fri" if n == 0 else ("Mon" if d1 == "Tue" else "Tue")
-            lab = STARTS[i % 4] if n == 0 else "16:00"
-            meetings.append({"day": lab_day, "start": lab, "end": end_of(lab, 110)})
+        if lec == 3 and one_block:
+            meetings = [meeting(DAYS[(i + 2 * n) % 5], STARTS_180[(i + n) % len(STARTS_180)], 180)]
+        elif lec == 3:
+            d1, d2 = PAIRS[(i + n) % 2]
+            start = STARTS_90[(i + 2 * n) % len(STARTS_90)]
+            meetings = [meeting(d1, start, 90), meeting(d2, start, 90)]
+        else:                                     # 1- or 2-hour courses meet once a week
+            options = starts_for(int(lec * 60))
+            meetings = [meeting(DAYS[(i + n) % 5], options[(i + 2 * n) % len(options)], int(lec * 60))]
+        if lab:
+            meetings += place(90 if lab == 3 else int(lab * 60), meetings, i, n, 2 if lab == 3 else 1)
+        if tut:
+            meetings += place(90 if tut == 3 else int(tut * 60), meetings, i, n + 3, 2 if tut == 3 else 1)
+        meetings.sort(key=lambda m: (DAYS.index(m["day"]), m["start"]))
         out.append({"id": "ABC"[n], "meetings": meetings})
     return out
+
+
+def check_sections(code, sections, hours, credits):
+    """Fail loudly if the demo timetable stops matching the calendar's weekly hours."""
+    lec = min(hours.get("LEC") or min(credits, 3) or 3, 3)
+    expected = int((lec + hours.get("LAB", 0) + hours.get("TUT", 0)) * 60)
+    for sec in sections:
+        ms = sec["meetings"]
+        assert sum(to_min(m["end"]) - to_min(m["start"]) for m in ms) == expected, f"{code} {sec['id']}: weekly minutes differ from the calendar"
+        assert all(to_min(m["start"]) % 30 == 0 and to_min(m["start"]) >= 8 * 60 + 30 and to_min(m["end"]) <= 17 * 60 + 30 for m in ms), f"{code}: time outside 08:30-17:30 or off the half hour"
+        assert not any(clashes(m, [o for o in ms if o is not m]) for m in ms), f"{code} {sec['id']}: its own sessions overlap"
+        assert all(to_min(m["end"]) - to_min(m["start"]) in (60, 90, 120, 180) for m in ms), f"{code}: unusual session length"
 
 
 courses = []
@@ -109,8 +165,9 @@ for i, code in enumerate(all_codes):
         "credits": c["credits"] or 3,
         "prereqs": prereqs,
         "counts_as": "elective",
-        "sections": sections_for(i, c["has_lab"]),
+        "sections": sections_for(i, c.get("hours") or {}, c["credits"] or 3),
     }
+    check_sections(code, course["sections"], c.get("hours") or {}, c["credits"] or 3)
     if c["needs_review"] and c["prereq_text"]:
         course["note"] = c["prereq_text"][:180]
     courses.append(course)
