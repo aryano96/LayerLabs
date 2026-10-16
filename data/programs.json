@@ -1,0 +1,16 @@
+[
+  {
+    "id": "example-3yr",
+    "name": "Example 3-year degree (placeholder)",
+    "years": 3,
+    "required": ["COSC 1000", "MATH 1000", "COSC 2000"],
+    "electives": ["MATH 1001", "COSC 2100", "COSC 3000"]
+  },
+  {
+    "id": "example-4yr",
+    "name": "Example 4-year honours degree (placeholder)",
+    "years": 4,
+    "required": ["COSC 1000", "MATH 1000", "COSC 2000", "COSC 3000", "COSC 4000"],
+    "electives": ["MATH 1001", "COSC 2100"]
+  }
+]

@@ -1,7 +1,7 @@
 // Tests for logic.js. Runs in the browser (tests.html) and in Node (node tests.js).
-// runTests(L, courses) -> { passed, failed } and prints PASS/FAIL lines.
+// runTests(L, courses, programs, print) -> { passed, failed } and prints PASS/FAIL lines.
 
-function runTests(L, courses, print) {
+function runTests(L, courses, programs, print) {
   let passed = 0;
   let failed = 0;
 
@@ -69,6 +69,26 @@ function runTests(L, courses, print) {
   check("fridaysOff drops schedules with a Friday class",
     L.filterSchedules(withFri, { noBefore: null, fridaysOff: true }), []);
 
+  // ---- degrees (programs.json) ----
+  const prog = (id) => programs.find((p) => p.id === id);
+  const p3 = prog("example-3yr");
+  const p4 = prog("example-4yr");
+  const c3000 = byCode("COSC 3000");
+
+  check("yearOf reads the first digit", L.yearOf(c3000), 3);
+  check("same course is elective in the 3-year degree", L.countsAs(c3000, p3), "elective");
+  check("same course is required in the 4-year degree", L.countsAs(c3000, p4), "required");
+  check("course not in a degree's lists doesn't count", L.countsAs(byCode("ART 1000"), p3), "none");
+  check("without a degree, falls back to counts_as", L.countsAs(c2000, null), "required");
+  check("3-year degree hides year 4 courses",
+    L.coursesForProgram(courses, p3).map((c) => c.code).includes("COSC 4000"), false);
+  check("3-year degree keeps year 3 courses",
+    L.coursesForProgram(courses, p3).map((c) => c.code).includes("COSC 3000"), true);
+  check("4-year degree includes year 4 courses",
+    L.coursesForProgram(courses, p4).map((c) => c.code).includes("COSC 4000"), true);
+  check("requiredCodes lists the degree's required courses that exist",
+    L.requiredCodes(courses, p3), ["COSC 1000", "MATH 1000", "COSC 2000"]);
+
   return { passed, failed };
 }
 
@@ -77,7 +97,8 @@ if (typeof module !== "undefined" && require.main === module) {
   const fs = require("fs");
   const L = require("./logic.js");
   const courses = JSON.parse(fs.readFileSync(__dirname + "/data/courses.json", "utf8"));
-  const result = runTests(L, courses, console.log);
+  const programs = JSON.parse(fs.readFileSync(__dirname + "/data/programs.json", "utf8"));
+  const result = runTests(L, courses, programs, console.log);
   console.log(`\n${result.passed} passed, ${result.failed} failed`);
   process.exit(result.failed ? 1 : 0);
 }

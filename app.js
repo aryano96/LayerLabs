@@ -2,7 +2,7 @@
 // The rules (eligibility, clashes, schedules) live in logic.js.
 
 const L = window.CourseLogic;
-const SCREENS = ["passed", "options", "schedules"];
+const SCREENS = ["degree", "passed", "options", "schedules"];
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
 const V1_WAIT = "2-3 business days (Algoma support page: emailing an advisor)";
@@ -10,6 +10,8 @@ const V1_WAIT = "2-3 business days (Algoma support page: emailing an advisor)";
 // Everything the app remembers lives here.
 const state = {
   courses: [],
+  programs: [],          // degrees from data/programs.json
+  programId: null,       // the degree the student chose
   passed: new Set(),     // codes the student has passed
   picked: [],            // codes the student wants this term
   filters: { noBefore: null, fridaysOff: false },
@@ -47,14 +49,28 @@ const TAGS = {
   none: "Doesn't count toward degree",
 };
 
-function tagFor(course) {
-  return el("span", { class: "tag tag-" + course.counts_as }, TAGS[course.counts_as]);
+// The degree the student chose (or undefined before they choose).
+const currentProgram = () => state.programs.find((p) => p.id === state.programId);
+
+// Only the courses that belong to the chosen degree (e.g. no year 4 for a 3-year degree).
+function visibleCourses() {
+  const program = currentProgram();
+  return program ? L.coursesForProgram(state.courses, program) : state.courses;
 }
 
-// "COSC 1000" -> year 1 (first digit of the course number)
-function yearOf(course) {
-  const digit = course.code.match(/\d/);
-  return digit ? Number(digit[0]) : 0;
+// How a course counts depends on the degree.
+const countsFor = (course) => L.countsAs(course, currentProgram());
+
+function tagFor(course) {
+  const kind = countsFor(course);
+  return el("span", { class: "tag tag-" + kind }, TAGS[kind]);
+}
+
+// Required courses for the chosen degree, as codes.
+function requiredList() {
+  const program = currentProgram();
+  return program ? L.requiredCodes(state.courses, program)
+    : state.courses.filter((c) => c.counts_as === "required").map((c) => c.code);
 }
 
 function describeSection(section) {
@@ -74,22 +90,27 @@ function formatElapsed(seconds) {
 
 // ---------- state <-> URL (this is the shareable link) ----------
 
-function saveToHash(screen) {
+function hashParams() {
   const params = new URLSearchParams();
+  params.set("d", state.programId || "");
   params.set("p", [...state.passed].join(","));
   params.set("k", state.picked.join(","));
-  const hash = "#" + screen + "?" + params.toString();
-  history.replaceState(null, "", hash);
+  return params;
 }
 
-// Reads "#options?p=A,B&k=C" into { screen, passed, picked }
+function saveToHash(screen) {
+  history.replaceState(null, "", "#" + screen + "?" + hashParams().toString());
+}
+
+// Reads "#options?d=id&p=A,B&k=C" into { screen, program, passed, picked }
 function parseHash() {
   const raw = location.hash.replace(/^#/, "");
   const [screenPart, query = ""] = raw.split("?");
   const params = new URLSearchParams(query);
   const clean = (text) => (text || "").split(",").filter((code) => byCode(code));
   return {
-    screen: SCREENS.includes(screenPart) ? screenPart : "passed",
+    screen: SCREENS.includes(screenPart) ? screenPart : "degree",
+    program: state.programs.some((p) => p.id === params.get("d")) ? params.get("d") : null,
     passed: clean(params.get("p")),
     picked: clean(params.get("k")),
   };
@@ -97,23 +118,26 @@ function parseHash() {
 
 // Move to a screen (adds a history entry so the Back button works).
 function go(screen) {
-  const params = new URLSearchParams();
-  params.set("p", [...state.passed].join(","));
-  params.set("k", state.picked.join(","));
-  location.hash = screen + "?" + params.toString();
+  location.hash = screen + "?" + hashParams().toString();
 }
 
 // Show the screen named in the URL and draw it.
 function route() {
   const parsed = parseHash();
-  state.passed = new Set(parsed.passed);
+  state.programId = parsed.program;
+  // Keep only courses that belong to the chosen degree.
+  const inDegree = new Set(visibleCourses().map((c) => c.code));
+  state.passed = new Set(parsed.passed.filter((code) => inDegree.has(code)));
   // Ignore picks the student isn't eligible for (e.g. an edited share link).
   state.picked = parsed.picked.filter((code) => {
+    if (!inDegree.has(code)) return false;
     const course = byCode(code);
     return !state.passed.has(code) && L.isEligible(course, state.passed);
   });
 
   let screen = parsed.screen;
+  // Every screen after the first needs a degree.
+  if (screen !== "degree" && !state.programId) screen = "degree";
   // A schedules link with nothing picked makes no sense: send them back.
   if (screen === "schedules" && state.picked.length === 0) screen = "options";
 
@@ -124,6 +148,7 @@ function route() {
     if (name === screen) step.setAttribute("aria-current", "step");
     else step.removeAttribute("aria-current");
   }
+  if (screen === "degree") renderDegree();
   if (screen === "passed") renderPassed();
   if (screen === "options") renderOptions();
   if (screen === "schedules") renderSchedules();
@@ -131,19 +156,49 @@ function route() {
   window.scrollTo(0, 0);
 }
 
-// ---------- screen 1: what have you passed? ----------
+// ---------- screen 1: your degree ----------
+
+function renderDegree() {
+  const root = document.getElementById("screen-degree");
+  root.replaceChildren(
+    el("h2", {}, "What degree are you in?"),
+    el("p", {}, "Pick your degree. It decides which years and courses we show you, and which courses count toward it."));
+
+  const group = el("fieldset", {}, el("legend", {}, "Degree"));
+  for (const program of state.programs) {
+    const id = "degree-" + program.id;
+    group.append(el("div", { class: "check-row" },
+      el("input", {
+        type: "radio", name: "degree", id, checked: program.id === state.programId,
+        onchange: () => {
+          state.programId = program.id;
+          if (!state.startTime) state.startTime = Date.now(); // demo timer starts
+          saveToHash("degree");
+          renderDegree();
+          document.getElementById(id).focus();
+        },
+      }),
+      el("label", { for: id }, `${program.name} (${program.years} years)`)));
+  }
+  root.append(group, el("button", {
+    class: "primary", disabled: !state.programId, onclick: () => go("passed"),
+  }, "Continue: what have I passed?"));
+  if (!state.programId) announce("Choose your degree to continue.");
+}
+
+// ---------- screen 2: what have you passed? ----------
 
 function renderPassed() {
   const root = document.getElementById("screen-passed");
   root.replaceChildren(
     el("h2", {}, "What have you passed?"),
-    el("p", {}, "Tick every course you have already completed. If you haven't taken any yet, just continue.")
+    el("p", {}, `Degree: ${currentProgram().name}. Tick every course you have already completed. If you haven't taken any yet, just continue.`)
   );
 
-  const years = [...new Set(state.courses.map(yearOf))].sort();
+  const years = [...new Set(visibleCourses().map(L.yearOf))].sort();
   for (const year of years) {
     const group = el("fieldset", {}, el("legend", {}, "Year " + year));
-    for (const course of state.courses.filter((c) => yearOf(c) === year)) {
+    for (const course of visibleCourses().filter((c) => L.yearOf(c) === year)) {
       const id = "passed-" + course.code.replace(/\s/g, "");
       group.append(
         el("div", { class: "check-row" },
@@ -162,23 +217,22 @@ function renderPassed() {
     root.append(group);
   }
 
-  root.append(el("button", {
-    class: "primary",
-    onclick: () => { if (!state.startTime) state.startTime = Date.now(); go("options"); },
-  }, "Continue: see what I can take"));
+  root.append(el("div", { class: "button-row" },
+    el("button", { onclick: () => go("degree") }, "Back"),
+    el("button", { class: "primary", onclick: () => go("options") }, "Continue: see what I can take")));
 }
 
 // ---------- screen 2: what can you take? ----------
 
 function renderOptions() {
   const root = document.getElementById("screen-options");
-  const eligible = state.courses.filter((c) => !state.passed.has(c.code) && L.isEligible(c, state.passed));
-  const blocked = state.courses.filter((c) => !state.passed.has(c.code) && !L.isEligible(c, state.passed));
+  const eligible = visibleCourses().filter((c) => !state.passed.has(c.code) && L.isEligible(c, state.passed));
+  const blocked = visibleCourses().filter((c) => !state.passed.has(c.code) && !L.isEligible(c, state.passed));
   // Drop picks that are no longer eligible (e.g. the passed list changed).
   state.picked = state.picked.filter((code) => eligible.some((c) => c.code === code));
 
-  const required = state.courses.filter((c) => c.counts_as === "required");
-  const requiredDone = required.filter((c) => state.passed.has(c.code)).length;
+  const required = requiredList();
+  const requiredDone = required.filter((code) => state.passed.has(code)).length;
 
   root.replaceChildren(
     el("h2", {}, "What can you take?"),
@@ -371,18 +425,19 @@ function copyLink() {
 
 // Fill the hidden print area, then open the print dialog.
 function printSummary(sched) {
-  const required = state.courses.filter((c) => c.counts_as === "required");
-  const requiredDone = required.filter((c) => state.passed.has(c.code)).length;
+  const required = requiredList();
+  const requiredDone = required.filter((code) => state.passed.has(code)).length;
   const passedList = [...state.passed].map((code) => el("li", {}, `${code} ${byCode(code).title}`));
   const root = document.getElementById("print-summary");
   root.replaceChildren(
     el("h1", {}, "Course plan: bring to advisor"),
+    el("p", {}, `Degree: ${currentProgram().name}`),
     el("p", {}, `Degree progress: ${requiredDone} of ${required.length} required courses passed.`),
     el("h2", {}, "Courses passed"),
     passedList.length ? el("ul", {}, passedList) : el("p", {}, "None yet."),
     el("h2", {}, "Planned courses this term"),
     el("ul", {}, sched.map((p) => el("li", {},
-      `${p.course.code} ${p.course.title} (${TAGS[p.course.counts_as]}), section ${p.section.id}: ${describeSection(p.section)}`))),
+      `${p.course.code} ${p.course.title} (${TAGS[countsFor(p.course)]}), section ${p.section.id}: ${describeSection(p.section)}`))),
     el("p", {}, "Generated by Course Planner 2.0. Please confirm with your academic advisor before registering."));
   window.print();
 }
@@ -394,6 +449,9 @@ async function start() {
     const response = await fetch("data/courses.json");
     if (!response.ok) throw new Error("HTTP " + response.status);
     state.courses = await response.json();
+    const programResponse = await fetch("data/programs.json");
+    if (!programResponse.ok) throw new Error("programs.json: HTTP " + programResponse.status);
+    state.programs = await programResponse.json();
   } catch (error) {
     document.getElementById("loading").textContent =
       "Could not load the course data (" + error.message + "). " +

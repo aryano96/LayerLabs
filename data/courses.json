@@ -5,12 +5,36 @@
     "prereqs": [],
     "counts_as": "required",
     "sections": [
-      { "id": "A", "meetings": [
-        { "day": "Mon", "start": "09:00", "end": "10:30" },
-        { "day": "Wed", "start": "09:00", "end": "10:30" } ] },
-      { "id": "B", "meetings": [
-        { "day": "Tue", "start": "13:00", "end": "14:30" },
-        { "day": "Thu", "start": "13:00", "end": "14:30" } ] }
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Mon",
+            "start": "09:00",
+            "end": "10:30"
+          },
+          {
+            "day": "Wed",
+            "start": "09:00",
+            "end": "10:30"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "meetings": [
+          {
+            "day": "Tue",
+            "start": "13:00",
+            "end": "14:30"
+          },
+          {
+            "day": "Thu",
+            "start": "13:00",
+            "end": "14:30"
+          }
+        ]
+      }
     ]
   },
   {
@@ -19,12 +43,36 @@
     "prereqs": [],
     "counts_as": "required",
     "sections": [
-      { "id": "A", "meetings": [
-        { "day": "Mon", "start": "10:00", "end": "11:30" },
-        { "day": "Wed", "start": "10:00", "end": "11:30" } ] },
-      { "id": "B", "meetings": [
-        { "day": "Tue", "start": "10:00", "end": "11:30" },
-        { "day": "Thu", "start": "10:00", "end": "11:30" } ] }
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Mon",
+            "start": "10:00",
+            "end": "11:30"
+          },
+          {
+            "day": "Wed",
+            "start": "10:00",
+            "end": "11:30"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "meetings": [
+          {
+            "day": "Tue",
+            "start": "10:00",
+            "end": "11:30"
+          },
+          {
+            "day": "Thu",
+            "start": "10:00",
+            "end": "11:30"
+          }
+        ]
+      }
     ]
   },
   {
@@ -33,33 +81,89 @@
     "prereqs": [],
     "counts_as": "elective",
     "sections": [
-      { "id": "A", "meetings": [
-        { "day": "Fri", "start": "09:00", "end": "12:00" } ] }
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Fri",
+            "start": "09:00",
+            "end": "12:00"
+          }
+        ]
+      }
     ]
   },
   {
     "code": "COSC 2000",
     "title": "Example Course (placeholder)",
-    "prereqs": [["COSC 1000"], ["MATH 1000", "MATH 1001"]],
+    "prereqs": [
+      [
+        "COSC 1000"
+      ],
+      [
+        "MATH 1000",
+        "MATH 1001"
+      ]
+    ],
     "counts_as": "required",
     "sections": [
-      { "id": "A", "meetings": [
-        { "day": "Mon", "start": "10:00", "end": "11:30" },
-        { "day": "Wed", "start": "10:00", "end": "11:30" } ] },
-      { "id": "B", "meetings": [
-        { "day": "Tue", "start": "15:00", "end": "16:30" },
-        { "day": "Thu", "start": "15:00", "end": "16:30" } ] }
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Mon",
+            "start": "10:00",
+            "end": "11:30"
+          },
+          {
+            "day": "Wed",
+            "start": "10:00",
+            "end": "11:30"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "meetings": [
+          {
+            "day": "Tue",
+            "start": "15:00",
+            "end": "16:30"
+          },
+          {
+            "day": "Thu",
+            "start": "15:00",
+            "end": "16:30"
+          }
+        ]
+      }
     ]
   },
   {
     "code": "COSC 2100",
     "title": "Example Elective (placeholder)",
-    "prereqs": [["COSC 1000"]],
+    "prereqs": [
+      [
+        "COSC 1000"
+      ]
+    ],
     "counts_as": "elective",
     "sections": [
-      { "id": "A", "meetings": [
-        { "day": "Mon", "start": "11:30", "end": "13:00" },
-        { "day": "Wed", "start": "11:30", "end": "13:00" } ] }
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Mon",
+            "start": "11:30",
+            "end": "13:00"
+          },
+          {
+            "day": "Wed",
+            "start": "11:30",
+            "end": "13:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -68,8 +172,70 @@
     "prereqs": [],
     "counts_as": "none",
     "sections": [
-      { "id": "A", "meetings": [
-        { "day": "Fri", "start": "13:00", "end": "15:00" } ] }
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Fri",
+            "start": "13:00",
+            "end": "15:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COSC 3000",
+    "title": "Example Year 3 Course (placeholder)",
+    "prereqs": [
+      [
+        "COSC 2000"
+      ]
+    ],
+    "counts_as": "required",
+    "sections": [
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Tue",
+            "start": "09:00",
+            "end": "10:30"
+          },
+          {
+            "day": "Thu",
+            "start": "09:00",
+            "end": "10:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "COSC 4000",
+    "title": "Example Year 4 Course (placeholder)",
+    "prereqs": [
+      [
+        "COSC 3000"
+      ]
+    ],
+    "counts_as": "required",
+    "sections": [
+      {
+        "id": "A",
+        "meetings": [
+          {
+            "day": "Mon",
+            "start": "14:00",
+            "end": "15:30"
+          },
+          {
+            "day": "Wed",
+            "start": "14:00",
+            "end": "15:30"
+          }
+        ]
+      }
     ]
   }
 ]

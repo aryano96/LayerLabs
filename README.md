@@ -9,4 +9,4 @@ Run locally: `python -m http.server` then open http://localhost:8000
 Open `tests.html` through the local server, or run `node tests.js`.
 
 ## Data
-All courses live in `data/courses.json`. Replace the placeholder courses with real ones; no code changes needed.
+Degrees live in `data/programs.json` (name, years, required and elective course codes). All courses live in `data/courses.json`. Replace the placeholder courses with real ones; no code changes needed.

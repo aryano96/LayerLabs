@@ -91,5 +91,35 @@ CourseLogic.filterSchedules = function (schedules, filters) {
   });
 };
 
+// ---- degrees ----
+// A program looks like { id, name, years, required: [codes], electives: [codes] }.
+
+// "COSC 3000" -> 3 (the first digit of the course number is the year level)
+CourseLogic.yearOf = function (course) {
+  const digit = course.code.match(/\d/);
+  return digit ? Number(digit[0]) : 0;
+};
+
+// How does this course count for this degree? "required", "elective" or "none".
+// With no degree chosen we fall back to the course's own counts_as.
+CourseLogic.countsAs = function (course, program) {
+  if (!program) return course.counts_as;
+  if (program.required.includes(course.code)) return "required";
+  if (program.electives.includes(course.code)) return "elective";
+  return "none";
+};
+
+// Only the courses a student in this degree could take (a 3-year degree has no year 4).
+CourseLogic.coursesForProgram = function (courses, program) {
+  return courses.filter((c) => CourseLogic.yearOf(c) <= program.years);
+};
+
+// Codes of the degree's required courses that exist in our data.
+CourseLogic.requiredCodes = function (courses, program) {
+  return CourseLogic.coursesForProgram(courses, program)
+    .filter((c) => program.required.includes(c.code))
+    .map((c) => c.code);
+};
+
 if (typeof module !== "undefined") module.exports = CourseLogic;
 else window.CourseLogic = CourseLogic;

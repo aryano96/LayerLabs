@@ -12,11 +12,11 @@
   <script src="tests.js"></script>
   <script>
     // Load the real course data, then run every check and show the results.
-    fetch("data/courses.json")
-      .then((r) => r.json())
-      .then((courses) => {
+    Promise.all([fetch("data/courses.json"), fetch("data/programs.json")])
+      .then((responses) => Promise.all(responses.map((r) => r.json())))
+      .then(([courses, programs]) => {
         const lines = [];
-        const result = runTests(window.CourseLogic, courses, (line) => lines.push(line));
+        const result = runTests(window.CourseLogic, courses, programs, (line) => lines.push(line));
         const out = document.getElementById("out");
         out.innerHTML = "";
         lines.forEach((line) => {
