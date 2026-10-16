@@ -568,3 +568,6 @@ input:active:not(:disabled) { transform: scale(0.9); }
 .day-row:hover { background: var(--surface-2); }
 .day-row:has(input:checked) { background: var(--action-soft); font-weight: 600; }
 @keyframes pop-down { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+/* keep dropdown menus above the side panel */
+main { position: relative; z-index: 2; }
