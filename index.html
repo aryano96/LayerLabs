@@ -7,16 +7,36 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header>
     <h1>Course Planner 2.0</h1>
-    <p>From waiting days for an advisor to a valid course plan in 2 minutes.</p>
+    <p class="tagline">From waiting days for an advisor to a valid course plan in 2 minutes.</p>
+    <ol class="steps" aria-label="Steps">
+      <li id="step-passed">1. What you've passed</li>
+      <li id="step-options">2. What you can take</li>
+      <li id="step-schedules">3. Your schedules</li>
+    </ol>
   </header>
 
-  <main id="app">
-    <!-- Screens 1-3 will be added here, one <section> each -->
-    <p>Skeleton works. Next: placeholder data and logic.</p>
+  <!-- Screen reader announcements (errors, counts, etc.) -->
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+
+  <main id="main" tabindex="-1">
+    <p id="loading">Loading courses...</p>
+    <section id="screen-passed" hidden></section>
+    <section id="screen-options" hidden></section>
+    <section id="screen-schedules" hidden></section>
   </main>
 
+  <!-- Filled in and shown only when printing ("Bring to advisor") -->
+  <div id="print-summary"></div>
+
+  <footer>
+    <p>Prototype for ThunderHacks 2026. Course data shown may be placeholder examples. Always confirm your plan with an academic advisor.</p>
+  </footer>
+
+  <script src="logic.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
