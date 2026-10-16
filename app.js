@@ -6,7 +6,7 @@
 // blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
-const VERSION = "6";
+const VERSION = "7";
 const SCREENS = ["degree", "passed", "options", "schedules"];
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
@@ -37,6 +37,7 @@ const state = {
   queries: { degree: "", passed: "", options: "" },
   tag: "all",
   openYears: new Set([1, 2]),
+  pickOpen: null,          // which year groups are open on the Choose screen (null = all)
   screen: "degree",
 };
 
@@ -570,6 +571,25 @@ function renderOptions(focusCode) {
       tagFor(course)));
   };
 
+  // Same layout as the "Passed" screen: one collapsible group per year, Required first.
+  const allYears = [...new Set(eligibleAll.map(L.yearOf))];
+  const yearGroups = (items) => [...new Set(items.map(L.yearOf))].sort().map((year) => {
+    const inYear = items.filter((c) => L.yearOf(c) === year).sort(sortByTag);
+    const nPicked = inYear.filter((c) => state.picked.includes(c.code)).length;
+    const isOpen = query ? true : (state.pickOpen ? state.pickOpen.has(year) : true);
+    const details = el("details", { class: "year", open: isOpen },
+      el("summary", {}, `Year ${year}`,
+        el("span", { class: "count" }, `${plural(inYear.length, "course", "courses")} available${nPicked ? ` · ${nPicked} picked` : ""}`),
+        el("span", { class: "chev" }, icon("right"))),
+      el("ul", { class: "rows" }, rowsWithLabels(inYear, optionsRow)));
+    details.addEventListener("toggle", () => {
+      if (query) return;
+      if (!state.pickOpen) state.pickOpen = new Set(allYears);
+      if (details.open) state.pickOpen.add(year); else state.pickOpen.delete(year);
+    });
+    return details;
+  });
+
   const dots = el("span", { class: "dots", "aria-hidden": "true" }, Array.from({ length: MAX_PICKS }, (_, i) => el("span", { class: i < state.picked.length ? "on" : "" })));
   const ready = state.picked.length > 0;
 
@@ -582,7 +602,7 @@ function renderOptions(focusCode) {
       el("div", { class: "segmented", role: "group", "aria-label": "Show" }, segment("all", "All"), segment("required", "Required"), segment("elective", "Elective")),
       el("span", { class: "counter" }, dots, " ", `${state.picked.length} of ${MAX_PICKS} picked`)),
     eligible.length
-      ? el("div", { class: "panel" }, el("ul", { class: "rows", style: { borderTop: "0" } }, rowsWithLabels(eligible, optionsRow)))
+      ? el("div", {}, yearGroups(eligible))
       : el("div", { class: "empty" }, el("strong", {}, eligibleAll.length ? "Nothing matches your search or filter" : "No courses are available yet"),
         eligibleAll.length ? "Try clearing the search or choosing All." : "Go back and tick the courses you've already passed to unlock more."),
     blockedAll.length ? el("details", { class: "year blocked", open: open || !!query },
