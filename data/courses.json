@@ -212,7 +212,7 @@
  },
  {
   "code": "MATH 1036",
-  "title": "Mathematics 1036 (demo title)",
+  "title": "Calculus I",
   "prereqs": [],
   "counts_as": "elective",
   "sections": [
@@ -265,7 +265,7 @@
  },
  {
   "code": "MATH 1056",
-  "title": "Mathematics 1056 (demo title)",
+  "title": "Discrete Mathematics I",
   "prereqs": [],
   "counts_as": "elective",
   "sections": [
@@ -318,12 +318,8 @@
  },
  {
   "code": "MATH 1057",
-  "title": "Mathematics 1057 (demo title)",
-  "prereqs": [
-   [
-    "MATH 1056"
-   ]
-  ],
+  "title": "Linear Algebra I",
+  "prereqs": [],
   "counts_as": "elective",
   "sections": [
    {
@@ -834,10 +830,10 @@
  },
  {
   "code": "MATH 2056",
-  "title": "Mathematics 2056 (demo title)",
+  "title": "Discrete Mathematics II",
   "prereqs": [
    [
-    "MATH 1057"
+    "MATH 1056"
    ]
   ],
   "counts_as": "elective",
@@ -1632,11 +1628,11 @@
   ]
  },
  {
-  "code": "COSC 4437",
-  "title": "Distributed Systems",
+  "code": "COSC 4436",
+  "title": "Computer Networks",
   "prereqs": [
    [
-    "COSC 3407"
+    "COSC 3406"
    ]
   ],
   "counts_as": "elective",
@@ -1683,6 +1679,63 @@
       "day": "Thu",
       "start": "16:00",
       "end": "17:20"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "COSC 4437",
+  "title": "Distributed Systems",
+  "prereqs": [
+   [
+    "COSC 3407"
+   ]
+  ],
+  "counts_as": "elective",
+  "sections": [
+   {
+    "id": "A",
+    "meetings": [
+     {
+      "day": "Mon",
+      "start": "11:30",
+      "end": "12:50"
+     },
+     {
+      "day": "Wed",
+      "start": "11:30",
+      "end": "12:50"
+     }
+    ]
+   },
+   {
+    "id": "B",
+    "meetings": [
+     {
+      "day": "Tue",
+      "start": "14:30",
+      "end": "15:50"
+     },
+     {
+      "day": "Thu",
+      "start": "14:30",
+      "end": "15:50"
+     }
+    ]
+   },
+   {
+    "id": "C",
+    "meetings": [
+     {
+      "day": "Mon",
+      "start": "08:30",
+      "end": "09:50"
+     },
+     {
+      "day": "Wed",
+      "start": "08:30",
+      "end": "09:50"
      }
     ]
    }

@@ -178,7 +178,7 @@ function renderDegree() {
           document.getElementById(id).focus();
         },
       }),
-      el("label", { for: id }, `${program.name} (${program.years} years)`)));
+      el("label", { for: id }, program.name)));
   }
   root.append(group, el("button", {
     class: "primary", disabled: !state.programId, onclick: () => go("passed"),
@@ -459,6 +459,9 @@ async function start() {
     return;
   }
   document.getElementById("loading").hidden = true;
+  // The rail buttons jump between steps (route() sends you back if a step isn't ready).
+  document.querySelectorAll(".rail button").forEach((button) =>
+    button.addEventListener("click", () => go(button.dataset.screen)));
   window.addEventListener("hashchange", route);
   route();
 }

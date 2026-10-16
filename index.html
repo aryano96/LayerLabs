@@ -10,34 +10,47 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header>
-    <h1>Course Planner 2.0</h1>
-    <p class="tagline">From waiting days for an advisor to a valid course plan in 2 minutes.</p>
-    <ol class="steps" aria-label="Steps">
-      <li id="step-degree">1. Your degree</li>
-      <li id="step-passed">2. What you've passed</li>
-      <li id="step-options">3. What you can take</li>
-      <li id="step-schedules">4. Your schedules</li>
-    </ol>
-  </header>
+  <div class="shell">
+    <!-- Dark left rail: the four steps (clickable) -->
+    <nav class="rail" aria-label="Steps">
+      <button type="button" id="step-degree" data-screen="degree"><span class="num">1</span><span class="lbl">Degree</span></button>
+      <button type="button" id="step-passed" data-screen="passed"><span class="num">2</span><span class="lbl">Passed</span></button>
+      <button type="button" id="step-options" data-screen="options"><span class="num">3</span><span class="lbl">Can take</span></button>
+      <button type="button" id="step-schedules" data-screen="schedules"><span class="num">4</span><span class="lbl">Schedules</span></button>
+    </nav>
 
-  <!-- Screen reader announcements (errors, counts, etc.) -->
-  <div id="status" class="status" role="status" aria-live="polite"></div>
+    <div class="page">
+      <header class="topbar">
+        <h1>Course Planner 2.0</h1>
+        <p class="tagline">From waiting days for an advisor to a valid course plan in 2 minutes.</p>
+      </header>
 
-  <main id="main" tabindex="-1">
-    <p id="loading">Loading courses...</p>
-    <section id="screen-degree" hidden></section>
-    <section id="screen-passed" hidden></section>
-    <section id="screen-options" hidden></section>
-    <section id="screen-schedules" hidden></section>
-  </main>
+      <p class="crumbs">Academics <span aria-hidden="true">&bull;</span> Course Planner</p>
+
+      <div class="banner" role="note">
+        <span class="banner-icon" aria-hidden="true">!</span>
+        <p>Demo data: course names, prerequisites and degree requirements follow Algoma's 2026-2027 academic calendar (simplified). Section times are invented for demonstration. Always confirm your plan with an academic advisor.</p>
+      </div>
+
+      <!-- Screen reader announcements (errors, counts, etc.) -->
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <main id="main" tabindex="-1">
+        <p id="loading">Loading courses...</p>
+        <section id="screen-degree" hidden></section>
+        <section id="screen-passed" hidden></section>
+        <section id="screen-options" hidden></section>
+        <section id="screen-schedules" hidden></section>
+      </main>
+
+      <footer>
+        <p>Prototype built for ThunderHacks 2026. Not an official Algoma University service.</p>
+      </footer>
+    </div>
+  </div>
 
   <!-- Filled in and shown only when printing ("Bring to advisor") -->
   <div id="print-summary"></div>
-
-  <footer>
-    <p>Prototype for ThunderHacks 2026. Demo data: course names and prerequisites follow Algoma's catalog, but section times and degree requirements are invented for demonstration. Always confirm your plan with an academic advisor.</p>
-  </footer>
 
   <script src="logic.js"></script>
   <script src="app.js"></script>

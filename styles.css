@@ -1,14 +1,21 @@
-/* Course Planner 2.0 styles: readable, high contrast, works at phone width. */
+/* Course Planner 2.0 styles.
+   Look: red top bar, dark left rail, grey page, white cards, blue outline pill buttons
+   (modelled on a university self-service portal). Readable, high contrast, phone friendly. */
 :root {
-  --bg: #ffffff;
+  --bar: #b3262e;          /* top bar red; white text on it is 6.4:1 */
+  --rail: #3a3f44;         /* dark rail; white text 11:1 */
+  --page: #f3f3f3;
+  --card: #ffffff;
   --text: #1a1a1a;
   --muted: #4a4a4a;
-  --brand: #0b3d91;        /* dark blue: 9:1 contrast on white */
-  --brand-text: #ffffff;
+  --action: #0b5cad;       /* link / button blue; 6.6:1 on white */
+  --action-text: #ffffff;
   --border: #6b6b6b;
-  --soft: #eef3fb;
+  --line: #d6d6d6;
+  --soft: #eaf1fa;
   --focus: #b45309;
   --warn-bg: #fff4d6;
+  --warn-line: #c9a227;
   --required-bg: #d9efe0;  --required-fg: #0f4d1f;
   --elective-bg: #e0e7ff;  --elective-fg: #1e2a78;
   --none-bg: #eeeeee;      --none-fg: #333333;
@@ -21,51 +28,79 @@ body {
   font-size: 1.125rem;     /* 18px */
   line-height: 1.5;
   color: var(--text);
-  background: var(--bg);
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 60rem;
+  background: var(--page);
+  margin: 0;
 }
 
-h1 { margin: 0; font-size: 1.75rem; color: var(--brand); }
-h2 { font-size: 1.5rem; margin-top: 1.5rem; }
-h3 { font-size: 1.2rem; }
-.tagline { margin: 0.25rem 0 1rem; color: var(--muted); }
+/* ---------- page frame ---------- */
+.shell { display: flex; min-height: 100vh; }
+.page { flex: 1; min-width: 0; }
 
-/* Skip link: only visible when focused with the keyboard */
-.skip-link { position: absolute; left: -999px; top: 0; background: var(--brand); color: var(--brand-text); padding: 0.5rem 1rem; }
+.topbar { background: var(--bar); color: #fff; padding: 0.75rem 1.5rem; }
+.topbar h1 { margin: 0; font-size: 1.5rem; font-weight: 600; }
+.tagline { margin: 0; font-size: 1rem; }
+
+.crumbs { margin: 0; padding: 0.5rem 1.5rem; font-size: 1rem; color: var(--action); background: var(--card); border-bottom: 1px solid var(--line); }
+.crumbs span { margin: 0 0.4rem; color: var(--muted); }
+
+.banner { display: flex; gap: 0.75rem; align-items: flex-start; margin: 0; padding: 0.6rem 1.5rem; background: var(--warn-bg); border-top: 1px solid var(--warn-line); border-bottom: 1px solid var(--warn-line); font-size: 1rem; }
+.banner p { margin: 0; }
+.banner-icon { flex: none; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: #7a5b00; color: #fff; font-weight: 700; text-align: center; line-height: 1.6rem; }
+
+main { padding: 1rem 1.5rem 2rem; }
+main > section { background: var(--card); border: 1px solid var(--line); padding: 1rem 1.5rem 1.5rem; }
+main:focus { outline: none; }
+
+footer { padding: 1rem 1.5rem; font-size: 0.95rem; color: var(--muted); border-top: 1px solid var(--line); }
+
+h2 { font-size: 1.6rem; font-weight: 400; margin: 0.25rem 0 0.75rem; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+
+/* Left rail (steps) */
+.rail { flex: none; width: 5.25rem; background: var(--rail); display: flex; flex-direction: column; align-items: stretch; padding-top: 0.5rem; }
+.rail button {
+  background: none; border: 0; border-radius: 0; color: #fff; min-height: 4.5rem;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.2rem; padding: 0.4rem 0.2rem;
+}
+.rail .num { width: 2rem; height: 2rem; border-radius: 50%; border: 2px solid #fff; line-height: 1.7rem; font-weight: 700; }
+.rail .lbl { font-size: 0.8rem; }
+.rail button.current { background: #1f2327; box-shadow: inset 4px 0 0 #fff; }
+.rail button.current .num { background: #fff; color: var(--rail); }
+.rail button:focus-visible { outline: 3px solid #fff; outline-offset: -4px; }
+
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--action); color: var(--action-text); padding: 0.5rem 1rem; }
 .skip-link:focus { left: 0.5rem; top: 0.5rem; z-index: 10; }
 
 /* Clear keyboard focus everywhere */
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-main:focus { outline: none; }
 
-/* Step indicator */
-.steps { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
-.steps li { padding: 0.25rem 0.75rem; border: 2px solid var(--border); border-radius: 999px; color: var(--muted); }
-.steps li.current { background: var(--brand); border-color: var(--brand); color: var(--brand-text); font-weight: 600; }
+.status { min-height: 1.5rem; color: var(--muted); font-size: 1rem; padding: 0.4rem 1.5rem 0; }
 
-.status { min-height: 1.5rem; color: var(--muted); font-size: 1rem; margin: 0.5rem 0; }
-
-/* Buttons: big enough to tap */
+/* ---------- buttons: blue outline pills ---------- */
 button {
-  font: inherit; min-height: 2.75rem; padding: 0.5rem 1.25rem;
-  border: 2px solid var(--brand); border-radius: 0.5rem;
-  background: var(--bg); color: var(--brand); cursor: pointer;
+  font: inherit; min-height: 2.75rem; padding: 0.5rem 1.5rem;
+  border: 2px solid var(--action); border-radius: 999px;
+  background: var(--card); color: var(--action); cursor: pointer;
 }
-button.primary { background: var(--brand); color: var(--brand-text); }
+button:hover:not(:disabled) { background: var(--soft); }
+button.primary { background: var(--action); color: var(--action-text); }
+button.primary:hover:not(:disabled) { background: #084a8d; }
 button:disabled { border-color: var(--border); color: var(--muted); background: #f0f0f0; cursor: not-allowed; }
 .button-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.25rem 0; }
 
-/* Checkbox rows */
-fieldset { border: 2px solid var(--border); border-radius: 0.5rem; margin: 1rem 0; padding: 0.5rem 1rem; }
+/* ---------- form rows ---------- */
+fieldset { border: 1px solid var(--border); border-radius: 0.35rem; margin: 1rem 0; padding: 0.5rem 1rem; }
 legend { font-weight: 700; padding: 0 0.5rem; }
 .check-row { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.35rem 0; }
-input[type="checkbox"] { width: 1.5rem; height: 1.5rem; flex: none; margin-top: 0.15rem; }
+input[type="checkbox"], input[type="radio"] { width: 1.5rem; height: 1.5rem; flex: none; margin-top: 0.15rem; }
 label { cursor: pointer; }
 
-.course-list { list-style: none; padding: 0; }
-.course-list li { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.5rem 0; border-bottom: 1px solid #d0d0d0; }
+/* Course lists look like portal result cards */
+.course-list { list-style: none; padding: 0; margin: 0.5rem 0; }
+.course-list li {
+  display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.75rem 1rem; margin-bottom: 0.5rem;
+  background: var(--card); border: 1px solid var(--line); border-radius: 0.25rem;
+}
 .course-list.blocked li { display: block; }
 .reason { color: var(--muted); margin-top: 0.15rem; }
 
@@ -75,14 +110,14 @@ label { cursor: pointer; }
 .tag-elective { background: var(--elective-bg); color: var(--elective-fg); }
 .tag-none { background: var(--none-bg); color: var(--none-fg); }
 
-.progress-box { background: var(--soft); padding: 0.75rem 1rem; border-radius: 0.5rem; }
+.progress-box { background: var(--soft); border: 1px solid var(--line); padding: 0.75rem 1rem; border-radius: 0.25rem; }
 progress { width: 100%; height: 1.25rem; }
 .notice { background: var(--warn-bg); border-left: 6px solid var(--focus); padding: 0.75rem 1rem; }
 
-/* Weekly grid */
+/* ---------- weekly grid ---------- */
 .grid-wrap { overflow-x: auto; margin: 1rem 0; }
-.grid { display: grid; grid-template-columns: 3.5rem repeat(5, minmax(5.5rem, 1fr)); min-width: 36rem; border: 2px solid var(--border); }
-.grid-head { font-weight: 700; text-align: center; background: var(--soft); border-bottom: 2px solid var(--border); padding: 0.25rem; }
+.grid { display: grid; grid-template-columns: 3.5rem repeat(5, minmax(5.5rem, 1fr)); min-width: 36rem; border: 1px solid var(--border); background: var(--card); }
+.grid-head { font-weight: 700; text-align: center; background: var(--soft); border-bottom: 1px solid var(--border); padding: 0.25rem; }
 .grid-time { font-size: 0.85rem; color: var(--muted); border-top: 1px solid #ccc; padding: 0 0.25rem; }
 .block { font-size: 0.85rem; font-weight: 600; padding: 0.15rem 0.35rem; border: 2px solid var(--text); border-radius: 0.35rem; margin: 1px; overflow: hidden; }
 .color-0 { background: #cfe3ff; } .color-1 { background: #d4f0d9; } .color-2 { background: #ffe3b8; }
@@ -90,19 +125,23 @@ progress { width: 100%; height: 1.25rem; }
 
 .schedule-list { padding-left: 1.25rem; }
 
-/* Before / after */
+/* ---------- before / after ---------- */
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
-.compare-col { padding: 0.75rem 1rem; border-radius: 0.5rem; border: 2px solid var(--border); }
+.compare-col { padding: 0.75rem 1rem; border-radius: 0.25rem; border: 1px solid var(--border); }
 .compare-col h3 { margin-top: 0; }
 .compare-col.before { background: #fdecec; }
 .compare-col.after { background: var(--required-bg); }
 
-footer { margin-top: 2rem; font-size: 0.95rem; color: var(--muted); border-top: 1px solid #ccc; }
-
 #print-summary { display: none; }
 
-@media (max-width: 600px) {
-  body { padding: 0.75rem; }
+/* ---------- small screens: rail becomes a top strip ---------- */
+@media (max-width: 700px) {
+  .shell { flex-direction: column; }
+  .rail { width: auto; flex-direction: row; padding-top: 0; }
+  .rail button { flex: 1; min-height: 3.5rem; }
+  .rail button.current { box-shadow: inset 0 -4px 0 #fff; }
+  .topbar, .crumbs, .banner, main, footer, .status { padding-left: 0.75rem; padding-right: 0.75rem; }
+  main > section { padding: 0.75rem; }
   .compare { grid-template-columns: 1fr; }
 }
 
@@ -114,5 +153,5 @@ footer { margin-top: 2rem; font-size: 0.95rem; color: var(--muted); border-top: 
 @media print {
   body > *:not(#print-summary) { display: none !important; }
   #print-summary { display: block; }
-  body { font-size: 12pt; max-width: none; }
+  body { font-size: 12pt; background: #fff; }
 }

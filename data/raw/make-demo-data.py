@@ -1,8 +1,10 @@
-"""Builds the DEMO data files for the app.
+"""Builds the data files for the app.
 
-Titles and prerequisites come from data/raw/cosc-catalog-draft.json (typed from Algoma's
-catalog). Section times and degree requirement lists are INVENTED for demonstration.
-MATH course titles and prerequisites are also invented (they were not in our screenshots).
+REAL (from Algoma's 2026-2027 academic calendar and Self-Service catalog screenshots):
+  course codes, titles, prerequisites, and the BCOSC3 / BCOSC4 degree requirements
+  (simplified: "N credits from a list" groups are treated as electives).
+INVENTED for demonstration: all section times (the public site has no timetable; sections
+are only in the login-only Self-Service).
 
 Run from the project folder:  python data/raw/make-demo-data.py
 """
@@ -10,12 +12,13 @@ import json
 
 draft = {c["code"]: c for c in json.load(open("data/raw/cosc-catalog-draft.json", encoding="utf-8"))["courses"]}
 
-# Invented MATH courses (the real catalog entries were not captured).
+# MATH courses, from Chapter 4 of the 2026-2027 academic calendar.
+# (Prerequisites of MATH 1036/1056/1057 are high-school credits, so no course prerequisite.)
 math = {
-    "MATH 1036": ("Mathematics 1036 (demo title)", []),
-    "MATH 1056": ("Mathematics 1056 (demo title)", []),
-    "MATH 1057": ("Mathematics 1057 (demo title)", [["MATH 1056"]]),
-    "MATH 2056": ("Mathematics 2056 (demo title)", [["MATH 1057"]]),
+    "MATH 1036": ("Calculus I", []),
+    "MATH 1056": ("Discrete Mathematics I", []),
+    "MATH 1057": ("Linear Algebra I", []),
+    "MATH 2056": ("Discrete Mathematics II", [["MATH 1056"]]),
 }
 
 # Which courses go into the demo, in display order.
@@ -25,7 +28,7 @@ CODES = [
     "COSC 2947", "COSC 2956", "MATH 2056",
     "COSC 3106", "COSC 3117", "COSC 3127", "COSC 3216", "COSC 3406", "COSC 3407", "COSC 3506",
     "COSC 3596", "COSC 3796", "COSC 3807",
-    "COSC 4086", "COSC 4106", "COSC 4127", "COSC 4206", "COSC 4437",
+    "COSC 4086", "COSC 4106", "COSC 4127", "COSC 4206", "COSC 4436", "COSC 4437",
 ]
 
 STARTS = ["08:30", "10:00", "11:30", "13:00", "14:30", "16:00"]
@@ -73,21 +76,25 @@ for c in courses:
         for p in g:
             assert p in known, f"{c['code']} needs {p} which is not in the demo set"
 
-# Invented degree requirements. Courses in neither list count as "none".
-core3 = ["COSC 1046", "COSC 1047", "MATH 1056", "COSC 2006", "COSC 2007", "COSC 2406", "COSC 2307", "MATH 2056"]
-req3 = core3 + ["COSC 3106"]
-req4 = req3 + ["COSC 3127", "COSC 3407", "COSC 3506", "COSC 4086", "COSC 4106"]
-not_counted = {"COSC 1701", "MATH 1036"}
+# Degree requirements from Chapter 3 of the 2026-2027 calendar (simplified).
+# BCOSC3 = Bachelor of Computer Science (General), 3-year, 90 credits.
+# BCOSC4 = Bachelor of Computer Science (Honours), 4-year, 120 credits.
+# Courses named in the year-by-year tables are "required". Everything else in the demo set
+# counts as an elective credit (the calendar has "N credits from..." groups we do not model).
+req3 = ["COSC 1046", "COSC 1047", "MATH 1056", "COSC 2006", "COSC 2007", "COSC 2406",
+        "COSC 2307", "MATH 2056", "COSC 3506"]
+req4 = ["COSC 1046", "COSC 1047", "MATH 1056", "MATH 1057", "COSC 2006", "COSC 2007", "COSC 2406",
+        "COSC 2307", "COSC 3406", "MATH 2056", "COSC 3106", "COSC 3127", "COSC 3407", "COSC 3506",
+        "COSC 4106", "COSC 4436"]
 
 def electives(program_years, required):
     return [c["code"] for c in courses
-            if int(c["code"].split()[1][0]) <= program_years
-            and c["code"] not in required and c["code"] not in not_counted]
+            if int(c["code"].split()[1][0]) <= program_years and c["code"] not in required]
 
 programs = [
-    {"id": "cs-3yr-demo", "name": "Computer Science, 3-year (demo requirements)", "years": 3,
+    {"id": "bcosc3", "name": "Bachelor of Computer Science (General), 3-year [BCOSC3]", "years": 3,
      "required": req3, "electives": electives(3, req3)},
-    {"id": "cs-4yr-demo", "name": "Computer Science, 4-year honours (demo requirements)", "years": 4,
+    {"id": "bcosc4", "name": "Bachelor of Computer Science (Honours), 4-year [BCOSC4]", "years": 4,
      "required": req4, "electives": electives(4, req4)},
 ]
 
