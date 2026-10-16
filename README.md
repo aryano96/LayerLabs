@@ -62,6 +62,6 @@ Keyboard-only use, visible focus, a high-legibility typeface (Atkinson Hyperlegi
 
 ## Files
 
-`index.html`, `styles.css`, `app.js` (screens and state), `logic.js` (the rules), `theme-init.js`, `assets/`, `data/`, `docs/` (design spec and plan).
+`index.html`, `styles.css`, `app.js` (screens and state), `logic.js` (the rules), `theme-init.js`, `assets/`, `data/`.
 
 Prototype built during ThunderHacks 2026. Not an official Algoma University service. Always confirm a plan with an academic advisor.
