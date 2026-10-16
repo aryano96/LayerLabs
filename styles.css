@@ -533,3 +533,12 @@ input:active:not(:disabled) { transform: scale(0.9); }
   .brand-mark { display: none; }
   .compare-col .big { font-size: 1.75rem; }
 }
+
+/* ---------- group labels inside course lists ---------- */
+.rows li.group-label {
+  padding: 0.45rem 1.1rem; font-size: 0.9rem; font-weight: 700; background: var(--surface-2); color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+.rows li.group-required { color: var(--required-fg); background: var(--required-bg); }
+.rows li.group-elective { color: var(--elective-fg); background: var(--elective-bg); }
+.rows li:first-child.group-label { border-top: 0; }

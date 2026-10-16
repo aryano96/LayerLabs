@@ -6,7 +6,7 @@
 // blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
-const VERSION = "5";
+const VERSION = "6";
 const SCREENS = ["degree", "passed", "options", "schedules"];
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
@@ -135,6 +135,27 @@ function visibleCourses() {
 }
 const countsFor = (course) => L.countsAs(course, currentProgram());
 const tagFor = (course) => { const k = countsFor(course); return el("span", { class: "tag tag-" + k }, TAGS[k]); };
+// Required first, then Elective, then anything that doesn't count; ties by course code.
+const TAG_ORDER = { required: 0, elective: 1, none: 2 };
+const sortByTag = (a, b) => TAG_ORDER[countsFor(a)] - TAG_ORDER[countsFor(b)] || a.code.localeCompare(b.code);
+const GROUP_TITLES = { required: "Required for your degree", elective: "Electives", none: "Doesn't count toward your degree" };
+
+// Turn sorted courses into list items, with a small heading each time the group changes.
+function rowsWithLabels(courses, makeRow) {
+  const out = [];
+  let last = null;
+  for (const course of courses) {
+    const kind = countsFor(course);
+    if (kind !== last) {
+      const n = courses.filter((c) => countsFor(c) === kind).length;
+      out.push(el("li", { class: "group-label group-" + kind }, `${GROUP_TITLES[kind]} (${n})`));
+      last = kind;
+    }
+    out.push(makeRow(course));
+  }
+  return out;
+}
+
 const requiredList = () => { const p = currentProgram(); return p ? L.requiredCodes(state.courses, p) : []; };
 const creditsOf = (course) => course.credits ?? 3;
 
@@ -481,7 +502,7 @@ function fillPassedList(list, counter) {
     refresh();
     const details = el("details", { class: "year", open: query || state.openYears.has(year) },
       el("summary", {}, `Year ${year}`, count, el("span", { class: "chev" }, icon("right"))),
-      el("ul", { class: "rows" }, inYear.map((course) => {
+      el("ul", { class: "rows" }, rowsWithLabels([...inYear].sort(sortByTag), (course) => {
         const id = "passed-" + course.code.replace(/\s/g, "");
         return el("li", {}, el("label", { class: "row", for: id },
           el("input", {
@@ -522,9 +543,7 @@ function renderOptions(focusCode) {
   const root = $("screen-options");
   const open = root.querySelector("details.blocked")?.open ?? false;
   const all = visibleCourses().filter((c) => !state.passed.has(c.code));
-  const order = { required: 0, elective: 1, none: 2 };
-  const sortCourses = (a, b) => order[countsFor(a)] - order[countsFor(b)] || a.code.localeCompare(b.code);
-  const eligibleAll = all.filter((c) => L.isEligible(c, state.passed)).sort(sortCourses);
+  const eligibleAll = all.filter((c) => L.isEligible(c, state.passed)).sort(sortByTag);
   const blockedAll = all.filter((c) => !L.isEligible(c, state.passed));
   const query = state.queries.options;
   const keep = (c) => matches(c, query) && (state.tag === "all" || countsFor(c) === state.tag);
@@ -563,7 +582,7 @@ function renderOptions(focusCode) {
       el("div", { class: "segmented", role: "group", "aria-label": "Show" }, segment("all", "All"), segment("required", "Required"), segment("elective", "Elective")),
       el("span", { class: "counter" }, dots, " ", `${state.picked.length} of ${MAX_PICKS} picked`)),
     eligible.length
-      ? el("div", { class: "panel" }, el("ul", { class: "rows", style: { borderTop: "0" } }, eligible.map(optionsRow)))
+      ? el("div", { class: "panel" }, el("ul", { class: "rows", style: { borderTop: "0" } }, rowsWithLabels(eligible, optionsRow)))
       : el("div", { class: "empty" }, el("strong", {}, eligibleAll.length ? "Nothing matches your search or filter" : "No courses are available yet"),
         eligibleAll.length ? "Try clearing the search or choosing All." : "Go back and tick the courses you've already passed to unlock more."),
     blockedAll.length ? el("details", { class: "year blocked", open: open || !!query },
