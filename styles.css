@@ -604,3 +604,32 @@ input:active:not(:disabled) { transform: scale(0.9); }
 
 /* keep dropdown menus above the side panel */
 main { position: relative; z-index: 2; }
+
+/* ---------- Before & after page ---------- */
+.why-block { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 1rem; padding: 1.25rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.why-block > div > * + * { margin-top: 0.75rem; }
+.why-num { display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%; background: var(--action); color: var(--on-action); font-weight: 800; font-size: 1.1rem; }
+.why-list { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.6rem; }
+.why-list li { max-width: 75ch; }
+.why-table th[scope="row"] { width: 9rem; font-weight: 700; }
+.why-table td { min-width: 12rem; }
+.good { color: var(--required-fg); font-size: 1.15em; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.table-wrap .plan-table th, .table-wrap .plan-table td { vertical-align: top; }
+.why-steps summary { cursor: pointer; font-weight: 700; min-height: 2.75rem; display: flex; align-items: center; }
+.why-steps ol { margin: 0.25rem 0 0.5rem; padding-left: 1.4rem; display: grid; gap: 0.25rem; }
+.voices { margin-top: 0.5rem; }
+.voices blockquote { margin: 0.6rem 0 0; padding: 0.6rem 1rem; border-left: 5px solid var(--action); background: var(--surface-2); }
+.voices blockquote p { margin: 0; }
+.voices footer { color: var(--muted); font-size: 0.95rem; margin-top: 0.25rem; }
+.why-bonus h3 { margin-bottom: 0.75rem; }
+.why-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.why-grid > div { padding: 1rem 1.1rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.why-grid h4 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+.why-grid p { color: var(--muted); font-size: 0.97rem; }
+.why-block > div { min-width: 0; }
+@media (max-width: 599px) { .why-block { grid-template-columns: minmax(0, 1fr); } .why-num { width: 2.5rem; height: 2.5rem; } .why-table th[scope="row"] { width: auto; } }
+
+/* when the plan panel is hidden (degree, Before & after) let the content use the full width */
+.layout:has(> .summary[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.layout:has(> .summary[hidden]) main { max-width: 64rem; }

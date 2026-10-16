@@ -6,8 +6,11 @@
 // blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
-const VERSION = "10";
+const VERSION = "12";
 const SCREENS = ["degree", "passed", "options", "schedules"];
+const PAGES = [...SCREENS, "why"];   // "why" is the Before & after page, outside the step rail
+const SUPPORT_URL = "https://algomauniversity.freshservice.com/support/solutions/articles/17000006724-for-course-registration-issue";
+const CALENDAR_URL = "https://algomau.ca/academics/home-of-the-registrar/academic-calendar-2026-2027/";
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
 const GRID_STEP = 5; // minutes per timetable row
@@ -40,6 +43,8 @@ const state = {
   openYears: new Set([1, 2]),
   pickOpen: null,          // which year groups are open on the Choose screen (null = all)
   screen: "degree",
+  cameFrom: null,          // screen to return to from the Before & after page
+  evidence: [],            // real student interviews, from data/evidence.json
 };
 
 // ---------- small helpers ----------
@@ -86,6 +91,7 @@ const ICONS = {
   right: ["m9 18 6-6-6-6"],
   left: ["m15 18-6-6 6-6"],
   copy: [["rect", { x: 9, y: 9, width: 13, height: 13, rx: 2 }], "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"],
+  compare: ["M8 3 4 7l4 4", "M4 7h16", "m16 21 4-4-4-4", "M20 17H4"],
   lock: [["rect", { x: 3, y: 11, width: 18, height: 11, rx: 2 }], "M7 11V7a5 5 0 0 1 10 0v4"],
 };
 
@@ -222,7 +228,7 @@ function parseHash(raw = location.hash) {
   const params = new URLSearchParams(query);
   const clean = (text) => (text || "").split(",").filter((code) => state.byCode.has(code));
   return {
-    screen: SCREENS.includes(screenPart) ? screenPart : "degree",
+    screen: PAGES.includes(screenPart) ? screenPart : "degree",
     program: state.programs.some((p) => p.id === params.get("d")) ? params.get("d") : null,
     passed: clean(params.get("p")),
     picked: clean(params.get("k")),
@@ -252,12 +258,13 @@ function route(initial = false) {
   prunePicks();
 
   let screen = parsed.screen;
-  if (screen !== "degree" && !state.programId) screen = "degree";
+  if (screen !== "degree" && screen !== "why" && !state.programId) screen = "degree";
   if (screen === "schedules" && state.picked.length === 0) screen = "options";
+  if (screen === "why" && state.screen !== "why") state.cameFrom = state.screen;
   state.screen = screen;
   state.daysOpen = false;
 
-  for (const name of SCREENS) {
+  for (const name of PAGES) {
     const section = $("screen-" + name);
     const show = name === screen;
     if (show && section.hidden) {
@@ -271,6 +278,7 @@ function route(initial = false) {
   if (screen === "passed") renderPassed();
   if (screen === "options") renderOptions();
   if (screen === "schedules") renderSchedules();
+  if (screen === "why") renderWhy();
   renderChrome();
   if (!initial) {
     const heading = $("screen-" + screen).querySelector("h2");
@@ -333,7 +341,7 @@ function progressMeters() {
 function renderSummary() {
   const aside = $("summary");
   const program = currentProgram();
-  if (!program || state.screen === "degree") { aside.hidden = true; return; }
+  if (!program || state.screen === "degree" || state.screen === "why") { aside.hidden = true; return; }
   aside.hidden = false;
   const picks = state.picked.map(byCode);
   aside.replaceChildren(
@@ -625,6 +633,77 @@ function renderOptions(focusCode) {
   if (focusCode) { const node = document.getElementById("pick-" + focusCode.replace(/\s/g, "")); if (node && !node.disabled) node.focus(); }
 }
 
+// ---------- Before & after page (follows the four parts of the ThunderHacks brief) ----------
+
+function whyBlock(num, title, ...children) {
+  return el("section", { class: "why-block" },
+    el("span", { class: "why-num", "aria-hidden": "true" }, num),
+    el("div", {}, el("h3", {}, title), ...children));
+}
+
+function extLink(href, text) { return el("a", { href, target: "_blank", rel: "noopener noreferrer" }, text); }
+
+function renderWhy() {
+  const root = $("screen-why");
+  const hasProgram = !!currentProgram();
+  const back = state.cameFrom && state.cameFrom !== "why" ? state.cameFrom : (hasProgram ? "passed" : "degree");
+  const example = byCode("COSC 3506");
+  const measured = state.elapsed !== null ? formatElapsed(state.elapsed) : null;
+  const row = (label, today, now) => el("tr", {}, el("th", { scope: "row" }, label), el("td", {}, today), el("td", {}, now));
+  const steps = ["Find your degree's requirements in the calendar PDF.", "Look up each course's prerequisites.", "Work out which of your passed courses count.",
+    "Log in to Self-Service to find section times.", "Check for time clashes by eye.", "Email an academic advisor.", "Wait 2–3 business days for a reply.", "Fix what the advisor found and repeat."];
+
+  root.replaceChildren(
+    el("div", {}, el("h2", { tabindex: "-1" }, "Before and after"),
+      el("p", { class: "lead" }, "What students do today, what is wrong with it, and what this planner changes. Every claim on this page can be checked in the live app.")),
+
+    whyBlock("01", "Version 1.0: planning by hand, then emailing an advisor",
+      el("p", {}, el("strong", {}, "Who uses it: "), "Algoma University students choosing courses each term. Algoma's support page tells students who need help with course registration to email an academic advisor ", extLink(SUPPORT_URL, "(Algoma support page)"), "."),
+      el("p", {}, el("strong", {}, "What exists today: "), "three separate sources and an inbox. Prerequisites and degree requirements are in the academic calendar, section times are inside student login, and the check itself is done by the student and then by an advisor.")),
+
+    whyBlock("02", "What is broken, specifically",
+      el("ul", { class: "why-list" },
+        el("li", {}, el("strong", {}, "A wait of days. "), "The support page says course-registration emails get a reply in 2–3 business days."),
+        el("li", {}, el("strong", {}, "Three places to cross-check by hand. "), "Prerequisites sit in the calendar's course list, degree requirements in a different chapter, and section times only behind login. We had to read ", extLink(CALENDAR_URL, "the calendar"), " ourselves to build this."),
+        el("li", {}, el("strong", {}, "Rules written for people, not checked for them. "),
+          example && example.note ? `Real example: COSC 3506 Software Engineering says “${example.note}” The student has to work out which courses that means.`
+            : "Prerequisites such as “completion of the second year core program” leave the student to work out which courses are meant."),
+        el("li", {}, el("strong", {}, "Clashes are found by eye. "), "Five courses with three sections each have 3⁵ = 243 possible combinations to try by hand."),
+        el("li", {}, el("strong", {}, "No conflict-free planner for Algoma "), "that we could find (we are still checking this with students).")),
+      state.evidence.length ? el("div", { class: "voices" }, el("h4", {}, "What students told us"),
+        state.evidence.map((q) => el("blockquote", {}, el("p", {}, `“${q.quote}”`), el("footer", {}, q.who + (q.date ? `, ${q.date}` : ""))))) : null),
+
+    whyBlock("03", "Version 2.0: a planner that checks the rules for you",
+      el("ul", { class: "why-list" },
+        el("li", {}, "Pick a degree and tick what you have passed. It knows ", el("strong", {}, `${state.programs.length} degrees and ${state.courses.length} courses`), " from the calendar."),
+        el("li", {}, "Only courses whose prerequisites you meet can be picked. The rest sit under “Not available yet” with exactly what is missing, and a “1 step away” hint."),
+        el("li", {}, "Every timetable it builds is free of clashes by construction, and you can filter out early mornings, late afternoons and any days."),
+        el("li", {}, "A printable sheet with your progress, plan and what is still required, so the advisor confirms a plan instead of building one.")),
+      el("div", { class: "actions" }, el("button", { type: "button", class: "btn primary", onclick: () => go(back) }, hasProgram ? "Back to the planner" : "Try the planner", icon("right")))),
+
+    whyBlock("04", "Proof that it is better",
+      el("div", { class: "table-wrap" }, el("table", { class: "plan-table why-table" },
+        el("caption", { class: "sr-only" }, "Version 1.0 compared with Version 2.0"),
+        el("thead", {}, el("tr", {}, ["Measure", "Today (Version 1.0)", "This planner (Version 2.0)"].map((h) => el("th", { scope: "col" }, h)))),
+        el("tbody", {},
+          row("Time to a valid plan", "2–3 business days for an advisor's reply, after hours of manual work.",
+            measured ? el("span", {}, el("strong", { class: "good" }, measured), " on your last run, measured by the plan clock.") : "Minutes. Run the planner and the plan clock records your time here."),
+          row("Steps", el("span", {}, el("strong", {}, "8 manual steps"), " in our walkthrough of today's process (listed below)."), el("span", {}, el("strong", { class: "good" }, "4 steps"), ": degree, passed, choose, schedule.")),
+          row("Errors", "Mistakes are found by the advisor, days later.", "Courses you are not eligible for cannot be picked, and every timetable is conflict-free. Both are covered by automated tests."),
+          row("Who can use it", "Calendar PDFs and a login portal.", "Any device, keyboard only, a text table beside the visual timetable for screen readers, light and dark themes, and a printable sheet.")))),
+      el("details", { class: "why-steps" }, el("summary", {}, "The 8 manual steps today"),
+        el("ol", {}, steps.map((t) => el("li", {}, t))),
+        el("p", { class: "muted" }, "This is the team's walkthrough of the current process. Student interviews will refine it."))),
+
+    el("section", { class: "why-bonus" },
+      el("h3", {}, "Beyond the basics"),
+      el("div", { class: "why-grid" },
+        el("div", {}, el("h4", {}, "Real data"), el("p", {}, "Course codes, titles, credits, prerequisites and degree requirements are from Algoma's 2026–2027 academic calendar. The one invented part is section times: the public site has no timetable, so the demo uses made-up times, labelled on every screen.")),
+        el("div", {}, el("h4", {}, "Accessibility"), el("p", {}, "Built for keyboard and screen-reader use, with a high-legibility typeface, strong contrast, reduced-motion support and a layout that works on a phone.")),
+        el("div", {}, el("h4", {}, "A realistic switch"), el("p", {}, "Nothing to install and no account: students open a link. Each term the registrar updates two data files. Advisors accept the printed sheet instead of starting from scratch. A first pilot could be one program.")),
+        el("div", {}, el("h4", {}, "Beyond one institution"), el("p", {}, "All rules and courses live in two data files. Another school replaces them and the planner works unchanged.")))));
+}
+
 // ---------- screen 4: schedules ----------
 
 function renderSchedules() {
@@ -784,7 +863,8 @@ function comparePanel() {
     el("div", { class: "compare-col after" },
       el("span", { class: "kicker" }, "Version 2.0: this planner"),
       el("span", { class: "big" }, after),
-      el("p", { class: "small" }, note)));
+      el("p", { class: "small" }, note),
+      el("button", { type: "button", class: "btn quiet", style: { marginTop: "0.5rem" }, onclick: () => go("why") }, "See the full before and after", icon("right"))));
 }
 
 // ---------- share, copy, print ----------
@@ -868,11 +948,24 @@ async function loadJson(path) {
   return response.json();
 }
 
+// Real student quotes (optional). Anything malformed is ignored, and the file may be missing.
+async function loadEvidence() {
+  try {
+    const data = await loadJson("data/evidence.json");
+    const list = Array.isArray(data.interviews) ? data.interviews : [];
+    return list.filter((q) => q && typeof q.quote === "string" && typeof q.who === "string" && q.quote.length <= 400 && q.who.length <= 80)
+      .map((q) => ({ quote: q.quote, who: q.who, date: typeof q.date === "string" ? q.date.slice(0, 20) : "" }));
+  } catch { return []; }
+}
+
 function initChrome() {
   $("restart").replaceChildren(icon("restart"), el("span", { class: "btn-text" }, "Start over"));
   $("restart").setAttribute("aria-label", "Start over");   // keeps a name when only the icon shows on phones
   $("restart").setAttribute("title", "Start over");
   $("restart").addEventListener("click", restart);
+  $("why-link").replaceChildren(icon("compare"), el("span", { class: "btn-text" }, "Before & after"));
+  $("why-link").setAttribute("aria-label", "Before and after");
+  $("why-link").addEventListener("click", () => go("why"));
   $("demo-icon").replaceChildren(icon("info"));
   $("demo-dismiss").replaceChildren(icon("x"));
   try { if (sessionStorage.getItem(KEY_NOTE)) $("demo-note").hidden = true; } catch { /* ignore */ }
@@ -921,6 +1014,7 @@ async function start() {
     if (!dataIsValid(courses, programs)) throw new Error("the course data file is not in the expected format");
     state.courses = courses; state.programs = programs;
     state.byCode = new Map(courses.map((c) => [c.code, c]));
+    state.evidence = await loadEvidence();
   } catch (error) {
     $("loading").textContent = `Could not load the course data (${error.message}). If you opened this file directly, run "python -m http.server" in the project folder and open http://localhost:8000 instead.`;
     return;
