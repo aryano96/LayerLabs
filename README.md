@@ -2,6 +2,8 @@
 
 **From waiting days for an advisor to a valid course plan in 2 minutes.**
 
+**Live demo:** https://aryano96.github.io/LayerLabs/
+
 A prerequisite- and degree-aware course planner for Algoma University students. Pick a degree, tick the courses you've passed, choose up to five for the term, and get conflict-free timetables with a printable sheet for your advisor.
 
 ## The brief, in four parts
