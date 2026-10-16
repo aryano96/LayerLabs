@@ -499,14 +499,47 @@ input:active:not(:disabled) { transform: scale(0.9); }
 }
 
 /* ---------- printing "Bring to advisor" ---------- */
+@page { margin: 12mm; }
 @media print {
   body > *:not(#print-summary) { display: none !important; }
-  #print-summary { display: block; color: #000; background: #fff; font-size: 12pt; }
   body { background: #fff; }
-  #print-summary h1 { font-size: 20pt; margin: 0 0 0.4rem; }
-  #print-summary h2 { font-size: 13pt; margin: 1rem 0 0.3rem; }
-  #print-summary table { width: 100%; border-collapse: collapse; }
-  #print-summary th, #print-summary td { text-align: left; border: 1px solid #555; padding: 0.3rem 0.5rem; }
+  #print-summary {
+    display: block; color: #000; background: #fff; font-size: 10.5pt; line-height: 1.4;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    /* always print with the light palette, even if the screen is in dark mode */
+    --text: #000; --muted: #444; --line: #9aa4ae; --surface: #fff; --surface-2: #f1f3f5; --page: #fff;
+    --c0-bg: #d3e5fb; --c0-bd: #2a63a8; --c0-fg: #0d2a4a; --c1-bg: #d6f0dd; --c1-bd: #2a7a46; --c1-fg: #0c3a1f;
+    --c2-bg: #fde3bd; --c2-bd: #a8650d; --c2-fg: #4a2c05; --c3-bg: #f6d3ef; --c3-bd: #94318a; --c3-fg: #4a1245;
+    --c4-bg: #cfeeee; --c4-bd: #1f7a7a; --c4-fg: #0a3939; --c5-bg: #e3e6ea; --c5-bd: #566472; --c5-fg: #1c252d;
+  }
+  #print-summary h1 { font-size: 20pt; margin: 0; letter-spacing: -0.01em; }
+  #print-summary h2 { font-size: 12pt; margin: 14pt 0 5pt; padding-bottom: 2pt; border-bottom: 1.5pt solid #a82430; break-after: avoid; }
+  .ps-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; padding-bottom: 8pt; border-bottom: 3pt solid #a82430; }
+  .ps-degree { margin: 2pt 0 0; font-size: 12pt; font-weight: 700; }
+  .ps-date { margin: 0; color: #444; white-space: nowrap; }
+  .ps-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8pt; margin-top: 10pt; }
+  .ps-stat { padding: 7pt 9pt; border: 1pt solid #9aa4ae; border-radius: 4pt; background: #f1f3f5; }
+  .ps-stat strong { display: block; font-size: 13pt; }
+  .ps-stat span { color: #444; font-size: 9pt; }
+  .ps-table { width: 100%; border-collapse: collapse; break-inside: avoid; }
+  .ps-table th, .ps-table td { text-align: left; padding: 4pt 6pt; border: 1pt solid #9aa4ae; vertical-align: top; }
+  .ps-table th { background: #f1f3f5; font-size: 9.5pt; }
+  .ps-table .ps-total td { font-weight: 700; background: #f1f3f5; }
+  .ps-table .ps-total td:first-child { text-align: right; }
+  .ps-table .swatch { display: inline-block; width: 8pt; height: 8pt; margin-right: 5pt; border: 1.5pt solid; border-radius: 2pt; }
+  .ps-grid { break-inside: avoid; }
+  .ps-grid .grid-wrap { overflow: visible; border: 1pt solid #9aa4ae; border-radius: 3pt; margin: 0; }
+  .ps-grid .grid { min-width: 0; grid-template-columns: 2.6rem repeat(5, 1fr); }
+  .ps-grid .block { animation: none; font-size: 7.5pt; }
+  .ps-grid .block span { font-size: 7pt; }
+  .ps-grid .grid-time { font-size: 7.5pt; }
+  .ps-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; }
+  .ps-columns > section { break-inside: avoid; }
+  .ps-list { margin: 0; padding-left: 12pt; font-size: 9.5pt; }
+  .ps-list li { margin-bottom: 2pt; }
+  .ps-notes { break-inside: avoid; }
+  .ps-line { height: 20pt; border-bottom: 0.75pt solid #777; }
+  .ps-foot { margin-top: 14pt; padding-top: 6pt; border-top: 1pt solid #9aa4ae; font-size: 8pt; color: #444; }
 }
 
 /* ---------- timetable guides ---------- */
