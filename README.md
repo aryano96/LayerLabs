@@ -17,6 +17,53 @@ A prerequisite- and degree-aware course planner for Algoma University students. 
 
 Open the **Before & after** button in the app's top bar for the full side-by-side.
 
+## Screenshots
+
+The whole flow, from choosing a degree to a printed sheet for the advisor. Every screen says that the section days and start times are demo data.
+
+### 1. Choose your degree
+Nine real Algoma degrees in five subject areas, with search.
+
+![Choose your degree: nine Algoma degrees grouped by subject, with a search box](docs/screenshots/01-choose-degree.png)
+
+### 2. Tick what you have passed
+Courses are grouped by year, with the Required courses of your degree first. The plan panel tracks credits and required courses as you tick.
+
+![What have you passed: courses grouped by year, Required first, with a live plan panel](docs/screenshots/02-what-have-you-passed.png)
+
+### 3. See what you can take
+Only courses whose prerequisites you meet can be picked, with Required courses at the top of each year.
+
+![What can you take: eligible courses grouped by year, Required first](docs/screenshots/03-what-can-you-take.png)
+
+Anything blocked says exactly what is missing, and "1 step away" flags the courses you are closest to unlocking.
+
+![Not available yet: blocked courses with the missing prerequisite and a 1 step away hint](docs/screenshots/03b-not-available-yet.png)
+
+### 4. Your timetable
+Every combination is free of clashes. Filter by early classes, late classes or any days off, and flip through the options.
+
+![Your timetable: a weekly grid with 41 conflict-free combinations and filters](docs/screenshots/04-your-timetable.png)
+
+### 5. Bring it to your advisor
+A two-page sheet with your progress, your plan, the weekly timetable, what is still required, and your own questions.
+
+![The printed advisor sheet: plan table, weekly timetable, courses passed, required courses still to take and questions](docs/screenshots/09-advisor-sheet.png)
+
+### Before and after
+The proof page compares the old process with the planner: the wait, the steps, the errors and who can use it.
+
+![The Before and after page: what is broken today, and the comparison with the planner](docs/screenshots/05-before-and-after.png)
+
+### On a phone, and in dark mode
+
+<p>
+  <img src="docs/screenshots/06-phone-choose.png" alt="The planner on a phone: the course list with a bottom step bar" width="30%">
+  <img src="docs/screenshots/07-phone-timetable.png" alt="The timetable on a phone, scrolling sideways inside its own box" width="30%">
+</p>
+
+![The timetable in dark mode](docs/screenshots/08-dark-mode.png)
+
 ## Run it
 
 ```
