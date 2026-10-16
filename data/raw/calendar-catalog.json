@@ -1,0 +1,9627 @@
+[
+{
+"code": "ADMN 1016",
+"title": "Introduction to Canadian Business",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "successful completion of all program entry requirements.",
+"needs_review": true
+},
+{
+"code": "ADMN 1126",
+"title": "Introductory Financial Accounting I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "successful completion of all program entry requirements.",
+"needs_review": true
+},
+{
+"code": "ADMN 1127",
+"title": "Introductory Financial Accounting II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1126"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1126.",
+"needs_review": false
+},
+{
+"code": "ADMN 1206",
+"title": "Management Skills and Secondary Research Methods",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 1207",
+"title": "Quantitative Management Decision-Making",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "successful completion of all program entry requirements. This course may be taken concurrently with ADMN-1206. (CST/EXP/TUT 1) (3 cr)",
+"needs_review": true
+},
+{
+"code": "ADMN 1306",
+"title": "Commercial Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "successful completion of all program entry requirements.",
+"needs_review": true
+},
+{
+"code": "ADMN 1456",
+"title": "Graduate Certificate Internship",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "A minimum overall average of 70% or above or permission of the School of Business and Economics. Completion of a mandatory non-credit career skills seminar in the semester prior to the internship. Completion of the mandatory non-credit career skills seminar requires students to: 1.Attend all scheduled seminar sessions. 2.Receive a grade of at least 75% on the internship application package rubric.",
+"needs_review": true
+},
+{
+"code": "ADMN 1706",
+"title": "Introduction to Esports",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 1707",
+"title": "Understanding Esports Infrastructure",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206. (CST/WIL 3) ( 3 cr)",
+"needs_review": false
+},
+{
+"code": "ADMN 2106",
+"title": "Intermediate Accounting I",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1127.",
+"needs_review": false
+},
+{
+"code": "ADMN 2107",
+"title": "Intermediate Accounting II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2106"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2106.",
+"needs_review": false
+},
+{
+"code": "ADMN 2406",
+"title": "Social and Ethical Issues in Business",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "successful completion of ADMN-1206. This course cannot be used by college transfer students toward the B.B.A. degree.",
+"needs_review": true
+},
+{
+"code": "ADMN 2506",
+"title": "Business Statistics",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1207"
+]
+],
+"has_lab": false,
+"prereq_text": "successful completion of ADMN-1207.",
+"needs_review": true
+},
+{
+"code": "ADMN 2507",
+"title": "Business Statistics II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2506",
+"needs_review": false
+},
+{
+"code": "ADMN 2556",
+"title": "Finance and Accounting for Non-business Majors",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 2607",
+"title": "Introduction to Management Science",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2506",
+"ECON 2126"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2506 or ECON-2126.",
+"needs_review": false
+},
+{
+"code": "ADMN 2706",
+"title": "Marketing Strategy for Esports",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 2707",
+"title": "Fundamentals of Esports Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 2756",
+"title": "Esports Production, Content Creation, and Broadcasting",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 2906",
+"title": "Occupational Health and Safety Management",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206.",
+"needs_review": false
+},
+{
+"code": "ADMN 2916",
+"title": "Compensation",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206.",
+"needs_review": false
+},
+{
+"code": "ADMN 2926",
+"title": "Training and Development",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206.",
+"needs_review": false
+},
+{
+"code": "ADMN 3106",
+"title": "Management Accounting & Control I",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1126",
+"ADMN 1127"
+],
+[
+"ADMN 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1126 or ADMN-1127. ADMN-2506 is recommended.",
+"needs_review": false
+},
+{
+"code": "ADMN 3107",
+"title": "Management Accounting & Control II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3106"
+],
+[
+"ADMN 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3106. ADMN-2506 (3 cr) is recommended.",
+"needs_review": false
+},
+{
+"code": "ADMN 3116",
+"title": "Financial Management",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2506",
+"ECON 2126"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2506 or ECON-2126.",
+"needs_review": false
+},
+{
+"code": "ADMN 3117",
+"title": "Corporate Finance",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3116"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3116.",
+"needs_review": false
+},
+{
+"code": "ADMN 3126",
+"title": "Marketing Concepts",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1207"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1207.",
+"needs_review": false
+},
+{
+"code": "ADMN 3127",
+"title": "Services Marketing",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3126"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3126.",
+"needs_review": false
+},
+{
+"code": "ADMN 3136",
+"title": "Organizational Behaviour",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206.",
+"needs_review": false
+},
+{
+"code": "ADMN 3137",
+"title": "Management of Human Resources",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3136"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3136.",
+"needs_review": false
+},
+{
+"code": "ADMN 3206",
+"title": "Human Resource Planning",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3136"
+],
+[
+"ADMN 3137"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3136, ADMN-3137.",
+"needs_review": false
+},
+{
+"code": "ADMN 3216",
+"title": "Recruitment and Selection",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3136"
+],
+[
+"ADMN 3137"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3136, ADMN-3137.",
+"needs_review": false
+},
+{
+"code": "ADMN 3456",
+"title": "Business Administration Internship",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of the first two years of the Business Administration program with a minimum overall average of 70% or above or permission of the School of Business and Economics. Completion of a mandatory non-credit career skills seminar in the semester prior to the internship. Completion of the mandatory non-credit career skills seminar requires students to: 1.Attend all scheduled seminar sessions. 2.Receive a grade of at least 75% on the internship application package rubric. WIL3 (3 cr)",
+"needs_review": true
+},
+{
+"code": "ADMN 3706",
+"title": "Education and Personal Wellness Within Esports",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 3707",
+"title": "Brand Activation and Sponsorship for Esports",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 3756",
+"title": "Event Planning for Esports",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ADMN 4046",
+"title": "Operations Management",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+]
+],
+"has_lab": false,
+"prereq_text": "Successful completion of ADMN-2506, ADMN-2607.",
+"needs_review": true
+},
+{
+"code": "ADMN 4076",
+"title": "International Business Management",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1016"
+],
+[
+"ADMN 1126"
+],
+[
+"ADMN 1206"
+],
+[
+"ADMN 1207"
+],
+[
+"ADMN 1306"
+],
+[
+"ADMN 2406"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127. Antirequisite: ECON3296",
+"needs_review": false
+},
+{
+"code": "ADMN 4336",
+"title": "Marketing Communications",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3127.",
+"needs_review": false
+},
+{
+"code": "ADMN 4346",
+"title": "Marketing for Non-Profit Organizations",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3127.",
+"needs_review": false
+},
+{
+"code": "ADMN 4367",
+"title": "Advanced Marketing Planning",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3127"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3127, ADMN-2506, ADMN-2607.",
+"needs_review": false
+},
+{
+"code": "ADMN 4376",
+"title": "International Marketing",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3127.",
+"needs_review": false
+},
+{
+"code": "ADMN 4606",
+"title": "Business Strategy and Policy I",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2506"
+],
+[
+"ADMN 3106"
+],
+[
+"ADMN 3107"
+],
+[
+"ADMN 3116"
+],
+[
+"ADMN 3117"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+],
+[
+"ADMN 3136"
+],
+[
+"ADMN 3137"
+]
+],
+"has_lab": false,
+"prereq_text": "Successful completion of ADMN-2506, ADMN-3106, ADMN-3107, ADMN-3116, ADMN-3117, ADMN-3126, ADMN-3127, ADMN-3136, ADMN-3137.",
+"needs_review": true
+},
+{
+"code": "ADMN 4607",
+"title": "Business Strategy and Policy II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 4606"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-4606.",
+"needs_review": false
+},
+{
+"code": "ADMN 4706",
+"title": "Esports in the Global Market",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2706"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2706 and ADMN- 2707",
+"needs_review": false
+},
+{
+"code": "ADMN 4707",
+"title": "Esports Law",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 4706"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-4706",
+"needs_review": false
+},
+{
+"code": "ADMN 4737",
+"title": "Personal Financial Management",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1126"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1126 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ADMN 4747",
+"title": "Corporate Finance",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3116"
+],
+[
+"ADMN 3117"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3116 and ADMN-3117.",
+"needs_review": false
+},
+{
+"code": "ADMN 4806",
+"title": "External Auditing I",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2106"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2106 and ADMN- 2107.",
+"needs_review": false
+},
+{
+"code": "ADMN 4807",
+"title": "External Auditing II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 4806"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-4806.",
+"needs_review": false
+},
+{
+"code": "ADMN 4816",
+"title": "Personal Taxation: An Accounting Perspective",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1126",
+"ADMN 1127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1126 or ADMN-1127 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ADMN 4817",
+"title": "Corporate Taxation: An Accounting Perspective",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 4816"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-4816 with a minimum of 60%.",
+"needs_review": false
+},
+{
+"code": "ADMN 4836",
+"title": "Advanced Financial Accounting I",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2106"
+],
+[
+"ADMN 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2106, ADMN-2107.",
+"needs_review": false
+},
+{
+"code": "ADMN 4837",
+"title": "Advanced Financial Accounting II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2106"
+],
+[
+"ADMN 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2106, ADMN-2107.",
+"needs_review": false
+},
+{
+"code": "ADMN 4856",
+"title": "Information Systems",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3106"
+],
+[
+"ADMN 3107"
+]
+],
+"has_lab": false,
+"prereq_text": "an introductory course and ADMN-3106, ADMN-3107.",
+"needs_review": false
+},
+{
+"code": "ADMN 4866",
+"title": "Advanced Cost Accounting Topics",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3106"
+],
+[
+"ADMN 3107"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3106, ADMN-3107, ADMN-2506, ADMN-2607.",
+"needs_review": false
+},
+{
+"code": "ADMN 4876",
+"title": "Management of Small Enterprises",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1016"
+],
+[
+"ADMN 1126"
+],
+[
+"ADMN 1206"
+],
+[
+"ADMN 1207"
+],
+[
+"ADMN 1306"
+],
+[
+"ADMN 2406"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207, ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127. (CST/WIL 3) (3 cr)",
+"needs_review": false
+},
+{
+"code": "ADMN 4896",
+"title": "Current Topics in Administration I",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1016"
+],
+[
+"ADMN 1126"
+],
+[
+"ADMN 1206"
+],
+[
+"ADMN 1207"
+],
+[
+"ADMN 1306"
+],
+[
+"ADMN 2406"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ADMN 4897",
+"title": "Current Topics in Administration II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1016"
+],
+[
+"ADMN 1126"
+],
+[
+"ADMN 1206"
+],
+[
+"ADMN 1207"
+],
+[
+"ADMN 1306"
+],
+[
+"ADMN 2406"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ADMN 4916",
+"title": "Entrepreneurship",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1016"
+],
+[
+"ADMN 1126"
+],
+[
+"ADMN 1206"
+],
+[
+"ADMN 1207"
+],
+[
+"ADMN 1306"
+],
+[
+"ADMN 2406"
+],
+[
+"ADMN 2506"
+],
+[
+"ADMN 2607"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1016, ADMN-1126, ADMN-1206, ADMN-1207 ADMN-1306, ADMN-2406, ADMN-2506, ADMN-2607, ADMN-3126, ADMN-3127 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ADMN 4926",
+"title": "Portfolio Management",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 2506"
+],
+[
+"ADMN 3117"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-2506, ADMN-3117.",
+"needs_review": false
+},
+{
+"code": "ADMN 4936",
+"title": "Research Methods I",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 2126",
+"ADMN 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-2126 or ADMN-2506.",
+"needs_review": false
+},
+{
+"code": "ADMN 4937",
+"title": "Marketing on the Internet",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-3126, ADMN-3127.",
+"needs_review": false
+},
+{
+"code": "ADMN 4946",
+"title": "Consumer Behaviour",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206, ADMN-3126, ADMN-3127.",
+"needs_review": false
+},
+{
+"code": "ADMN 4947",
+"title": "Advertising Theory and Practice",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 1206"
+],
+[
+"ADMN 3126"
+],
+[
+"ADMN 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-1206, ADMN-3126, ADMN-3127.",
+"needs_review": false
+},
+{
+"code": "ADMN 4957",
+"title": "Research Methods II",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 4936"
+]
+],
+"has_lab": false,
+"prereq_text": "ADMN-4936.",
+"needs_review": false
+},
+{
+"code": "ADMN 4976",
+"title": "Industrial and Labour Relations in Canada",
+"credits": 3.0,
+"prereqs": [
+[
+"ADMN 3137"
+]
+],
+"has_lab": false,
+"prereq_text": "Successful completion of ADMN-3137.",
+"needs_review": true
+},
+{
+"code": "ADMN 4995",
+"title": "Research Project/Thesis in Business Administration",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Fourth year status in the B.B.A. program, at least a 75% overall average, and permission of the department. (THESIS/WIL) (6 cr)",
+"needs_review": true
+},
+{
+"code": "ANII 1006",
+"title": "Anishinaabe Peoples and our Homelands I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANII 1007",
+"title": "Anishinaabe Peoples and Our Homelands II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "ANII 1206",
+"title": "Anishinaabe Peoples and Our Homelands III",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "ANII 2006",
+"title": "Anishinaabe Social Issues",
+"credits": 3.0,
+"prereqs": [
+[
+"ANII 1006"
+],
+[
+"ANII 1007",
+"ANII 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ANII-1006, ANII-1007, or ANII-1206 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ANII 2007",
+"title": "Anishinaabe Social Movements",
+"credits": 3.0,
+"prereqs": [
+[
+"ANII 1006"
+],
+[
+"ANII 1007",
+"ANII 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "ANII-1006, ANII-1007, or ANII-1206.",
+"needs_review": false
+},
+{
+"code": "ANII 2067",
+"title": "Music as Culture: Indigenous Music",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANII 3006",
+"title": "Government Acts and Policies",
+"credits": 3.0,
+"prereqs": [
+[
+"ANII 2006"
+],
+[
+"ANII 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "ANII-2006, ANII-2007 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ANII 3007",
+"title": "Treaties",
+"credits": 3.0,
+"prereqs": [
+[
+"ANII 2006"
+],
+[
+"ANII 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "ANII-2006, ANII-2007 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ANII 3126",
+"title": "Anishinaabe Research Methodology I: Ni Mi koo Bi doon",
+"credits": 3.0,
+"prereqs": [
+[
+"ANII 2006"
+],
+[
+"ANII 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "ANII-2006, ANII-2007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ANII 3127",
+"title": "Anishinaabe Research Methodology II: Ni Mi koo Bi doon",
+"credits": 3.0,
+"prereqs": [
+[
+"ANII 2006"
+],
+[
+"ANII 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "ANII-2006, ANII-2007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ANII 3456",
+"title": "Anishinaabe Culture in Practice I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANII 3906",
+"title": "Special Topics in Anishinaabe Studies I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANII 3907",
+"title": "Special Topics in Anishinaabe Studies II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANTR 1007",
+"title": "Introduction to Cultural Anthropology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANTR 2096",
+"title": "I NDIGENOUS A RCHAEOLOGY",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ANTR 2406",
+"title": "Social Anthropology: Experiencing Culture through Ethnography",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "ANTR- 1007",
+"needs_review": false
+},
+{
+"code": "ANTR 3036",
+"title": "Indigenous Cultures of North America",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing.",
+"needs_review": true
+},
+{
+"code": "AUAP 1200",
+"title": "Interdisciplinary Inquiry",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AUAP 1501",
+"title": "Leadership Development for University Success",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 2206",
+"title": "Aviation Safety Management Systems (SMS) - SMS Certification",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 2706",
+"title": "Aviation Quality Assurance (AQA) - AQA Certification",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 2806",
+"title": "Fundamentals of Aviation Law and Regulations",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 3306",
+"title": "Airline Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 3506",
+"title": "Procurement and Supply Chain Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 3706",
+"title": "Air Traffic Control and Dispatch Operations - Dispatcher Certification",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 3806",
+"title": "Airline Finance and Economics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 4206",
+"title": "Corporate Aviation Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 4406",
+"title": "Crew Resource Management - CRM certification",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "AVIA 4506",
+"title": "Commercial Drone Operations - Drone certification",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 1506",
+"title": "Biology I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 1507",
+"title": "Biology II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 2007",
+"title": "Genetics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507",
+"needs_review": false
+},
+{
+"code": "BIOL 2026",
+"title": "Microbiology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 2056",
+"title": "Principles of Scientific Inquiry",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 2127",
+"title": "Plant Form and Function",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 2217",
+"title": "Topics in Environmental Ethics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 2606",
+"title": "Introduction to Behavioural Neuroscience",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 2706",
+"title": "Vertebrate Form and Function",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507 or equivalent.",
+"needs_review": false
+},
+{
+"code": "BIOL 2716",
+"title": "Invertebrate Form and Function",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507",
+"needs_review": false
+},
+{
+"code": "BIOL 3006",
+"title": "Evolutionary Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 3007",
+"title": "Molecular Cell Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506 and BIOL- 2007.",
+"needs_review": false
+},
+{
+"code": "BIOL 3107",
+"title": "Behavioural Ecology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 1506, BIOL- 1507; or BIOL- 3396 (or BIOL- 3356/7) recommended.",
+"needs_review": false
+},
+{
+"code": "BIOL 3126",
+"title": "Human Anatomy and Physiology I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 3127",
+"title": "Human Anatomy and Physiology II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 3137",
+"title": "Reading Darwin and His Contemporaries",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 3346",
+"title": "Ethnobotany",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 3396",
+"title": "Ecology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 3456",
+"title": "Biology Internship I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of first two years of the Biology program or permission from the department.",
+"needs_review": true
+},
+{
+"code": "BIOL 3506",
+"title": "Neuropharmacology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 3556",
+"title": "Concepts in Health Informatics",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2127"
+],
+[
+"PSYC 3256"
+],
+[
+"PSYC 3286",
+"SOCI 2127"
+]
+],
+"has_lab": false,
+"prereq_text": "one of PSYC-2127, PSYC-3256, PSYC-3286, BIOL- 2056, BIOL- 2996, or SOCI-2127 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "BIOL 3626",
+"title": "Epidemiology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 3716",
+"title": "Biochemistry I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 2426.",
+"needs_review": false
+},
+{
+"code": "BIOL 3717",
+"title": "Biochemistry II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 3016.",
+"needs_review": false
+},
+{
+"code": "BIOL 3906",
+"title": "Special Topics in Biology I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of second year core program in Biology or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "BIOL 3907",
+"title": "Special Topics in Biology II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of second year core program in Biology or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "BIOL 3977",
+"title": "Conservation Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "BIOL 4016",
+"title": "Field Studies in Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 3396 (or BIOL- 3356/7) or permission from the instructor.",
+"needs_review": false
+},
+{
+"code": "BIOL 4105",
+"title": "Honours Thesis (Biology)",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "This course is restricted to students in the four-year program with a minimum average of 70% in Biology courses or by permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "BIOL 4256",
+"title": "Nutritional Science",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "BIOL 4306",
+"title": "Aquatic Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 3396 (or BIOL- 3356/7) or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "BIOL 4396",
+"title": "Cancer Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 2026, CHMI- 3016",
+"needs_review": false
+},
+{
+"code": "BIOL 4406",
+"title": "Climate Change Biology",
+"credits": 3.0,
+"prereqs": [
+[
+"BIOL 3396"
+]
+],
+"has_lab": false,
+"prereq_text": "BIOL- 1506/1507. BIOL-3396 and ENVS- 1006.",
+"needs_review": false
+},
+{
+"code": "BIOL 4426",
+"title": "Advanced Studies in Ecology and Evolution",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 2056, BIOL- 3396, or permission from the instructor.",
+"needs_review": false
+},
+{
+"code": "BIOL 4456",
+"title": "Biology Internship II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of the first three years of the Biology program.",
+"needs_review": true
+},
+{
+"code": "BIOL 4506",
+"title": "Invasive Species Biology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 3396 (or BIOL- 3356/7) or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "BIOL 4596",
+"title": "Special Topics in Health Sciences",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "third year standing in Biology",
+"needs_review": true
+},
+{
+"code": "BIOL 4726",
+"title": "The Scientific Enlightenment",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "related 2000 series course or permission from the department.",
+"needs_review": false
+},
+{
+"code": "BIOL 4906",
+"title": "Advanced Topics in Biology I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of the third-year core program in Biology or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "BIOL 4907",
+"title": "Advanced Topics in Biology II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of the third-year core program in Biology or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "CESD 1006",
+"title": "Introduction to Community Economic and Social Development I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "CESD 1007",
+"title": "Introduction to Community Economic and Social Development II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "CESD 1206",
+"title": "Social Service Administration in First Nation Communities I",
+"credits": 3.0,
+"prereqs": [
+[
+"CESD 1806",
+"CESD 1807"
+]
+],
+"has_lab": false,
+"prereq_text": "CESD-1806 or CESD-1807 or permission of the Department",
+"needs_review": false
+},
+{
+"code": "CESD 1207",
+"title": "Social Service Administration in First Nation Communities II",
+"credits": 3.0,
+"prereqs": [
+[
+"CESD 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "CESD-1206 or permission of the Department",
+"needs_review": false
+},
+{
+"code": "CESD 1806",
+"title": "Ontario Works Financial Assistance Overview",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "CESD 1807",
+"title": "Ontario Works Employment Assistance Overview",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "CESD 2016",
+"title": "Community-Based Research Methods",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "One introductory course in a social science or professional course category (CESD, ADMN, ANII, ANTR, ECON, GEOG, JURI, POLI, PSYC, SOCI, or SWRK, see the options below) or permission of the department",
+"needs_review": false
+},
+{
+"code": "CESD 2106",
+"title": "Community Economic Development and the Social Economy",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in their upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 2206",
+"title": "Social Policy and Community Development in First Nation Communities",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 2306",
+"title": "Project Management and Proposal Writing for Community Development",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 2406",
+"title": "Environment and Community Resilience",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 2607",
+"title": "Community Engagement and Strategic Planning",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 2996",
+"title": "Fundamentals of Organizational Financial Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3016",
+"title": "Global/Local Relations: Critical Perspectives",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3017",
+"title": "Directed Studies CESD-Practicum",
+"credits": 3.0,
+"prereqs": [
+[
+"CESD 1006"
+],
+[
+"CESD 1007"
+],
+[
+"CESD 2016"
+],
+[
+"CESD 2106"
+],
+[
+"CESD 2406"
+],
+[
+"CESD 2607"
+],
+[
+"CESD 3016"
+]
+],
+"has_lab": false,
+"prereq_text": "CESD-1006, CESD-1007, CESD-2016, CESD-2106, CESD-2406, CESD-2607, and CESD-3016. Students must apply to enrol in CESD 3017 in the preceding semester by the deadline set by the department.",
+"needs_review": false
+},
+{
+"code": "CESD 3106",
+"title": "Tools for Regional Economic Analysis",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3216",
+"title": "Legal Issues in Community Development: Case Studies in Treaty Rights, Land Use, and Enterprise Relations",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3406",
+"title": "Sustainable Indigenous, Rural and Urban Community Development",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3456",
+"title": "Community Advocacy and Social Justice",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3906",
+"title": "Community Economic and Social Development: Selected Topics I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 3907",
+"title": "Community Economic and Social Development: Selected Topics II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 4016",
+"title": "Community Economic and Social Development Project and Analysis: Placement and Major Projects I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "CESD 4017",
+"title": "Community Economic and Social Development: Placement and Major Projects II",
+"credits": 3.0,
+"prereqs": [
+[
+"CESD 4016"
+]
+],
+"has_lab": false,
+"prereq_text": "CESD-4016. Restricted to students in year four of the program or permission of the department. (THESIS/WIL) (3 cr)",
+"needs_review": true
+},
+{
+"code": "CESD 4906",
+"title": "Community Economic and Social Development: Selected Topics I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CESD 4907",
+"title": "Community Economic and Social Development: Selected Topics II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Students must be in upper year in good academic standing.",
+"needs_review": true
+},
+{
+"code": "CHMI 1006",
+"title": "General Chemistry I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "4U in Chemistry or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "CHMI 1007",
+"title": "General Chemistry II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 1006.",
+"needs_review": false
+},
+{
+"code": "CHMI 2426",
+"title": "Organic Chemistry I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 1006, CHMI- 1007.",
+"needs_review": false
+},
+{
+"code": "CHMI 2427",
+"title": "Organic Chemistry II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 2426.",
+"needs_review": false
+},
+{
+"code": "CHMI 3016",
+"title": "Biochemistry I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 2426.",
+"needs_review": false
+},
+{
+"code": "CHMI 3017",
+"title": "Biochemistry II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "CHMI- 3016.",
+"needs_review": false
+},
+{
+"code": "COSC 1036",
+"title": "Games Marketplace",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 1046",
+"title": "Introduction to Computer Science I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "OAC MATH/U-level Math or OAC Computer Science.",
+"needs_review": false
+},
+{
+"code": "COSC 1047",
+"title": "Introduction to Computer Science II",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046"
+]
+],
+"has_lab": true,
+"prereq_text": "COSC-1046.",
+"needs_review": false
+},
+{
+"code": "COSC 1056",
+"title": "Introduction to Extended Reality Technologies",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 1701",
+"title": "Computer Applications I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 1702",
+"title": "Computer Applications II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 2006",
+"title": "Data Structures I",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1047"
+],
+[
+"MATH 1056"
+]
+],
+"has_lab": true,
+"prereq_text": "COSC-1047 and MATH-1056, or permission of the school.",
+"needs_review": false
+},
+{
+"code": "COSC 2007",
+"title": "Data Structures II",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+]
+],
+"has_lab": true,
+"prereq_text": "COSC-2006.",
+"needs_review": false
+},
+{
+"code": "COSC 2036",
+"title": "Computer Game Design I",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-1046.",
+"needs_review": false
+},
+{
+"code": "COSC 2056",
+"title": "3D Computer Animation",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 2307",
+"title": "Database Programming",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-1046 or equivalent programming experience.",
+"needs_review": false
+},
+{
+"code": "COSC 2396",
+"title": "UNIX and System Programming in C",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006",
+"needs_review": false
+},
+{
+"code": "COSC 2406",
+"title": "Assembly Language Programming",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1056"
+],
+[
+"COSC 1047"
+]
+],
+"has_lab": true,
+"prereq_text": "MATH-1056 and COSC-1047.",
+"needs_review": false
+},
+{
+"code": "COSC 2507",
+"title": "Introduction to Data Science with Python",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-1046.",
+"needs_review": false
+},
+{
+"code": "COSC 2596",
+"title": "Interaction Design and Testing",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-1046",
+"needs_review": false
+},
+{
+"code": "COSC 2636",
+"title": "Game Software Engineering",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2947"
+],
+[
+"MATH 1056",
+"MATH 1057"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2947, MATH-1056/MATH-1057.",
+"needs_review": false
+},
+{
+"code": "COSC 2836",
+"title": "Computer Software for the Sciences",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1036"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1036 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "COSC 2896",
+"title": "Computer Science Co-Op Work Term I",
+"credits": 2.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the School.",
+"needs_review": false
+},
+{
+"code": "COSC 2947",
+"title": "Object Oriented Programming Using C++",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1047"
+]
+],
+"has_lab": false,
+"prereq_text": "The Java version of COSC-1047 or equivalent object-oriented programming experience in a language other than C++.",
+"needs_review": false
+},
+{
+"code": "COSC 2956",
+"title": "Internet Tools",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-1046.",
+"needs_review": false
+},
+{
+"code": "COSC 2996",
+"title": "Systems Analysis and Analytics for Project Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing",
+"needs_review": true
+},
+{
+"code": "COSC 3026",
+"title": "Data Mining and Data Warehousing",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"COSC 2307"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006 and COSC-2307.",
+"needs_review": false
+},
+{
+"code": "COSC 3036",
+"title": "Computer Game Design II",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2036"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2036 (Computer Game Design I).",
+"needs_review": false
+},
+{
+"code": "COSC 3051",
+"title": "Augmented and Mixed Reality Development",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006",
+"MATH 1057"
+]
+],
+"has_lab": true,
+"prereq_text": "COSC-2006, MCV4U or MATH-1057.",
+"needs_review": false
+},
+{
+"code": "COSC 3056",
+"title": "Virtual Reality Development",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2036"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2036",
+"needs_review": false
+},
+{
+"code": "COSC 3106",
+"title": "Theory of Computing",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"MATH 2056"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006, MATH-2056.",
+"needs_review": false
+},
+{
+"code": "COSC 3117",
+"title": "Artificial Intelligence",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2007.",
+"needs_review": false
+},
+{
+"code": "COSC 3127",
+"title": "Programming Languages",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"COSC 2406"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006 and COSC-2406.",
+"needs_review": false
+},
+{
+"code": "COSC 3216",
+"title": "Introduction to Data Visualization",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2007.",
+"needs_review": false
+},
+{
+"code": "COSC 3306",
+"title": "Introduction to Computer Graphics",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2007"
+],
+[
+"MATH 1057"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2007, MATH-1057.",
+"needs_review": false
+},
+{
+"code": "COSC 3406",
+"title": "Computer Organization",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"COSC 2406"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006 and COSC-2406.",
+"needs_review": false
+},
+{
+"code": "COSC 3407",
+"title": "Operating Systems I",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"COSC 2406"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006 and COSC-2406.",
+"needs_review": false
+},
+{
+"code": "COSC 3416",
+"title": "Numerical Methods",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1057"
+],
+[
+"MATH 2066"
+],
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1057, MATH-2066, and COSC-1046.",
+"needs_review": false
+},
+{
+"code": "COSC 3426",
+"title": "Digital Design",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 3506",
+"title": "Software Engineering",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of second year core program in Computer Science or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "COSC 3596",
+"title": "Mobile Application Development I",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006",
+"needs_review": false
+},
+{
+"code": "COSC 3706",
+"title": "Directed Studies",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the school and of the prospective faculty member.",
+"needs_review": false
+},
+{
+"code": "COSC 3707",
+"title": "Techniques of Systems Analysis",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006.",
+"needs_review": false
+},
+{
+"code": "COSC 3756",
+"title": "Object Oriented Analysis and Design",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"COSC 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006, COSC-2007",
+"needs_review": false
+},
+{
+"code": "COSC 3796",
+"title": "Information Technology Security and Privacy",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006.",
+"needs_review": false
+},
+{
+"code": "COSC 3807",
+"title": "Applied Networks",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006",
+"needs_review": false
+},
+{
+"code": "COSC 3896",
+"title": "Computer Science Co-Op Work Term II",
+"credits": null,
+"prereqs": [
+[
+"COSC 2896"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2896 (Computer Science Co-Op Work Term I) or the permission of the school.",
+"needs_review": false
+},
+{
+"code": "COSC 4036",
+"title": "Computer Game Artificial Intelligence",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3117"
+],
+[
+"COSC 3036"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3117, COSC-3036.",
+"needs_review": false
+},
+{
+"code": "COSC 4051",
+"title": "Advanced Topics in XR",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "COSC 4056",
+"title": "Virtual Reality Production Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Introduction to VR/AR, 3D modeling basics",
+"needs_review": false
+},
+{
+"code": "COSC 4086",
+"title": "Fourth-year Project I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of third year core courses.",
+"needs_review": true
+},
+{
+"code": "COSC 4087",
+"title": "Fourth-year Project II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of third year core courses.",
+"needs_review": true
+},
+{
+"code": "COSC 4106",
+"title": "Analysis of Algorithms",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2007"
+],
+[
+"COSC 3106"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2007, COSC-3106.",
+"needs_review": false
+},
+{
+"code": "COSC 4127",
+"title": "Introduction to Machine Learning",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2507"
+],
+[
+"COSC 3117"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2507 and COSC-3117.",
+"needs_review": false
+},
+{
+"code": "COSC 4137",
+"title": "Introduction to ANN and Deep Learning",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2507"
+],
+[
+"COSC 3117"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2507 and COSC-3117.",
+"needs_review": false
+},
+{
+"code": "COSC 4206",
+"title": "Introduction to Cloud Computing",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "COSC3407",
+"needs_review": false
+},
+{
+"code": "COSC 4235",
+"title": "Thesis in Computer Science",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "An average of 70% in the COSC-specialization courses upon entry to fourth year, or permission of the school. (6 cr/WIL) COSC4297 Machine Learning/AI for Cybersecurity This course explores the application of machine learning and AI in cybersecurity. Students will examine the fundamentals of machine learning and AI and their applications in detecting distributed denial-of-service attacks, network anomaly detection, fraud and malware threat detection, and adversarial machine learning. This 3-credit course includes lectures, case studies, and practical approaches for machine learning and AI in cybersecurity.",
+"needs_review": true
+},
+{
+"code": "COSC 4307",
+"title": "Advanced Computer Graphics",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3306"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3306.",
+"needs_review": false
+},
+{
+"code": "COSC 4407",
+"title": "Operating Systems II",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3407"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3407.",
+"needs_review": false
+},
+{
+"code": "COSC 4417",
+"title": "Computer Architecture",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3406"
+],
+[
+"COSC 3407"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3406, COSC-3407.",
+"needs_review": false
+},
+{
+"code": "COSC 4426",
+"title": "Topics in Computer Science I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of second year core program in Computer Science.",
+"needs_review": true
+},
+{
+"code": "COSC 4427",
+"title": "Topics in Computer Science II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "completion of second year core program in Computer Science.",
+"needs_review": true
+},
+{
+"code": "COSC 4436",
+"title": "Computer Networks",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3406"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3406.",
+"needs_review": false
+},
+{
+"code": "COSC 4437",
+"title": "Distributed Systems",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3407"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3407.",
+"needs_review": false
+},
+{
+"code": "COSC 4596",
+"title": "Mobile Application Development II",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 3596"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3596.",
+"needs_review": false
+},
+{
+"code": "COSC 4606",
+"title": "Data Management Systems",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of second year core courses.",
+"needs_review": true
+},
+{
+"code": "COSC 4706",
+"title": "Directed Studies II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the department. (3 cr/EXP). COSC4726 Cloud and IoT Security This course explores security challenges and solutions in Cloud Computing and the Internet of Things (IoT). Students will examine threats, vulnerabilities, and countermeasures for securing cloud services, IoT devices, and edge computing environments. Topics include cloud security architecture, IoT security protocols, privacy concerns, and secure communication strategies. This 3-credit course includes lectures, case studies, and practical security assessments.",
+"needs_review": false
+},
+{
+"code": "COSC 4806",
+"title": "Web Data Management",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2307"
+],
+[
+"COSC 2956"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2307, COSC-2956.",
+"needs_review": false
+},
+{
+"code": "COSC 4896",
+"title": "Computer Science Co-Op Work Term III",
+"credits": 2.0,
+"prereqs": [
+[
+"COSC 3896"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-3896 (Computer Science Co-Op Work Term II) or the permission of the school.",
+"needs_review": false
+},
+{
+"code": "COSC 4926",
+"title": "Human-Computer Interaction",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of 2nd year core program in Computer Science, or completion of 3rd year core program in E-Business Science, or school\u2019s permission.",
+"needs_review": true
+},
+{
+"code": "DESC 4047",
+"title": "Cases in Management Science and Analytics",
+"credits": null,
+"prereqs": [
+[
+"ADMN 2607"
+]
+],
+"has_lab": false,
+"prereq_text": "Prerequisite: ADMN2506 or ECON2126 or instructor approval. If students have taken ADMN-2607 prior to this course, they also met the pre-requisite requirement. (3cr)",
+"needs_review": true
+},
+{
+"code": "ECON 1006",
+"title": "Introduction to Microeconomics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ECON 1007",
+"title": "Introduction to Macroeconomics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ECON 2026",
+"title": "Introduction to Urban Economics",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2027",
+"title": "Introduction to Regional Economics",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2036",
+"title": "Economics of Multinational Corporations",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2056",
+"title": "Economics of Natural Resources",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2057",
+"title": "Environmental Economics and Policies",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2066",
+"title": "Introduction to Economic Development",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006, ECON-1007",
+"needs_review": false
+},
+{
+"code": "ECON 2086",
+"title": "Canadian Economic Problems and Policy",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006, ECON-1007",
+"needs_review": false
+},
+{
+"code": "ECON 2106",
+"title": "Intermediate Microeconomics I",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2107",
+"title": "Intermediate Macroeconomics I",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2126",
+"title": "Elementary Statistical Methods for Economists",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006, ECON-1007. Anti-requisite: any other introductory Statistics course. (3 cr)",
+"needs_review": false
+},
+{
+"code": "ECON 2127",
+"title": "Introduction to the Mathematical Treatment of Economics",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 2146",
+"title": "The Use, Interpretation, and Collection of Economic Statistics",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006 and ECON-1007, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ECON 3016",
+"title": "Public Finance I",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 2106"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-2106 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ECON 3017",
+"title": "Public Finance II",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 3016"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-3016 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ECON 3076",
+"title": "Money and Financial Markets",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "ECON 2106, ECON 2107.",
+"needs_review": false
+},
+{
+"code": "ECON 3077",
+"title": "Management of Financial Institutions",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 3076"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-3076 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ECON 3106",
+"title": "Intermediate Microeconomics II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "ECON 2106.",
+"needs_review": false
+},
+{
+"code": "ECON 3107",
+"title": "Intermediate Macroeconomics II",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-2107.",
+"needs_review": false
+},
+{
+"code": "ECON 3296",
+"title": "Managerial Economics",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+],
+[
+"ECON 2106"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006, ECON-1007, ECON-2106 recommended.",
+"needs_review": false
+},
+{
+"code": "ECON 3446",
+"title": "International Trade",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 2106"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-2106 or permission of the department. Prerequisite: ECON 2106 and ECON 2107.",
+"needs_review": false
+},
+{
+"code": "ECON 3807",
+"title": "Introduction to Econometrics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "ECON 2126 or ADMN2506 (of the two), and ECON 2127.",
+"needs_review": false
+},
+{
+"code": "ECON 3906",
+"title": "Selected Topics in Economics I",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006, ECON-1007 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ECON 3907",
+"title": "Selected Topics in Economics II",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 1006"
+],
+[
+"ECON 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-1006, ECON-1007 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "ECON 4086",
+"title": "Research Project and Internship",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 3807"
+],
+[
+"ADMN 4936"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-3807, ADMN-4936, fourth year standing in the Finance and Economics program. To qualify for a supervisor/internship, students are required to achieve at least a 70% overall average.",
+"needs_review": true
+},
+{
+"code": "ECON 4447",
+"title": "International Finance",
+"credits": 3.0,
+"prereqs": [
+[
+"ECON 3446"
+]
+],
+"has_lab": false,
+"prereq_text": "ECON-3446 or permission of the school.",
+"needs_review": false
+},
+{
+"code": "ENGL 1006",
+"title": "Reading for Life",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 1007",
+"title": "Writing for Life",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006.",
+"needs_review": false
+},
+{
+"code": "ENGL 1101",
+"title": "Fundamentals of Academic Writing for International Students",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 1801",
+"title": "Academic Writing: Fundamentals: Communication and Argumentation (W)",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 1811",
+"title": "Academic Writing: Research and Inquiry (W)",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 1906",
+"title": "Introduction to Popular Literature and Culture I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 1996",
+"title": "Algoma Reads",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2026",
+"title": "Where is Here? Canadian Literature",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2046",
+"title": "Renaissance Literature: Transition and Transformation",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2056",
+"title": "Speech Writing and Presentation Skills (W)",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2097",
+"title": "Sense and Satire",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2126",
+"title": "Science Fiction",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2127",
+"title": "Fantasy",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2136",
+"title": "Children\u2019s Literature",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+],
+[
+"ENGL 1007"
+],
+[
+"HIST 1206"
+],
+[
+"HIST 1207"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 OR ENGL-1007 OR HIST-1206 OR HIST-1207",
+"needs_review": false
+},
+{
+"code": "ENGL 2396",
+"title": "The Novel \u2013 The Bright Book of Life",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2496",
+"title": "Tracing the Trade Triangle: Stories of the African Diaspora",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2536",
+"title": "Subversive Shakespeare: Staging Gender and Politics",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2537",
+"title": "Art and Thought in Shakepeare\u2019s Tragedies",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% and ENGL2536 or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2546",
+"title": "Introduction to Creative Writing (W)",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2596",
+"title": "Introduction to Creative Nonfiction (W)",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "at least one of ENGL-1006, 1007, 1991 or 2546 or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2696",
+"title": "Writing for Digital and Social Media (W)",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "students must be in upper-year standing. [LEC-SEM 3] 3 cr ENGL2856 Literature and Film A study of the relationship between literature and film that focuses on film adaptations of literary texts from one or more genres by one or more writers. In addition to the texts and films, classic and contemporary theories of adaptation will be examined. One goal will be to see how rich the literary texts are, how they offer directors and adaptors multiple possibilities. Another will be to explore the films as critical readings of the literary texts they adapt. The course will also examine the films as rich and meaningful texts in themselves. Prerequisite: ENGL-1006/07 or ENGL/FILM- 1606/07 or permission of Department.",
+"needs_review": true
+},
+{
+"code": "ENGL 2926",
+"title": "Indigenous Literature of North America",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 2991",
+"title": "Critical Writing: Who Do You Think You Are? (W)",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 2996",
+"title": "Algoma Reads",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 3006",
+"title": "Detective Fiction",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Open to any upper-year student who has completed successfully at least 24 credits.",
+"needs_review": true
+},
+{
+"code": "ENGL 3096",
+"title": "Politics and Literature",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006"
+],
+[
+"POLI 1007"
+],
+[
+"ENGL 1006"
+],
+[
+"ENGL 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "Any two of the following POLI-1006, POLI-1007, ENGL-1006, ENGL-1007.",
+"needs_review": false
+},
+{
+"code": "ENGL 3106",
+"title": "Climate Fiction",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Open to any upper-year student who has completed successfully at least 24 credits.",
+"needs_review": true
+},
+{
+"code": "ENGL 3116",
+"title": "Reshaping Poetry and Storytelling",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 3137",
+"title": "Making the World Anew",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3167",
+"title": "Modern Ideas, Words, Styles",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3357",
+"title": "The Harlem Renaissance and The Beat Generation",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3416",
+"title": "Contemporary Canadian Drama",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3476",
+"title": "Modern Drama",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3477",
+"title": "Contemporary Drama",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3516",
+"title": "Creative Writing Strategies (W)",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006",
+"ENGL 2546"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007, or ENGL-2546, or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3517",
+"title": "Creative Writing: Project (W)",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 2546",
+"ENGL 3516"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-2546 or ENGL-3516 or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3727",
+"title": "Contemporary Women\u2019s Writing",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 3856",
+"title": "Literature and Philosophy",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+],
+[
+"ENGL 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006, ENGL-1007, PHIL- 1116, or PHIL- 1117.",
+"needs_review": false
+},
+{
+"code": "ENGL 3896",
+"title": "Children of Violence: Contemporary Literature",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "ENGL 3996",
+"title": "John Milton and the English Revolution",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENGL 4006",
+"title": "Criticism, Aesthetics, Literature",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "ENGL 4086",
+"title": "Crime and Punishment",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "ENGL 4506",
+"title": "Revisionist Mythmaking: Re-reading Tragedy, Re-writing Culture",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "ENGL 4526",
+"title": "Twice Upon a Time: Contemporary Retellings of Folk and Fairy Tales",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "At least 24 credits in ENGL-courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "ENGL 4556",
+"title": "Four Quartets \u2013 The Quadrophonic Novel",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "At least 24 credits in English courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "ENGL 4596",
+"title": "Contemporary Women\u2019s Historical Fiction",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "At least 24 credits in English courses including ENGL-1006 and 1007 with a minimum grade of 60% or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "ENVS 1006",
+"title": "Introduction to Environmental Science",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ENVS 3106",
+"title": "Pollution",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "BIOL- 1506, CHMI- 1006, CHMI- 1007.",
+"needs_review": false
+},
+{
+"code": "ENVS 3306",
+"title": "Solutions to Environmental Problems",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "ENVS- 1006 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "ENVS 3456",
+"title": "Environmental Science Internship I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of first two years of the Environmental Science program.",
+"needs_review": true
+},
+{
+"code": "ENVS 3596",
+"title": "Limnology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "BIOL- 1506, BIOL- 1507.",
+"needs_review": false
+},
+{
+"code": "ENVS 3626",
+"title": "Epidemiology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "ENVS- 1006.",
+"needs_review": false
+},
+{
+"code": "ENVS 3906",
+"title": "Special Topics in Environmental Science I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of second year core program in Environmental Science or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "ENVS 3907",
+"title": "Special Topics in Environmental Science II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of second year core program in Environmental Science or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "ENVS 4105",
+"title": "(Environmental Science) Honours Thesis",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "Students must have a 70% average across core program courses to enter this course. This course is required for those seeking an Honours degree.",
+"needs_review": true
+},
+{
+"code": "ENVS 4456",
+"title": "Environmental Science Internship II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of first three years of the Environmental Science program.",
+"needs_review": true
+},
+{
+"code": "ENVS 4696",
+"title": "Toxicology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "ENVS- 1006 and CHMI- 2426.",
+"needs_review": false
+},
+{
+"code": "ENVS 4706",
+"title": "Soil Science",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1036"
+]
+],
+"has_lab": true,
+"prereq_text": "CHMI- 1006, CHMI- 1007, MATH-1036.",
+"needs_review": false
+},
+{
+"code": "ENVS 4906",
+"title": "Advanced Topics in Environmental Science I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of the third-year core program in Environmental Science or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "ENVS 4907",
+"title": "Advanced Topics in Environmental Science II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "completion of the third-year core program in Environmental Science or permission from the instructor.",
+"needs_review": true
+},
+{
+"code": "FILM 2906",
+"title": "Reel History: Film and the Historical Record",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "FILM 2907",
+"title": "Film and Modern History",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "FRAN 1021",
+"title": "Introductory French I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "FRAN 1022",
+"title": "Introductory French II",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1021"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1021, or Grade 9 French, or equivalent. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 1406",
+"title": "Communication and Culture I: The Media",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "FRAN 1407",
+"title": "Communication and Culture II: Reading for Pleasure",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "FRAN 2021",
+"title": "Intermediate French I",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1022"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1022, or Grade 10 French, or equivalent. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 2022",
+"title": "Intermediate French II",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 2021"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-2021, or Grade 11 French, or equivalent. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 2207",
+"title": "Du Roman psychologique au roman de la condition humaine",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "FRAN 2387",
+"title": "Litt\u00e9rature et culture dans le monde francophone II",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "FRAN 2406",
+"title": "Communication et Culture III: Introduction au Canada francophone",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 2407",
+"title": "Communication et Culture IV: le francais des affaires",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 2606",
+"title": "Survol de la litt\u00e9rature canadienne-fran\u00e7aise des origines \u00e0 1940",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "FRAN 2607",
+"title": "Survol de la litt\u00e9rature canadienne-fran\u00e7aise de 1940 \u00e0 aujourd\u2019hui",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "FRAN 2717",
+"title": "Th\u00e8mes de la litt\u00e9rature canadienne-fran\u00e7aise",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "FRAN 3406",
+"title": "Communication et Culture V: La France: histoire et culture",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 3407",
+"title": "Communication et Culture VI: La communication efficace",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "FRAN 3656",
+"title": "Culture et litt\u00e9rature de l\u2019\u00e9poque classique",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "FRAN 3657",
+"title": "La litt\u00e9rature fran\u00e7aise du dix-neuvi\u00e8me si\u00e8cle",
+"credits": 3.0,
+"prereqs": [
+[
+"FRAN 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "FRAN-1406/1407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "GEOG 1026",
+"title": "Introduction to the Physical Environment",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 1027",
+"title": "Introduction to the Human Environment",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 2016",
+"title": "Digital Earth",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 2017",
+"title": "Introduction to GIS",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Basic computer and operating system knowledge is needed. Basic math knowledge (addition, subtraction, multiplication, division) is also required.",
+"needs_review": false
+},
+{
+"code": "GEOG 2027",
+"title": "Spatial Thinking and Quantitative Geography",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 2106",
+"title": "Geomorphology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 2196",
+"title": "Introduction to Land Stewardship in First Nation Contexts",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026",
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026 or GEOG-1027 or Level 1 PLMCP student or Permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 2206",
+"title": "Population, Migration, and the Environment",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1027 preferred.",
+"needs_review": false
+},
+{
+"code": "GEOG 2216",
+"title": "Cross-Cultural Geography",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027. (ONLINE/EXP 3] (3 cr)",
+"needs_review": false
+},
+{
+"code": "GEOG 2217",
+"title": "Space, Place, Landscapes and Society",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1027 preferred.",
+"needs_review": false
+},
+{
+"code": "GEOG 2406",
+"title": "Geography of Canada\u2019s Regions",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "GEOG 2556",
+"title": "Geography of the United States",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 preferred.",
+"needs_review": false
+},
+{
+"code": "GEOG 2606",
+"title": "World Regional Geography",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 2617",
+"title": "The Geography of the Asian-Pacific Rim",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 2996",
+"title": "The Great Lakes: Resources, People, and the Environment",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or upper year standing preferred.",
+"needs_review": true
+},
+{
+"code": "GEOG 3006",
+"title": "Aerial Remote Sensing: From Manned Aircraft to Drones",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3016",
+"title": "Geography Practicum",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3036",
+"title": "Community Planning in an Indigenous Context",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3037",
+"title": "Remote Sensing of the Environment",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3046",
+"title": "Approaches to Research and Applied Inquiries in Geography",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or Department\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "GEOG 3056",
+"title": "Field Course in Geography",
+"credits": null,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+],
+[
+"GEOG 2017"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027; GEOG-2017; or Departmental permission.",
+"needs_review": false
+},
+{
+"code": "GEOG 3076",
+"title": "Advanced Geographic Information Systems (GIS)",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 2017"
+],
+[
+"GEOG 2016"
+]
+],
+"has_lab": true,
+"prereq_text": "GEOG-2017 required, GEOG-2016 recommended.",
+"needs_review": false
+},
+{
+"code": "GEOG 3096",
+"title": "Topics in GIS Applications",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 2017"
+]
+],
+"has_lab": true,
+"prereq_text": "GEOG-2017.",
+"needs_review": false
+},
+{
+"code": "GEOG 3106",
+"title": "Climatology: The Context for Climate Change",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3196",
+"title": "Water Stewardship in a Spatial Context",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3206",
+"title": "Urbanization and World Cities",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1027 or upper year standing preferred.",
+"needs_review": true
+},
+{
+"code": "GEOG 3207",
+"title": "The Urban Environment",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "(s): GEOG-1027 or upper year standing preferred.",
+"needs_review": true
+},
+{
+"code": "GEOG 3307",
+"title": "Indigenous Knowledge in Environmental Stewardship",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 3317",
+"title": "Contemporary Issues in Economic Geography",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3406",
+"title": "Geographies of Health and the Environment",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 2026"
+],
+[
+"SOCI 3126"
+]
+],
+"has_lab": true,
+"prereq_text": "GEOG-2026 OR SOCI-3126.",
+"needs_review": false
+},
+{
+"code": "GEOG 3596",
+"title": "Climate Change & Communities: Vulnerabilities, Impacts and Adaptations",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 3707",
+"title": "Landscapes and People of Canada\u2019s North",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3756",
+"title": "Geographies of Development: Theory and Application",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 3796",
+"title": "Stewarding Community Food Systems",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 3807",
+"title": "The Geography of Sub-Saharan Africa",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or permission from the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 3956",
+"title": "Geography of Europe",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or upper year standing preferred.",
+"needs_review": true
+},
+{
+"code": "GEOG 3996",
+"title": "Special Topics in Geography I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 3997",
+"title": "Special Topics in Geography II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 4006",
+"title": "Geographic Information System Research Project",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 3076"
+],
+[
+"GEOG 3096"
+]
+],
+"has_lab": true,
+"prereq_text": "GEOG-3076 Advanced GIS, GEOG-3096 Topics in GIS Applications recommended.",
+"needs_review": false
+},
+{
+"code": "GEOG 4046",
+"title": "Global Environment Change",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOG 4105",
+"title": "Senior Thesis (Geography)",
+"credits": 6.0,
+"prereqs": [
+[
+"GEOG 2027"
+],
+[
+"GEOG 3046"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-2027, GEOG-3046.",
+"needs_review": false
+},
+{
+"code": "GEOG 4206",
+"title": "Directed Studies",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Available only to 3rd and 4th year honours students with a cumulative average grade of B or higher.",
+"needs_review": true
+},
+{
+"code": "GEOG 4217",
+"title": "Population, Environment and Development",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 2206"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-2206 recommended.",
+"needs_review": false
+},
+{
+"code": "GEOG 4226",
+"title": "Seminar in Urban Geography",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 3206",
+"GEOG 3207"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-3206 or GEOG-3207.",
+"needs_review": false
+},
+{
+"code": "GEOG 4296",
+"title": "Impact Assessment and Environmental Management",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1026"
+],
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1026, GEOG-1027 or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 4407",
+"title": "Environmental Stewardship: Policy and Practice",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOG 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOG-1027 preferred or permission of the Department.",
+"needs_review": false
+},
+{
+"code": "GEOG 4816",
+"title": "Community Planning",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "restricted to students in year three or four of the program or permission of the Department.",
+"needs_review": true
+},
+{
+"code": "GEOG 4906",
+"title": "Advanced Topics I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "restricted to students in the four-year program or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "GEOG 4907",
+"title": "Advanced Topics II in Geography",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "restricted to students in the four-year program or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "GEOL 1021",
+"title": "Understanding the Earth: The Planet and its Internal Processes",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOL 1022",
+"title": "Understanding the Earth: The Earth\u2019s Crust: Rocks and Minerals",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "GEOL 3476",
+"title": "Hazards and Disasters in a Geological Context",
+"credits": 3.0,
+"prereqs": [
+[
+"GEOL 1021",
+"GEOL 1022"
+]
+],
+"has_lab": false,
+"prereq_text": "GEOL-1021 or GEOL-1022 or permission from the Department.",
+"needs_review": false
+},
+{
+"code": "HIST 1001",
+"title": "Introduction to Canada, Past and Present",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "HIST 1206",
+"title": "Events & Ideas that Shaped the Early Modern World",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "HIST 1207",
+"title": "Turning Points in Modern History",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "HIST 2026",
+"title": "Canadian History: Pre-Confederation",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2027",
+"title": "Canadian History: Post-Confederation",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2056",
+"title": "History of Ancient Civilization to the Greeks",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2057",
+"title": "History of Ancient Greek and Roman Civilizations",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2116",
+"title": "First Nations and M\u00e9tis Communities Pre & during Colonization",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2117",
+"title": "First Nations and M\u00e9tis Communities Post Colonization",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2216",
+"title": "History of Women and the Family in the Pre-Industrial Era",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2217",
+"title": "History of Women and the Women\u2019s Movement in the Modern Era",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2286",
+"title": "A History of Ideas of the Modern World",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2456",
+"title": "History of Religion",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2556",
+"title": "Challenging Historical Narratives Through Archives",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2557",
+"title": "Reclaiming Shingwauk Through Archival Work",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2806",
+"title": "History of the United States: Origins to the Civil War",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2807",
+"title": "History of the United States: Civil War to the Present",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2906",
+"title": "Reel History: Film and the Historical Record",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2907",
+"title": "Film and Modern History",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 2996",
+"title": "Historical Practices",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3296",
+"title": "Select Topics in Community-Based Public History",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3297",
+"title": "Select Projects in Community-Based Public History",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3396",
+"title": "History of Childhood in Canada",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3526",
+"title": "Crime, the State, and Society in Early Modern England",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3606",
+"title": "Witches and Witch-hunts in Europe, 1450-1750",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3796",
+"title": "Introduction to English Legal History",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 3996",
+"title": "John Milton and the English Revolution",
+"credits": 3.0,
+"prereqs": [
+[
+"HIST 1206"
+]
+],
+"has_lab": false,
+"prereq_text": "HIST-1206 or 1207; or 12 credits in Humanities or Social Sciences, and an overall GPA of 70% or higher; or department permission.",
+"needs_review": true
+},
+{
+"code": "HIST 4055",
+"title": "Honours Thesis Research Project",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "permission from both the department and supervisor, and good academic standing in the final year of the HIST-Honours degree program.",
+"needs_review": true
+},
+{
+"code": "HIST 4206",
+"title": "Social Change and Canada\u2019s Long 1960s to the Present",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4296",
+"title": "Historical Memory and Social Change",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4306",
+"title": "Colonialism in North America",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4316",
+"title": "The History and Theory of International Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4466",
+"title": "Britain in the Age of the Tudors",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4467",
+"title": "Stuart Britain",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4726",
+"title": "The Scientific Enlightenment",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "HIST 4727",
+"title": "The Political Enlightenment: Ideas of Liberty in the Atlantic World, 1550 - 1800",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "21 total credits in HIST-courses; or 36 credits in Humanities and/or Social Sciences, and an overall GPA of 70% or higher; or permission of the department.",
+"needs_review": true
+},
+{
+"code": "ITAL 1005",
+"title": "Introductory Italian",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ITAL 2005",
+"title": "Intermediate Italian",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ITEC 2706",
+"title": "Mobile Technology: Design and Use",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 1046",
+"COSC 1702"
+]
+],
+"has_lab": true,
+"prereq_text": "COSC-1046 or COSC-1702.",
+"needs_review": false
+},
+{
+"code": "ITEC 2707",
+"title": "E-Business Strategy, Architecture and Design",
+"credits": 3.0,
+"prereqs": [
+[
+"ITEC 2706"
+]
+],
+"has_lab": false,
+"prereq_text": "ITEC-2706.",
+"needs_review": false
+},
+{
+"code": "ITEC 3006",
+"title": "Cybersecurity and Risk Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "ITEC 3206",
+"title": "Big Data Analytics",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2307"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2307",
+"needs_review": false
+},
+{
+"code": "ITEC 3506",
+"title": "Software Engineering",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"COSC 2947"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006, COSC-2947 or permission of the school.",
+"needs_review": false
+},
+{
+"code": "ITEC 3706",
+"title": "Software Engineering Project Management",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of the second year COSC-program",
+"needs_review": true
+},
+{
+"code": "JURI 1106",
+"title": "Introduction to Legal Studies I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "JURI 1107",
+"title": "Introduction to Legal Studies II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "JURI 2106",
+"title": "Introduction to Private Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106 with 60%, JURI-1107 with 60%.",
+"needs_review": false
+},
+{
+"code": "JURI 2107",
+"title": "Canadian Political and Legal Institutions",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "JURI 2306",
+"title": "Commercial Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106, JURI-1107 or admission to year 2 of the B.B.A. program.",
+"needs_review": true
+},
+{
+"code": "JURI 2316",
+"title": "Environmental Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106 / 1107 or enrolled in the Environmental Sciences Graduate Certificate.",
+"needs_review": false
+},
+{
+"code": "JURI 2406",
+"title": "Introduction to Criminal Law and Procedure",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106/7.",
+"needs_review": false
+},
+{
+"code": "JURI 2506",
+"title": "Property Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
+"needs_review": false
+},
+{
+"code": "JURI 2856",
+"title": "Research Methods in Law and Politics",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006"
+],
+[
+"POLI 1007",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006, POLI-1007, or JURI-1106, JURI-1107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 2996",
+"title": "Legal Research Methods",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "JURI 3106",
+"title": "Canadian Law and Policy and Indigenous Peoples",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2136"
+],
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "one of JURI-2136, POLI-2707/JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 3107",
+"title": "Treaty Relations",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2136"
+],
+[
+"POLI 2706"
+],
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "one of JURI-2136, POLI-2706, POLI-2707/JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 3137",
+"title": "Dispute Resolution",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2136"
+]
+],
+"has_lab": false,
+"prereq_text": "upper year standing in JURI. Anti-requisite: JURI-2136",
+"needs_review": true
+},
+{
+"code": "JURI 3216",
+"title": "Themes in Criminal Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "JURI 3226",
+"title": "United States: Law and Politics",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105, or POLI-1006 or POLI-1007, or permission from the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 3236",
+"title": "Law and Politics in Latin America",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in a degree program. Antirequisites: POLI3236",
+"needs_review": true
+},
+{
+"code": "JURI 3246",
+"title": "Law And Politics Of The Soviet Union And Russian Federation",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree program. Antirequisite: POLI3246",
+"needs_review": true
+},
+{
+"code": "JURI 3296",
+"title": "Crime and Popular Culture",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree programme.",
+"needs_review": true
+},
+{
+"code": "JURI 3306",
+"title": "Legal Rights in Criminal Proceedings",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
+"needs_review": false
+},
+{
+"code": "JURI 3456",
+"title": "International Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree program.",
+"needs_review": true
+},
+{
+"code": "JURI 3506",
+"title": "Legal Regulation of Close Adult Relationships",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
+"needs_review": false
+},
+{
+"code": "JURI 3526",
+"title": "Crime, the State, and Society in Early Modern England",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree program.",
+"needs_review": true
+},
+{
+"code": "JURI 3606",
+"title": "Legal Regulation of Parent-Child Relationships",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
+"needs_review": false
+},
+{
+"code": "JURI 3616",
+"title": "Labour Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106"
+],
+[
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106, JURI-1107.",
+"needs_review": false
+},
+{
+"code": "JURI 3796",
+"title": "Introduction to English Legal History",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in a degree program - Students must have completed at least 30 credits before beginning the course.",
+"needs_review": true
+},
+{
+"code": "JURI 3906",
+"title": "Special Topics in Law & Justice I",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2106",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-2106/JURI-2107.",
+"needs_review": false
+},
+{
+"code": "JURI 3907",
+"title": "Special Topics in Law & Justice II",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2106",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-2106/JURI-2107.",
+"needs_review": false
+},
+{
+"code": "JURI 4206",
+"title": "Independent Studies I in Law and Justice",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"JURI 1106",
+"JURI 1107"
+],
+[
+"JURI 2106",
+"JURI 2107"
+],
+[
+"JURI 2426"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105 or JURI-1106/JURI-1107, JURI-2106/JURI-2107, & JURI-2426 with a minimum grade of 60% or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 4236",
+"title": "Youth in Conflict with the Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2106",
+"JURI 2107"
+],
+[
+"JURI 2136"
+],
+[
+"JURI 2426"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-2106/JURI-2107, JURI-2136, and JURI-2426 with a minimum grade of 60% or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 4237",
+"title": "Special Topics in Criminal Law",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in a JURI-or POLI-degree programme.",
+"needs_review": true
+},
+{
+"code": "JURI 4246",
+"title": "Mental Health Addictions, and the Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in a degree program",
+"needs_review": true
+},
+{
+"code": "JURI 4316",
+"title": "History and Theory of International Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "third or fourth year standing in the JURI/POLI-program(s) - students have to be a POLI-or JURI-major, and have completed at least 60 credits overall by the time they take the course; or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "JURI 4396",
+"title": "Theories of Justice",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in the Law & Justice or Political Science programmes - students must be a JURI-or POLI-major and have completed at least 30 credits overall by the time they take the course; or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "JURI 4486",
+"title": "Legal Professions",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2106",
+"JURI 2107"
+],
+[
+"JURI 2136"
+],
+[
+"JURI 2426"
+],
+[
+"JURI 3126"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-2106/JURI-2107, JURI-2136, JURI-2426, JURI-3126 with a minimum grade of 60% or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 4726",
+"title": "Constitutionalism and Federalism in Canadian Constitutional Law",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2706"
+],
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "one of POLI-2706, POLI-2707/JURI-2107, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 4727",
+"title": "The Politics of the Canadian Charter of Rights and Freedoms",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2706"
+],
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "one of POLI-2706, POLI-2707/JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "JURI 4804",
+"title": "Special Topics in Interdisciplinary Approaches to Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in the programme.",
+"needs_review": true
+},
+{
+"code": "JURI 4806",
+"title": "Special Topics in Private Law",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2106"
+]
+],
+"has_lab": false,
+"prereq_text": "Upper year standing in the programme and JURI-2106.",
+"needs_review": true
+},
+{
+"code": "JURI 4807",
+"title": "Special Topics in Legal Theory",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in a JURI-degree programme.",
+"needs_review": true
+},
+{
+"code": "JURI 4985",
+"title": "Thesis in Law/Justice",
+"credits": 6.0,
+"prereqs": [
+[
+"JURI 1106"
+],
+[
+"JURI 1107"
+],
+[
+"JURI 2106"
+],
+[
+"JURI 2107"
+],
+[
+"JURI 2856"
+],
+[
+"JURI 2426"
+]
+],
+"has_lab": false,
+"prereq_text": "Restricted to 4th year students in the thesis option, in their graduating year and with at least a 75% grade average and JURI-1106, JURI-1107, JURI-2106, JURI-2107, JURI-2856, JURI-2426, all with a minimum 60% average. (Thesis/WIL) (6 cr)",
+"needs_review": true
+},
+{
+"code": "MATH 1036",
+"title": "Calculus I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "4U credit in Calculus or equivalent (MCV4U and/or MHF4U).",
+"needs_review": false
+},
+{
+"code": "MATH 1037",
+"title": "Calculus II",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1036"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1036.",
+"needs_review": false
+},
+{
+"code": "MATH 1056",
+"title": "Discrete Mathematics I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "OAC or 4U MATH-credit or equivalent.",
+"needs_review": false
+},
+{
+"code": "MATH 1057",
+"title": "Linear Algebra I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "OAC or 4U MATH-credit or equivalent.",
+"needs_review": false
+},
+{
+"code": "MATH 1911",
+"title": "Precalculus",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1911"
+]
+],
+"has_lab": false,
+"prereq_text": "and Anti-requisites (cross listings): Grade 11 Mathematics (MCR3U or MCF3M); Anti-requisites: Students wishing to concentrate in Mathematics and/or Science will not be allowed a MATH-credit for MATH-1911.",
+"needs_review": false
+},
+{
+"code": "MATH 1912",
+"title": "Elementary Calculus",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1911",
+"MATH 1912"
+]
+],
+"has_lab": false,
+"prereq_text": "and Anti-requisites (cross listings): MATH-1911 or MHF4U. Anti-requisite: Students wishing to concentrate in Mathematics and/or Science will not be allowed Mathematics credit for MATH-1912.",
+"needs_review": false
+},
+{
+"code": "MATH 2037",
+"title": "Advanced Calculus",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1037"
+],
+[
+"MATH 1057"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1037 and MATH-1057.",
+"needs_review": false
+},
+{
+"code": "MATH 2056",
+"title": "Discrete Mathematics II",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1056"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1056.",
+"needs_review": false
+},
+{
+"code": "MATH 2057",
+"title": "Linear Algebra II",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1057"
+],
+[
+"MATH 2056"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1057 and MATH-2056.",
+"needs_review": false
+},
+{
+"code": "MATH 2066",
+"title": "Introduction to Differential Equations",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1037"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1037.",
+"needs_review": false
+},
+{
+"code": "MATH 2236",
+"title": "Probability and Statistics I",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1037"
+],
+[
+"MATH 1056"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1037 and MATH-1056.",
+"needs_review": false
+},
+{
+"code": "MATH 3036",
+"title": "Real Analysis I",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 2066"
+],
+[
+"MATH 2037"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-2066 and MATH-2037.",
+"needs_review": false
+},
+{
+"code": "MATH 3046",
+"title": "Complex Analysis",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 2037"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-2037.",
+"needs_review": false
+},
+{
+"code": "MATH 3056",
+"title": "Algebra I",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 2056"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-2056.",
+"needs_review": false
+},
+{
+"code": "MATH 3236",
+"title": "Probability and Statistics II",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 2236"
+],
+[
+"MATH 2037"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-2236 and MATH-2037.",
+"needs_review": false
+},
+{
+"code": "MATH 3416",
+"title": "Numerical Methods",
+"credits": 3.0,
+"prereqs": [
+[
+"MATH 1057"
+],
+[
+"MATH 2066"
+],
+[
+"COSC 1046"
+]
+],
+"has_lab": false,
+"prereq_text": "MATH-1057, MATH-2066, and COSC-1046.",
+"needs_review": false
+},
+{
+"code": "MATH 3426",
+"title": "Theory of Computing",
+"credits": 3.0,
+"prereqs": [
+[
+"COSC 2006"
+],
+[
+"MATH 2056"
+]
+],
+"has_lab": false,
+"prereq_text": "COSC-2006, MATH-2056.",
+"needs_review": false
+},
+{
+"code": "MATH 3706",
+"title": "Directed Studies",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission of the department and of the prospective faculty member.",
+"needs_review": false
+},
+{
+"code": "MUSC 1015",
+"title": "Introduction to the History of Music in Western Culture",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "Level 8 theory (R.C.M.T.) or equivalent, or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 1101",
+"title": "Introduction to Music I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 1102",
+"title": "Introduction to Music II",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1101"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1101 or level 4 theory (R.C.M.T) at 80% or higher or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 1115",
+"title": "Materials of Music I",
+"credits": 6.0,
+"prereqs": [
+[
+"MUSC 1101"
+],
+[
+"MUSC 1102"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1101 and MUSC-1102 OR permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 1401",
+"title": "Applied Music Proficiency",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Audition and permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 1402",
+"title": "Applied Music Proficiency II",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1401"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1401 or audition and permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 1406",
+"title": "Applied Major 1a",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "audition and permission of the department. (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 1407",
+"title": "Applied Major 1b",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "audition and permission of the department. (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 1416",
+"title": "Applied Minor 1b",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 1451",
+"title": "Applied Individualized Instruction for Non-Music Majors Ia",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "permission of the department. (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 1452",
+"title": "Applied Individualized Instruction for Non-Music Majors Ib",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1451"
+],
+[
+"MUSC 1611"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1451permission of department. (PER/EXP, LEC)( 3 cr) MUSC-1611 / 2611 / 3611/ 4611 - Algoma University Choir This course provides an opportunity to experience the unique joy of singing in a group. Available as a 1st, 2nd, or 3rd year 3-credit arts elective, or to faculty, staff and community members, AU Choir provides artistic mentoring and inspiration, resulting in heightened musical and communicative skills. The experience of working in a collaborative manner with fellow singers leads to increased comfort on stage. Choir members will heighten breath control and efficiency as part of a process involving cultivation of rich vocal tone. Ensemble work benefits choir members in their wider life, regardless of major. All are welcome and encouraged to join. Choral music in Classical, Jazz, Folk, Pop, and World Music styles will be explored across different languages in a light-hearted, positive, supportive rehearsal environment. The final project is a public concert in an attractive local venue. FALL TERM ONLY Prerequisite: None. Permission of Department: Required.",
+"needs_review": true
+},
+{
+"code": "MUSC 1701",
+"title": "Class Piano",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 1801",
+"title": "Class Guitar",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2006",
+"title": "Music of the Baroque Period",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1015"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1015 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 2007",
+"title": "Music of the Classical Period",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1015"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1015 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 2056",
+"title": "Music in Popular Culture: Jazz and Blues",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2057",
+"title": "Music in Popular Culture: The History of Rock \u2018n\u2019 Roll",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2066",
+"title": "Music as Culture: World Music",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2067",
+"title": "Music as Culture: Indigenous Music",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2106",
+"title": "Introduction to Music Composition",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "MUSC1101/1102",
+"needs_review": false
+},
+{
+"code": "MUSC 2115",
+"title": "Materials of Music II",
+"credits": 6.0,
+"prereqs": [
+[
+"MUSC 1115"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1115 or equivalent.",
+"needs_review": false
+},
+{
+"code": "MUSC 2216",
+"title": "Introduction to Conducting",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2236",
+"title": "Introduction to The Music Business",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 2255",
+"title": "Elementary School Music I",
+"credits": 6.0,
+"prereqs": [
+[
+"MUSC 1101"
+]
+],
+"has_lab": false,
+"prereq_text": "Permission of the department It is strongly recommended that students who have no music theory background also take MUSC-1101 \u201cIntroduction to Music I\u201d.",
+"needs_review": false
+},
+{
+"code": "MUSC 2275",
+"title": "Jazz Practicum I",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "permission of department.",
+"needs_review": false
+},
+{
+"code": "MUSC 2406",
+"title": "Applied Major 1b",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "audition and permission of the department. (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 2451",
+"title": "Applied Individualized Instruction for Non-Music Majors IIa",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1452"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1452. (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 2452",
+"title": "Applied Individualized Instruction for Non-Music Majors IIb",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 2451"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-2451. (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 2506",
+"title": "Introduction to Audio Arts",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1101",
+"MUSC 1102"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1101/MUSC-1102 or departmental permission.",
+"needs_review": false
+},
+{
+"code": "MUSC 2507",
+"title": "History of Music in Video Games",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1015"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1015 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 2706",
+"title": "Sociology of Music",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 and/or first year MUSC-course.",
+"needs_review": true
+},
+{
+"code": "MUSC 3016",
+"title": "Music in the Romantic Period",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1015"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1015 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 3017",
+"title": "Music of the Twentieth Century",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1015"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1015 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 3216",
+"title": "Choral Conducting",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 2216"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-2216 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 3255",
+"title": "Elementary School Music II",
+"credits": 6.0,
+"prereqs": [
+[
+"MUSC 2255",
+"MUSC 1101"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-2255 or permission of the department. It is strongly recommended that students who have no music theory background also take MUSC-1101 \u201cIntroduction to Music\u201d.",
+"needs_review": false
+},
+{
+"code": "MUSC 3276",
+"title": "Jazz Performance and Pedagogy",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1115"
+],
+[
+"MUSC 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1115, and MUSC-1406 or or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 3277",
+"title": "Jazz Theory and Improvisation",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 1115"
+],
+[
+"MUSC 1406"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1115, and MUSC-1406 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "MUSC 3451",
+"title": "Applied Individualized Instruction for Non-Music Majors IIIa",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 2452"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-2452. (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 3452",
+"title": "Applied Individualized Instruction for Non-Music Majors IIIb",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 2451",
+"MUSC 2452"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-2451 or MUSC-2452. (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 3456",
+"title": "Music Internship",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of the first two years and 70% average in the student\u2019s program, or permission of the department.",
+"needs_review": true
+},
+{
+"code": "MUSC 3906",
+"title": "Special Topics in Music",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "students must be in upper year standing",
+"needs_review": true
+},
+{
+"code": "MUSC 4406",
+"title": "Applied Individualized Instruction for Music Majors IVa",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 3452"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-3452 (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 4407",
+"title": "Applied Individualized Instruction for Music Majors IVb",
+"credits": 3.0,
+"prereqs": [
+[
+"MUSC 4406"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-4406 (PER/EXP, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 4416",
+"title": "Applied Instrumental Minor IV",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "MUSC 4605",
+"title": "Capstone: Thesis/Creative Project",
+"credits": null,
+"prereqs": [
+[
+"MUSC 1015"
+]
+],
+"has_lab": false,
+"prereq_text": "MUSC-1015 (THE)(6cr)",
+"needs_review": false
+},
+{
+"code": "MUSC 4661",
+"title": "Final Recital",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "OJIB 1016",
+"title": "Introductory Anishinaabemowin I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "OJIB 1017",
+"title": "Introductory Anishinaabemowin II",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 1016"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-1016. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "OJIB 1206",
+"title": "Intensive Conversational Practice, Introductory Level",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "OJIB 2016",
+"title": "Intermediate Anishinaabemowin I",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 1016"
+],
+[
+"OJIB 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-1016, OJIB-1017 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "OJIB 2017",
+"title": "Intermediate Anishinaabemowin II",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 2016"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-2016 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "OJIB 2206",
+"title": "Intensive Conversational Practice, Intermediate Level",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "OJIB 2906",
+"title": "Anishinaabe Philosophy of Language and Culture I",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 1016"
+],
+[
+"OJIB 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-1016, OJIB-1017 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "OJIB 2907",
+"title": "Anishinaabe Philosophy of Language and Culture II",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 2906"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-2906 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "OJIB 3016",
+"title": "Advanced Anishinaabemowin I",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 2016"
+],
+[
+"OJIB 2017"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-2016, OJIB-2017 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "OJIB 3017",
+"title": "Advanced Anishinaabemowin II",
+"credits": 3.0,
+"prereqs": [
+[
+"OJIB 3016"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-3016 or permission of the instructor. (LANG 4) (3 cr)",
+"needs_review": false
+},
+{
+"code": "OJIB 3025",
+"title": "Seminar in Advanced Language Studies",
+"credits": 6.0,
+"prereqs": [
+[
+"OJIB 2016"
+],
+[
+"OJIB 2017"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-2016, OJIB-2017 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "OJIB 3105",
+"title": "Anishinaabe Oral Literature",
+"credits": 6.0,
+"prereqs": [
+[
+"OJIB 2016"
+],
+[
+"OJIB 2017"
+]
+],
+"has_lab": false,
+"prereq_text": "OJIB-2016, OJIB-2017 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "OJIB 3206",
+"title": "Intensive Conversational Practice, Advanced Level",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 1046",
+"title": "The Philosophy of Rock and Roll",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 1116",
+"title": "Critical Thinking",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 1117",
+"title": "Introduction to the Problems of Philosophy",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 2276",
+"title": "Ideas and the Origins of Modernity",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 2286",
+"title": "A History of Ideas of the Modern World",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 2347",
+"title": "Biomedical Ethics: Case Studies",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "PHIL- 1116, PHIL- 1117.",
+"needs_review": false
+},
+{
+"code": "PHIL 2876",
+"title": "Business Ethics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 2877",
+"title": "Professional Ethics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHIL 2906",
+"title": "Selected Topics in Philosophy",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "an introductory level course in Philosophy or permission of the department.",
+"needs_review": false
+},
+{
+"code": "PHIL 3856",
+"title": "Literature and Philosophy",
+"credits": 3.0,
+"prereqs": [
+[
+"ENGL 1006"
+],
+[
+"ENGL 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "ENGL-1006, ENGL-1007 or PHIL- 1117.",
+"needs_review": false
+},
+{
+"code": "PHYS 1006",
+"title": "Introductory Physics I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "4U Physics or equivalent.",
+"needs_review": false
+},
+{
+"code": "PHYS 1007",
+"title": "Introductory Physics II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": true,
+"prereq_text": "PHYS- 1006 or equivalent.",
+"needs_review": false
+},
+{
+"code": "PHYS 1026",
+"title": "Special Topics in Forensic Science, Part 1",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHYS 1027",
+"title": "Special Topics in Forensic Science, Part II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHYS 1906",
+"title": "General Astronomy I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PHYS 1907",
+"title": "General Astronomy II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "PHYS- 1906. This survey course is a suitable science elective",
+"needs_review": false
+},
+{
+"code": "POLI 1006",
+"title": "Introduction to Political Science",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 1007",
+"title": "Political Science II: World Politics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2206",
+"title": "Comparative Politics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2306",
+"title": "Globalization and Development",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007",
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007 except for students completing a minor in International Relations or a certificate program that does not require POLI-1006/POLI-1007.",
+"needs_review": false
+},
+{
+"code": "POLI 2396",
+"title": "Introduction to International Relations",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2397",
+"title": "Issues in International Politics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2405",
+"title": "and POLI-",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2406"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2406",
+"needs_review": false
+},
+{
+"code": "POLI 2406",
+"title": "Justice, Nature and the Good: History of Ancient and Medieval Political Thought",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006"
+],
+[
+"POLI 1007"
+],
+[
+"HIST 1206",
+"JURI 1106"
+]
+],
+"has_lab": false,
+"prereq_text": "3 credits from POLI-1006, POLI-1007, HIST-1206, or JURI-1106, or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "POLI 2407",
+"title": "Freedom, Reason, and Equality: History of Modern Political Thought",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2706",
+"title": "Identity and Culture in Canada",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2707",
+"title": "Canadian Political and Legal Institutions",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 2856",
+"title": "Research Methods in Law and Politics",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007",
+"JURI 1106",
+"JURI 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007 or JURI-1106/JURI-1107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3026",
+"title": "Political Science Internship",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007, or permission of instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3096",
+"title": "Politics and Literature",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007"
+],
+[
+"ENGL 1006",
+"ENGL 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "Any two of the following POLI-1006/POLI-1007, ENGL-1006/ENGL-1007.",
+"needs_review": false
+},
+{
+"code": "POLI 3106",
+"title": "Canadian Law and Policy and Indigenous Peoples",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2136"
+],
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "one of JURI-2136, POLI-2707/JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3107",
+"title": "Treaty Relations",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 2136"
+],
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "one of JURI-2136, POLI-2707/JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3206",
+"title": "Comparative Politics of the Global North",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007",
+"POLI 2206"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006 or POLI-1007 or POLI-2206 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3207",
+"title": "Comparative Politics of the Global South",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007",
+"POLI 2206"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006 or POLI-1007 or POLI-2206 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3226",
+"title": "United States: Law and Politics",
+"credits": 3.0,
+"prereqs": [
+[
+"JURI 1105",
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "JURI-1105, or POLI-1006 or POLI-1007, or permission from the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3246",
+"title": "Law and Politics of the Soviet Union and Russian Federation",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree program",
+"needs_review": true
+},
+{
+"code": "POLI 3317",
+"title": "Global Governance: The United Nations System",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1007",
+"POLI 2396"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1007 or POLI-2396.",
+"needs_review": false
+},
+{
+"code": "POLI 3336",
+"title": "Canadian Foreign Policy",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007",
+"POLI 2707",
+"JURI 2107",
+"POLI 2396",
+"POLI 3607"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007, or POLI-2707, or JURI-2107, or POLI-2396, or POLI-3607, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3406",
+"title": "Political Economy and its Critique",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3407",
+"title": "The State and Power",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007 or instructor\u2019s permission or",
+"needs_review": false
+},
+{
+"code": "POLI 3417",
+"title": "Democracy",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3427",
+"title": "Persuasion and Propaganda",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "none.",
+"needs_review": false
+},
+{
+"code": "POLI 3456",
+"title": "International Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree program.",
+"needs_review": true
+},
+{
+"code": "POLI 3506",
+"title": "Justice as Healing: Addressing the Legacy of Canada\u2019s Residential Schools Policies",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year standing in a degree program.",
+"needs_review": true
+},
+{
+"code": "POLI 3606",
+"title": "Public Administration in Canada",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2707"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2707 or JURI2107 permission from the instructor",
+"needs_review": false
+},
+{
+"code": "POLI 3607",
+"title": "Canadian Public Policy",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2707"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2707 or JURI2107 permission from the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3716",
+"title": "Government and Politics of Ontario",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2706",
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2706 or POLI-2707 or JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3756",
+"title": "Politics of the Environment",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 1006",
+"POLI 1007",
+"POLI 2707",
+"JURI 2107",
+"POLI 3606",
+"POLI 3607"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-1006/POLI-1007 or POLI-2707 or JURI-2107 or POLI-3606 or POLI-3607 or permission of instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 3906",
+"title": "Special Topics in Political Science I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 3907",
+"title": "Special Topics in Political Science II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing.",
+"needs_review": true
+},
+{
+"code": "POLI 4106",
+"title": "Contemporary Moral and Political Theory",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2406",
+"POLI 2407"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2406/POLI-2407",
+"needs_review": false
+},
+{
+"code": "POLI 4206",
+"title": "Comparative Politics of the Global North",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2396",
+"POLI 2206"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2396 or POLI-2206 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 4207",
+"title": "Comparative Politics of the Global South",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2396",
+"POLI 2206"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2396 or POLI-2206 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 4306",
+"title": "International Security",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper-year standing.",
+"needs_review": true
+},
+{
+"code": "POLI 4316",
+"title": "History and Theory of International Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "third or fourth year standing in the JURI/POLI-program(s) or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "POLI 4317",
+"title": "Global Governance: The United Nations System",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2396"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2396.",
+"needs_review": false
+},
+{
+"code": "POLI 4356",
+"title": "Global Political Economy",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2396",
+"POLI 2306"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2396 or POLI-2306.",
+"needs_review": false
+},
+{
+"code": "POLI 4396",
+"title": "Theories of Justice",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in the Law & Justice or Political Science programmes or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "POLI 4406",
+"title": "Political Economy and its Critique",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2406",
+"POLI 2407"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2406/POLI-2407 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 4407",
+"title": "The State and Power - Seminar",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2406",
+"POLI 2407",
+"POLI 2707",
+"POLI 2396"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2406 or POLI-2407 or POLI-2707 or JURL 2107 or POLI-2396 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "POLI 4417",
+"title": "Democracy",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2405",
+"POLI 2406",
+"POLI 2407"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2405 or POLI-2406/POLI-2407 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "POLI 4427",
+"title": "Persuasion and Propaganda - Seminar",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2406",
+"POLI 2407"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2406/POLI-2407.",
+"needs_review": false
+},
+{
+"code": "POLI 4506",
+"title": "Resistance and Revolution",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to students in an honours degree program offered by the Department of Law and Politics or permission of the department.",
+"needs_review": false
+},
+{
+"code": "POLI 4626",
+"title": "Special Topics in Constitutional Law",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in a JURI-or POLI-degree program.",
+"needs_review": true
+},
+{
+"code": "POLI 4726",
+"title": "Canadian Constitutional Law I: Constitutionalism and Federalism in Canadian Constitutional Law",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2707/JURI-2107, or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 4727",
+"title": "Canadian Constitutional Law II: The Politics of the Canadian Charter of and Freedoms",
+"credits": 3.0,
+"prereqs": [
+[
+"POLI 2707",
+"JURI 2107"
+]
+],
+"has_lab": false,
+"prereq_text": "POLI-2707/JURI-2107 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "POLI 4827",
+"title": "The Political Enlightenment: Ideas of Liberty in the Atlantic World, 1550 - 1800",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "POLI 4906",
+"title": "Selected Topics in Political Science I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to students in the four-year POLI-program or permission of the instructor.",
+"needs_review": true
+},
+{
+"code": "POLI 4907",
+"title": "Selected Topics in Political Science II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to students in the four-year POLI-program or permission of instructor.",
+"needs_review": true
+},
+{
+"code": "POLI 4985",
+"title": "Honours Essay",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Permission from both the department and supervisor, a minimum of 80% average entering 4th year of study.",
+"needs_review": true
+},
+{
+"code": "PSYC 1106",
+"title": "Introduction to Psychology: Biological Bases of Behaviour",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PSYC 1107",
+"title": "Introduction to Psychology: Individual and Social Bases of Behaviour",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PSYC 2006",
+"title": "Childhood Development",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PSYC 2007",
+"title": "Adolescence, Adulthood and Later Life",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-2006 or permission from the department.",
+"needs_review": false
+},
+{
+"code": "PSYC 2017",
+"title": "Developmental Disorders in Childhood and Adolescence",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2006"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-2006 or permission from the department.",
+"needs_review": false
+},
+{
+"code": "PSYC 2027",
+"title": "Careers in Psychology",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "PSYC- 1106/7",
+"needs_review": false
+},
+{
+"code": "PSYC 2056",
+"title": "Principles of Scientific Inquiry",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PSYC 2127",
+"title": "Scientific Method and Analysis",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107.",
+"needs_review": false
+},
+{
+"code": "PSYC 2346",
+"title": "Principles of Biomedical Ethics",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107.",
+"needs_review": false
+},
+{
+"code": "PSYC 2406",
+"title": "Introduction to the Study of Personality",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107.",
+"needs_review": false
+},
+{
+"code": "PSYC 2557",
+"title": "Introduction to Canadian Healthcare: An Overview",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year student in good standing",
+"needs_review": true
+},
+{
+"code": "PSYC 2606",
+"title": "Introduction to Behavioural Neuroscience",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PSYC 2756",
+"title": "Motivation and Emotion",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107.",
+"needs_review": false
+},
+{
+"code": "PSYC 2817",
+"title": "The Psychology of Aging",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "upper year student in good standing",
+"needs_review": true
+},
+{
+"code": "PSYC 2956",
+"title": "Sensation and Perception",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106.",
+"needs_review": false
+},
+{
+"code": "PSYC 3007",
+"title": "Advanced Study of Personality Theory",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2406"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-2406 and 6 credits in Psychology at the upper year level.",
+"needs_review": true
+},
+{
+"code": "PSYC 3106",
+"title": "Animal Behaviour",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107 and 6 upper year credits in Psychology or permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 3107",
+"title": "Behavioural Ecology",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 3106"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-3106.",
+"needs_review": false
+},
+{
+"code": "PSYC 3196",
+"title": "Human Evolutionary Psychology",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
+"needs_review": true
+},
+{
+"code": "PSYC 3206",
+"title": "Fundamentals of Psychometrics",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2127"
+]
+],
+"has_lab": false,
+"prereq_text": "STAT 2126, PSYC-2127 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "PSYC 3256",
+"title": "Advanced Univariate Statistics",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2127"
+]
+],
+"has_lab": false,
+"prereq_text": "A minimum grade of 70% in both STAT 2126 and PSYC-2127.",
+"needs_review": false
+},
+{
+"code": "PSYC 3286",
+"title": "Advanced Research Analysis",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2127"
+]
+],
+"has_lab": false,
+"prereq_text": "A minimum grade of 70% in STAT 2126, PSYC-2127.",
+"needs_review": false
+},
+{
+"code": "PSYC 3296",
+"title": "Laboratory in Psychological Science",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2127"
+]
+],
+"has_lab": true,
+"prereq_text": "STAT 2126 or equivalent and PSYC-2127.",
+"needs_review": false
+},
+{
+"code": "PSYC 3306",
+"title": "Learning",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
+"needs_review": true
+},
+{
+"code": "PSYC 3456",
+"title": "Psychology Internship I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of the first two years of the Psychology program with a minimum overall average of 70%, a minimum overall average of 70% in Psychology courses, or permission of the Department of Psychology.",
+"needs_review": true
+},
+{
+"code": "PSYC 3506",
+"title": "Neuropharmacology",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2606"
+],
+[
+"PSYC 2617"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-2606 and PSYC-2617 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "PSYC 3507",
+"title": "Behavioural Neurobiology",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2606"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-2606.",
+"needs_review": false
+},
+{
+"code": "PSYC 3557",
+"title": "Health Psychology: Biopsychosocial Perspectives on Health",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "PSYC 3606",
+"title": "Psychopathology I",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
+"needs_review": true
+},
+{
+"code": "PSYC 3607",
+"title": "Psychopathology II",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 3606"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-3606.",
+"needs_review": false
+},
+{
+"code": "PSYC 3617",
+"title": "Human Neuropsychology",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 2606"
+]
+],
+"has_lab": true,
+"prereq_text": "PSYC-2606.",
+"needs_review": false
+},
+{
+"code": "PSYC 3707",
+"title": "Language",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107 and 6 credits in Psychology at the upper-year level.",
+"needs_review": true
+},
+{
+"code": "PSYC 3716",
+"title": "Cognition",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107.",
+"needs_review": false
+},
+{
+"code": "PSYC 3717",
+"title": "Memory",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107.",
+"needs_review": false
+},
+{
+"code": "PSYC 3806",
+"title": "Social Psychology",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 1106",
+"PSYC 1107"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-1106/PSYC-1107 and 6 upper year credits in psychology.",
+"needs_review": true
+},
+{
+"code": "PSYC 3807",
+"title": "Group Processes",
+"credits": 3.0,
+"prereqs": [
+[
+"PSYC 3806"
+]
+],
+"has_lab": false,
+"prereq_text": "PSYC-3806.",
+"needs_review": false
+},
+{
+"code": "PSYC 3916",
+"title": "Advanced Readings in Psychology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to third or fourth-year students in the specialized program with at least an overall \u201cB\u201d average in Psychology courses and permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 3917",
+"title": "Special Projects Course",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to third- or fourth-year students in the specialized program with at least an overall \u201cB\u201d average in their Psychology courses and permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 4006",
+"title": "History of Psychology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of at least 42 credits in Psychology in the specialized program or permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 4007",
+"title": "Contemporary Theory and Research in Psychology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of at least 42 credits in Psychology in the specialized program or permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 4026",
+"title": "Forensic Psychology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of at least 24 upper year credits in Psychology or permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 4027",
+"title": "The Psychology of Criminal Conduct",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of at least 24 upper year credits in Psychology or permission of the department.",
+"needs_review": true
+},
+{
+"code": "PSYC 4105",
+"title": "Student\u2019s Investigation",
+"credits": null,
+"prereqs": [
+[
+"PSYC 2127"
+],
+[
+"PSYC 3256"
+],
+[
+"PSYC 3286"
+]
+],
+"has_lab": true,
+"prereq_text": "This course is restricted to students in their fourth year of their Honours Psychology degree program, with a minimum average of 70% in Psychology courses or by permission of the instructor, including a minimum grade of 70% in STAT 2126 and PSYC-2127 and a minimum grade of 75% in PSYC-3256 and PSYC-3286.",
+"needs_review": true
+},
+{
+"code": "PSYC 4206",
+"title": "Philosophical Foundation of Clinical and Counselling Psychology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in Psychology or Biology.",
+"needs_review": true
+},
+{
+"code": "PSYC 4207",
+"title": "Practical Approaches to Psychotherapy",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Upper year standing in Psychology or Biology.",
+"needs_review": true
+},
+{
+"code": "PSYC 4456",
+"title": "Psychology Internship II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of three years of the Psychology program with a minimum overall average of 70%, a minimum overall average of 70% in Psychology courses, or permission of the Department of Psychology.",
+"needs_review": true
+},
+{
+"code": "PSYC 4726",
+"title": "The Scientific Enlightenment",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "related 2000 series course or permission from the department.",
+"needs_review": false
+},
+{
+"code": "SOCI 1016",
+"title": "Understanding Society I: Principles and Processes",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 1017",
+"title": "Understanding Society II: Institutions and Issues",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016.",
+"needs_review": false
+},
+{
+"code": "SOCI 1806",
+"title": "Sociology of Health, Wellness and Addictions, Part One, Public Health",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 1807",
+"title": "Sociology of Health, Wellness and Addictions, Part Two, Addictions",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1806"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1806 [online, synchronous, asynchronous] (3 cr)",
+"needs_review": false
+},
+{
+"code": "SOCI 2006",
+"title": "The Child and Society",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2007",
+"title": "The Adolescent and Society",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2016",
+"title": "Thinking Sociologically",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 2017",
+"title": "Emergence of Sociological Theories",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 2086",
+"title": "Crime and Punishment I: Explanations of Crime",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2087",
+"title": "Crime and Punishment II: Police, Courts, Prisons, and Rehabilitation",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2127",
+"title": "Introduction to Social Research Methods and Statistics",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 2156",
+"title": "Critical Analysis of the Canadian Health System",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 2296",
+"title": "Sociology of Education Issues",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2406",
+"title": "Sociology of Mental Health",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2706",
+"title": "Sociology of Music",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 and/or first year MUSC-course.",
+"needs_review": true
+},
+{
+"code": "SOCI 2756",
+"title": "Rural Sociology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 2806",
+"title": "Trauma and Social Resilience",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1806"
+],
+[
+"SOCI 1807"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1806 and SOCI-1807. (3 cr)",
+"needs_review": false
+},
+{
+"code": "SOCI 3016",
+"title": "Modern Sociological Theories: Manifestations and Issues",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 2016",
+"SOCI 2017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-2016/SOCI-2017.",
+"needs_review": false
+},
+{
+"code": "SOCI 3126",
+"title": "Qualitative Methods",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 2127"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-2127 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 3127",
+"title": "Quantitative Research Methods and Analysis",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+],
+[
+"SOCI 2127"
+],
+[
+"SOCI 2016"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017, SOCI-2127, and SOCI-2016.",
+"needs_review": false
+},
+{
+"code": "SOCI 3196",
+"title": "Social Movements",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 3227",
+"title": "Environmental Sociology",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SOCI 3536",
+"title": "Racialization, Migration, and Identity",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+],
+[
+"SOCI 2016"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017, SOCI-2016 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 3706",
+"title": "The Contemporary Marriage and Family",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 3806",
+"title": "Social Theories of Illness & Addiction",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016"
+],
+[
+"SOCI 1807"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016, SOCI- 1806 and SOCI-1807 (online, a/synchronous, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "SOCI 3807",
+"title": "Wellness Through an Indigenous Lens",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 2806"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-2806 (online, a/synchronous, LEC) (3 cr)",
+"needs_review": false
+},
+{
+"code": "SOCI 3817",
+"title": "Sociology of Aging",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 3906",
+"title": "Selected Topics I",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 3907",
+"title": "Selected Topics II",
+"credits": 3.0,
+"prereqs": [
+[
+"SOCI 1016",
+"SOCI 1017"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-1016/SOCI-1017 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 4105",
+"title": "Research and Critical Analysis",
+"credits": 6.0,
+"prereqs": [
+[
+"SOCI 2127"
+],
+[
+"SOCI 3126"
+],
+[
+"SOCI 3127"
+]
+],
+"has_lab": false,
+"prereq_text": "SOCI-2127, SOCI-3126, and SOCI-3127 or instructor\u2019s permission.",
+"needs_review": false
+},
+{
+"code": "SOCI 4906",
+"title": "Selected Topics in Sociology I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to students in the four-year Sociology program or instructor\u2019s permission.",
+"needs_review": true
+},
+{
+"code": "SOCI 4907",
+"title": "Selected Topics in Sociology II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to students in the four-year Sociology program or instructor\u2019s permission.",
+"needs_review": true
+},
+{
+"code": "SWRK 1006",
+"title": "Introduction to Social Welfare in the North",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 1007",
+"title": "Introduction to Social Work: Anishinaabe, Structural and Feminist Perspectives",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 2106",
+"title": "Political Economy of Social Welfare",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006.",
+"needs_review": false
+},
+{
+"code": "SWRK 2107",
+"title": "Human Services Organizations",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1007",
+"needs_review": false
+},
+{
+"code": "SWRK 2127",
+"title": "Introduction to Social Work Research",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007.",
+"needs_review": false
+},
+{
+"code": "SWRK 2356",
+"title": "Basic Helping Skills in Social Work Practice: A Northern Perspective",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007. Admission may be restricted to students registered for a major in social work.",
+"needs_review": false
+},
+{
+"code": "SWRK 2406",
+"title": "Human Behaviour in the Social Environment: Critical Perspectives on Identity, Culture and Society",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007.",
+"needs_review": false
+},
+{
+"code": "SWRK 2506",
+"title": "Pathways to Success",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 3006",
+"title": "Anti-racism in Social Work",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 3026",
+"title": "Social Work Practice with Families",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007.",
+"needs_review": false
+},
+{
+"code": "SWRK 3036",
+"title": "Social Work with Groups",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 3206",
+"title": "Anti-Oppressive Social Work Practice: Anishinaabe, Structural and Feminist Perspectives",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506.",
+"needs_review": false
+},
+{
+"code": "SWRK 3207",
+"title": "Critical Social Policy in the North",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506.",
+"needs_review": false
+},
+{
+"code": "SWRK 3356",
+"title": "Social Welfare and Women",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007 OR SWRK-2506",
+"needs_review": false
+},
+{
+"code": "SWRK 3406",
+"title": "Concepts of Wellness in First Nations\u2019 Communities: An Historical Exploration",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007; OR SWRK-2506.",
+"needs_review": false
+},
+{
+"code": "SWRK 3407",
+"title": "Concepts of Wellness in First Nations\u2019 Communities: The Contemporary Context",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007.",
+"needs_review": false
+},
+{
+"code": "SWRK 3456",
+"title": "Social Work Research and Program Evaluation",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2127"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2106, SWRK-2107 and SWRK-2127. This course is restricted to students admitted into the professional years.",
+"needs_review": true
+},
+{
+"code": "SWRK 3506",
+"title": "Cultural Caring Practices",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007 or permission of the instructor.",
+"needs_review": false
+},
+{
+"code": "SWRK 3596",
+"title": "Social Work Philosophy and Ethics",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2356"
+],
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2356, SWRK-2106 and SWRK-2107 OR SWRK-2506 .",
+"needs_review": false
+},
+{
+"code": "SWRK 3606",
+"title": "Social Work with Victims of Abuse",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007.",
+"needs_review": false
+},
+{
+"code": "SWRK 3707",
+"title": "Social Work and Law",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006 and SWRK-1007; OR SWRK-2506.",
+"needs_review": false
+},
+{
+"code": "SWRK 3806",
+"title": "Family and Child Welfare",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506",
+"needs_review": false
+},
+{
+"code": "SWRK 3817",
+"title": "Contemporary Issues in Aging",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2106 and SWRK-2107; OR SWRK-2506.",
+"needs_review": false
+},
+{
+"code": "SWRK 3856",
+"title": "Crisis Intervention",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2356"
+],
+[
+"SWRK 2506"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006, SWRK-1007 and SWRK-2356; OR SWRK-2506",
+"needs_review": false
+},
+{
+"code": "SWRK 3906",
+"title": "Special Topics in Social Work I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 3907",
+"title": "Special Topics in Social Work II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 4006",
+"title": "Critical Mental Health and Madness",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 3006"
+],
+[
+"SWRK 3206"
+],
+[
+"SWRK 3207"
+],
+[
+"SWRK 3406"
+],
+[
+"SWRK 3407"
+],
+[
+"SWRK 3456"
+],
+[
+"SWRK 3596"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-3006, SWRK-3206, SWRK-3207, SWRK-3406, SWRK-3407, SWRK-3456, and SWRK-3596.",
+"needs_review": false
+},
+{
+"code": "SWRK 4206",
+"title": "Northern and Rural Social Work Practice",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 3206"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-2106, SWRK-2107 and SWRK-3206 or in lieu of all three, SWRK 2506.",
+"needs_review": false
+},
+{
+"code": "SWRK 4207",
+"title": "Mino-Wiichiitiwin: Social Work Practice with Individuals, Families and Groups",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 4206"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-4206 and permission from the instructor.",
+"needs_review": false
+},
+{
+"code": "SWRK 4506",
+"title": "Social Work and Substance Abuse",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "SWRK 4596",
+"title": "Field Integrative Seminar",
+"credits": 3.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2356"
+],
+[
+"SWRK 2127"
+],
+[
+"SWRK 2406"
+],
+[
+"SWRK 3006"
+],
+[
+"SWRK 3206"
+],
+[
+"SWRK 3207"
+],
+[
+"SWRK 3456"
+],
+[
+"SWRK 3596"
+],
+[
+"SWRK 3406"
+],
+[
+"SWRK 3407"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006, SWRK-1007, SWRK-2106, SWRK-2107, SWRK-2356, SWRK-2127, SWRK-2406, SWRK-3006, SWRK-3206, SWRK-3207, SWRK-3456, SWRK-3596, SWRK-3406 and SWRK-3407. (Capstone)(3 cr)",
+"needs_review": false
+},
+{
+"code": "SWRK 4600",
+"title": "Field Practicum I",
+"credits": 6.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2356"
+],
+[
+"SWRK 2127"
+],
+[
+"SWRK 2406"
+],
+[
+"SWRK 3206"
+],
+[
+"SWRK 3006"
+],
+[
+"SWRK 3207"
+],
+[
+"SWRK 3456"
+],
+[
+"SWRK 3596"
+],
+[
+"SWRK 3406"
+],
+[
+"SWRK 3407"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006, SWRK-1007, SWRK-2106, SWRK-2107, SWRK-2356, SWRK-2127, SWRK-2406, SWRK-3206, SWRK-3006, SWRK-3207, SWRK-3456, SWRK-3596, SWRK-3406 and SWRK-3407 (Capstone/WIL) (6 cr)",
+"needs_review": false
+},
+{
+"code": "SWRK 4605",
+"title": "Field Practicum II",
+"credits": 6.0,
+"prereqs": [
+[
+"SWRK 1006"
+],
+[
+"SWRK 1007"
+],
+[
+"SWRK 2106"
+],
+[
+"SWRK 2107"
+],
+[
+"SWRK 2356"
+],
+[
+"SWRK 2127"
+],
+[
+"SWRK 2406"
+],
+[
+"SWRK 3006"
+],
+[
+"SWRK 3206"
+],
+[
+"SWRK 3207"
+],
+[
+"SWRK 3456"
+],
+[
+"SWRK 3596"
+],
+[
+"SWRK 3406"
+],
+[
+"SWRK 3407"
+],
+[
+"SWRK 4600",
+"SWRK 4906"
+]
+],
+"has_lab": false,
+"prereq_text": "SWRK-1006, SWRK-1007, SWRK-2106, SWRK-2107, SWRK-2356, SWRK-2127, SWRK-2406, SWRK-3006, SWRK-3206, SWRK-3207, SWRK-3456, SWRK-3596, SWRK-3406, SWRK-3407 and SWRK-4600 Field Practicum I. (Capstone/WIL)(6 cr) SWRK-4906/4907Advanced Topics in Social Work I & II These courses will examine advanced coverage of particular topics in social work. Specific content will vary from year to year depending on faculty expertise and research. This course is restricted to students in year four of the BSW program.",
+"needs_review": true
+},
+{
+"code": "VISA 1026",
+"title": "Visual Fundamentals I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 1027",
+"title": "Visual Fundamentals II",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1026"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-1026.",
+"needs_review": false
+},
+{
+"code": "VISA 1206",
+"title": "Introduction to Art History and Visual Culture",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 1406",
+"title": "Introduction to Western Art History",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 1407",
+"title": "Introduction to Eastern Art History",
+"credits": null,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 1506",
+"title": "Drawing I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 2006",
+"title": "Modernism",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1206"
+],
+[
+"VISA 1406",
+"VISA 1407"
+]
+],
+"has_lab": false,
+"prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407.",
+"needs_review": false
+},
+{
+"code": "VISA 2007",
+"title": "Late Modern to Postmodern and Contemporary Art",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1206"
+],
+[
+"VISA 1406",
+"VISA 1407"
+],
+[
+"VISA 2006"
+],
+[
+"VISA 2007"
+]
+],
+"has_lab": false,
+"prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407. It is recommended that students take VISA-2006 prior to VISA-2007.",
+"needs_review": false
+},
+{
+"code": "VISA 2026",
+"title": "Indigenous Futurism, Art + Material Culture of Turtle Island",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 2027",
+"title": "Modern and Contemporary Anishinaabe Art",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 2556",
+"title": "Painting I",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1026",
+"VISA 1027"
+],
+[
+"VISA 1506"
+],
+[
+"VISA 2706"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-1026/VISA-1027, VISA-1506, and VISA-2706.",
+"needs_review": false
+},
+{
+"code": "VISA 2586",
+"title": "Printmaking I",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1026",
+"VISA 1027"
+],
+[
+"VISA 1506"
+],
+[
+"VISA 2706"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-1026/VISA-1027, VISA-1506, and VISA-2706.",
+"needs_review": false
+},
+{
+"code": "VISA 2706",
+"title": "Drawing II",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1506"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-1506.",
+"needs_review": false
+},
+{
+"code": "VISA 2746",
+"title": "Painting II",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 2556"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-2556.",
+"needs_review": false
+},
+{
+"code": "VISA 2926",
+"title": "Group Exhibition and Professional Practice I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "",
+"needs_review": false
+},
+{
+"code": "VISA 2996",
+"title": "Wild Clay Research: Pit-Fired Local Ceramics",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "VISA 3056",
+"title": "Special Topics in Public Art",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1026",
+"VISA 1027"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-1026/ VISA-1027 or permission of the department.",
+"needs_review": false
+},
+{
+"code": "VISA 3106",
+"title": "The Art of Canada: A Culture Comes of Age",
+"credits": null,
+"prereqs": [
+[
+"VISA 1206"
+],
+[
+"VISA 1406",
+"VISA 1407"
+]
+],
+"has_lab": false,
+"prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407",
+"needs_review": false
+},
+{
+"code": "VISA 3107",
+"title": "Postmodernism in Canada",
+"credits": null,
+"prereqs": [
+[
+"VISA 1206"
+],
+[
+"VISA 1406",
+"VISA 1407"
+]
+],
+"has_lab": false,
+"prereq_text": "One of VISA-1206, VISA-1406 or VISA-1407.",
+"needs_review": false
+},
+{
+"code": "VISA 3456",
+"title": "Visual Art Internship I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Completion of the first two years and 70% average in the student\u2019s program, or permission of the department.",
+"needs_review": true
+},
+{
+"code": "VISA 3516",
+"title": "Drawing III",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 2706"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-2706.",
+"needs_review": false
+},
+{
+"code": "VISA 3536",
+"title": "Painting III",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 2746"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-2746.",
+"needs_review": false
+},
+{
+"code": "VISA 3586",
+"title": "Printmaking II",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 2586"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-2586.",
+"needs_review": false
+},
+{
+"code": "VISA 3587",
+"title": "Printmaking III",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 3587"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-3587.",
+"needs_review": false
+},
+{
+"code": "VISA 3916",
+"title": "Special Topics in Painting",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "VISA 3926",
+"title": "Group Exhibition and Professional Practices II",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 1026"
+],
+[
+"VISA 1506"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-1026, VISA-1506, and must be enrolled in BFA or be a Visual Art Major, Visual Art Minor or receive permission from the department.",
+"needs_review": false
+},
+{
+"code": "VISA 3936",
+"title": "Special Topics in Printmaking",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "None.",
+"needs_review": false
+},
+{
+"code": "VISA 4005",
+"title": "Senior Exhibit",
+"credits": 6.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Admission to year four of the B.F.A. program and approval of a FINA proposal. In addition to an overall average of 70%, students must achieve a final grade of at least 70% in this course to graduate with honours standing.",
+"needs_review": true
+},
+{
+"code": "VISA 4026",
+"title": "Advanced Studio I",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to 4th-year students of the specialized program or permission of the department.",
+"needs_review": true
+},
+{
+"code": "VISA 4027",
+"title": "Advanced Studio II",
+"credits": 3.0,
+"prereqs": [],
+"has_lab": false,
+"prereq_text": "Restricted to 4th-year students of the specialized program or permission of the department.",
+"needs_review": true
+},
+{
+"code": "VISA 4536",
+"title": "Painting IV",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 3536"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-3536.",
+"needs_review": false
+},
+{
+"code": "VISA 4537",
+"title": "Painting V",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 4536"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-4536.",
+"needs_review": false
+},
+{
+"code": "VISA 4686",
+"title": "Printmaking IV: Individual Direction",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 3696",
+"VISA 4697"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-3696 or VISA-4697.",
+"needs_review": false
+},
+{
+"code": "VISA 4687",
+"title": "Printmaking V: Individual Direction",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 4696",
+"VISA 4697"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-4696 or VISA-4697.",
+"needs_review": false
+},
+{
+"code": "VISA 4716",
+"title": "Drawing IV",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 3516"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-3516.",
+"needs_review": false
+},
+{
+"code": "VISA 4717",
+"title": "Drawing V",
+"credits": 3.0,
+"prereqs": [
+[
+"VISA 4716"
+]
+],
+"has_lab": false,
+"prereq_text": "VISA-4716.",
+"needs_review": false
+}
+]

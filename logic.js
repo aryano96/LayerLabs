@@ -77,7 +77,7 @@ CourseLogic.findClashes = function (courses) {
 };
 
 // Keep only schedules that satisfy the filters:
-// noBefore ("10:00" or null) and fridaysOff (true/false).
+// noBefore ("10:00" or null), noAfter ("17:00" or null) and fridaysOff (true/false).
 CourseLogic.filterSchedules = function (schedules, filters) {
   const meetingsOf = (sched) => sched.flatMap((p) => p.section.meetings);
   return schedules.filter((sched) => {
@@ -85,6 +85,10 @@ CourseLogic.filterSchedules = function (schedules, filters) {
     if (filters.noBefore) {
       const limit = CourseLogic.toMinutes(filters.noBefore);
       if (meetings.some((mt) => CourseLogic.toMinutes(mt.start) < limit)) return false;
+    }
+    if (filters.noAfter) {
+      const limit = CourseLogic.toMinutes(filters.noAfter);
+      if (meetings.some((mt) => CourseLogic.toMinutes(mt.end) > limit)) return false;
     }
     if (filters.fridaysOff && meetings.some((mt) => mt.day === "Fri")) return false;
     return true;
@@ -109,9 +113,16 @@ CourseLogic.countsAs = function (course, program) {
   return "none";
 };
 
-// Only the courses a student in this degree could take (a 3-year degree has no year 4).
+// Only the courses a student in this degree could take: those in the degree's own list
+// (program.courses, when it has one) and within its years (a 3-year degree has no year 4).
 CourseLogic.coursesForProgram = function (courses, program) {
-  return courses.filter((c) => CourseLogic.yearOf(c) <= program.years);
+  const own = program.courses ? new Set(program.courses) : null;
+  return courses.filter((c) => CourseLogic.yearOf(c) <= program.years && (!own || own.has(c.code)));
+};
+
+// Total credits of the passed courses (a course with no credits listed counts as 3).
+CourseLogic.creditsPassed = function (courses, passed) {
+  return courses.filter((c) => passed.has(c.code)).reduce((sum, c) => sum + (c.credits ?? 3), 0);
 };
 
 // Codes of the degree's required courses that exist in our data.

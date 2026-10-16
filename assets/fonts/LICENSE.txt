@@ -1,0 +1,4 @@
+Atkinson Hyperlegible Next
+Copyright 2025 The Atkinson Hyperlegible Next Project Authors (https://github.com/googlefonts/atkinson-hyperlegible-next)
+Licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
+Downloaded from Google Fonts (fonts.gstatic.com) and self-hosted so the app makes no third-party requests.

@@ -1,94 +1,178 @@
+"use strict";
 // Course Planner 2.0 - screens, state and navigation.
-// The rules (eligibility, clashes, schedules) live in logic.js.
+// The rules (eligibility, clashes, schedules, credits) live in logic.js.
+// Safety notes: we never use innerHTML (all text goes through textContent), the URL and saved data
+// are checked against our own course list before use, and the page's Content-Security-Policy
+// blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
+const VERSION = "4";
 const SCREENS = ["degree", "passed", "options", "schedules"];
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
-const V1_WAIT = "2-3 business days (Algoma support page: emailing an advisor)";
+const GRID_STEP = 5; // minutes per timetable row
+const KEY_SESSION = "cp2.session";
+const KEY_THEME = "cp2.theme";
+const KEY_NOTE = "cp2.noteHidden";
+const TAGS = { required: "Required", elective: "Elective", none: "Doesn't count toward degree" };
+const STEPS = [
+  { id: "degree", title: "Degree" },
+  { id: "passed", title: "Passed" },
+  { id: "options", title: "Choose" },
+  { id: "schedules", title: "Schedule" },
+];
 
 // Everything the app remembers lives here.
 const state = {
   courses: [],
-  programs: [],          // degrees from data/programs.json
-  programId: null,       // the degree the student chose
-  passed: new Set(),     // codes the student has passed
-  picked: [],            // codes the student wants this term
-  filters: { noBefore: null, fridaysOff: false },
-  scheduleIndex: 0,      // which schedule is showing on screen 3
-  startTime: null,       // when the student first interacted (for the demo timer)
-  elapsed: null,         // seconds from start to first schedule
+  byCode: new Map(),
+  programs: [],
+  programId: null,
+  passed: new Set(),       // codes the student has passed
+  picked: [],              // codes the student wants this term
+  filters: { noBefore: null, noAfter: null, fridaysOff: false },
+  scheduleIndex: 0,
+  startTime: null,         // set at the first choice, drives the plan clock
+  elapsed: null,           // seconds until the first timetable appeared
+  queries: { passed: "", options: "" },
+  tag: "all",
+  openYears: new Set([1, 2]),
+  screen: "degree",
 };
 
 // ---------- small helpers ----------
+
+const store = {
+  get(key) { try { return localStorage.getItem(key); } catch { return null; } },
+  set(key, value) { try { localStorage.setItem(key, value); } catch { /* storage blocked: fine */ } },
+  remove(key) { try { localStorage.removeItem(key); } catch { /* ignore */ } },
+};
 
 // Build an element: el("button", {class: "x", onclick: fn}, "text or child")
 function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attrs)) {
+    if (value == null || value === false) continue;
     if (key.startsWith("on")) node.addEventListener(key.slice(2), value);
+    else if (key === "style") Object.assign(node.style, value); // CSSOM: allowed by our CSP
+    else if (key === "class") node.className = value;
     else if (value === true) node.setAttribute(key, "");
-    else if (value !== false && value != null) node.setAttribute(key, value);
+    else node.setAttribute(key, String(value));
   }
   for (const child of children.flat()) {
-    node.append(child instanceof Node ? child : document.createTextNode(child));
+    if (child == null || child === false) continue;
+    node.append(child instanceof Node ? child : document.createTextNode(String(child)));
   }
   return node;
 }
 
-// Tell screen readers something (also visible at the top of the page).
-function announce(message) {
-  document.getElementById("status").textContent = message;
-}
+const $ = (id) => document.getElementById(id);
 
-const byCode = (code) => state.courses.find((c) => c.code === code);
-
-const TAGS = {
-  required: "Required",
-  elective: "Elective",
-  none: "Doesn't count toward degree",
+// Inline SVG icons (no emoji, no icon font).
+const SVG_NS = "http://www.w3.org/2000/svg";
+const ICONS = {
+  check: ["M20 6 9 17l-5-5"],
+  search: [["circle", { cx: 11, cy: 11, r: 8 }], "m21 21-4.3-4.3"],
+  printer: ["M6 9V2h12v7", "M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2", "M6 14h12v8H6z"],
+  link: ["M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71", "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"],
+  restart: ["M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", "M3 3v5h5"],
+  sun: [["circle", { cx: 12, cy: 12, r: 4 }], "M12 2v2", "M12 20v2", "m4.93 4.93 1.41 1.41", "m17.66 17.66 1.41 1.41", "M2 12h2", "M20 12h2", "m6.34 17.66-1.41 1.41", "m19.07 4.93-1.41 1.41"],
+  moon: ["M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"],
+  info: [["circle", { cx: 12, cy: 12, r: 10 }], "M12 16v-4", "M12 8h.01"],
+  alert: ["m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3", "M12 9v4", "M12 17h.01"],
+  x: ["M18 6 6 18", "m6 6 12 12"],
+  right: ["m9 18 6-6-6-6"],
+  left: ["m15 18-6-6 6-6"],
+  copy: [["rect", { x: 9, y: 9, width: 13, height: 13, rx: 2 }], "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"],
+  lock: [["rect", { x: 3, y: 11, width: 18, height: 11, rx: 2 }], "M7 11V7a5 5 0 0 1 10 0v4"],
 };
 
-// The degree the student chose (or undefined before they choose).
-const currentProgram = () => state.programs.find((p) => p.id === state.programId);
+function icon(name, cls = "") {
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "2");
+  svg.setAttribute("stroke-linecap", "round");
+  svg.setAttribute("stroke-linejoin", "round");
+  svg.setAttribute("class", "icon " + cls);
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("focusable", "false");
+  for (const part of ICONS[name]) {
+    const isPath = typeof part === "string";
+    const node = document.createElementNS(SVG_NS, isPath ? "path" : part[0]);
+    if (isPath) node.setAttribute("d", part);
+    else for (const [k, v] of Object.entries(part[1])) node.setAttribute(k, v);
+    svg.append(node);
+  }
+  return svg;
+}
 
-// Only the courses that belong to the chosen degree (e.g. no year 4 for a 3-year degree).
+// Spoken update for screen readers.
+function announce(message) { $("status").textContent = message; }
+
+// Short visible confirmation. Optional action button, e.g. { label: "Undo", run: fn }.
+function toast(message, action) {
+  const box = $("toasts");
+  const node = el("div", { class: "toast" }, el("span", {}, message));
+  const close = () => {
+    node.classList.add("out");
+    setTimeout(() => node.remove(), 220);
+  };
+  if (action) node.append(el("button", { type: "button", onclick: () => { close(); action.run(); } }, action.label));
+  box.append(node);
+  setTimeout(close, action ? 7000 : 3200);
+}
+
+const byCode = (code) => state.byCode.get(code);
+const currentProgram = () => state.programs.find((p) => p.id === state.programId);
+let visibleCache = { id: null, list: [] };
 function visibleCourses() {
   const program = currentProgram();
-  return program ? L.coursesForProgram(state.courses, program) : state.courses;
+  if (!program) return state.courses;
+  if (visibleCache.id !== program.id) visibleCache = { id: program.id, list: L.coursesForProgram(state.courses, program) };
+  return visibleCache.list;
 }
-
-// How a course counts depends on the degree.
 const countsFor = (course) => L.countsAs(course, currentProgram());
+const tagFor = (course) => { const k = countsFor(course); return el("span", { class: "tag tag-" + k }, TAGS[k]); };
+const requiredList = () => { const p = currentProgram(); return p ? L.requiredCodes(state.courses, p) : []; };
+const creditsOf = (course) => course.credits ?? 3;
 
-function tagFor(course) {
-  const kind = countsFor(course);
-  return el("span", { class: "tag tag-" + kind }, TAGS[kind]);
+function describeGroup(group) { return group.length === 1 ? group[0] : "one of " + group.join(" or "); }
+function matches(course, query) {
+  const hay = (course.code + " " + course.title).toLowerCase();
+  return query.toLowerCase().split(/\s+/).filter(Boolean).every((word) => hay.includes(word));
+}
+function plural(n, one, many) { return `${n} ${n === 1 ? one : many}`; }
+
+function formatMeetings(meetings) {
+  // Group days that share the same time: "Mon, Wed 10:00-11:20; Fri 13:00-14:50"
+  const groups = new Map();
+  for (const m of meetings) {
+    const key = `${m.start}–${m.end}`;
+    groups.set(key, (groups.get(key) || []).concat(m.day));
+  }
+  return [...groups].map(([time, days]) => `${days.join(", ")} ${time}`).join("; ");
 }
 
-// Required courses for the chosen degree, as codes.
-function requiredList() {
-  const program = currentProgram();
-  return program ? L.requiredCodes(state.courses, program)
-    : state.courses.filter((c) => c.counts_as === "required").map((c) => c.code);
+// ---------- data checks (never trust a file blindly) ----------
+
+function dataIsValid(courses, programs) {
+  const timeOk = (t) => typeof t === "string" && /^\d{2}:\d{2}$/.test(t);
+  if (!Array.isArray(courses) || !Array.isArray(programs) || courses.length === 0 || programs.length === 0) return false;
+  const coursesOk = courses.every((c) =>
+    c && typeof c.code === "string" && /^[A-Z]{4} \d{4}[A-Z]?$/.test(c.code) && typeof c.title === "string" &&
+    Array.isArray(c.prereqs) && c.prereqs.every((g) => Array.isArray(g) && g.every((x) => typeof x === "string")) &&
+    Array.isArray(c.sections) && c.sections.every((s) => typeof s.id === "string" && Array.isArray(s.meetings) &&
+      s.meetings.every((m) => DAYS.includes(m.day) && timeOk(m.start) && timeOk(m.end))));
+  const programsOk = programs.every((p) =>
+    p && typeof p.id === "string" && /^[a-z0-9-]+$/.test(p.id) && typeof p.name === "string" &&
+    Number.isInteger(p.years) && p.years >= 1 && p.years <= 6 &&
+    Array.isArray(p.required) && Array.isArray(p.electives) && (p.courses === undefined || Array.isArray(p.courses)));
+  return coursesOk && programsOk;
 }
 
-function describeSection(section) {
-  return section.meetings.map((m) => `${m.day} ${m.start}-${m.end}`).join(", ");
-}
-
-// Turn a missing prereq group into words: ["MATH 1000","MATH 1001"] -> "one of MATH 1000 / MATH 1001"
-function describeGroup(group) {
-  return group.length === 1 ? group[0] : "one of " + group.join(" / ");
-}
-
-function formatElapsed(seconds) {
-  const m = Math.floor(seconds / 60);
-  const s = String(Math.round(seconds % 60)).padStart(2, "0");
-  return `${m}:${s}`;
-}
-
-// ---------- state <-> URL (this is the shareable link) ----------
+// ---------- state <-> URL (this is the shareable link) and saved session ----------
 
 function hashParams() {
   const params = new URLSearchParams();
@@ -98,16 +182,22 @@ function hashParams() {
   return params;
 }
 
-function saveToHash(screen) {
-  history.replaceState(null, "", "#" + screen + "?" + hashParams().toString());
+function saveSession() {
+  store.set(KEY_SESSION, JSON.stringify({ d: state.programId, p: [...state.passed], k: state.picked }));
 }
 
-// Reads "#options?d=id&p=A,B&k=C" into { screen, program, passed, picked }
-function parseHash() {
-  const raw = location.hash.replace(/^#/, "");
-  const [screenPart, query = ""] = raw.split("?");
+// Update the address bar (no new history entry) and remember the session on this device.
+function syncHash(screen) {
+  history.replaceState(null, "", "#" + screen + "?" + hashParams().toString());
+  saveSession();
+  renderChrome();
+}
+
+// Reads "#options?d=id&p=A,B&k=C". Anything that is not one of our own courses is ignored.
+function parseHash(raw = location.hash) {
+  const [screenPart, query = ""] = raw.replace(/^#/, "").split("?");
   const params = new URLSearchParams(query);
-  const clean = (text) => (text || "").split(",").filter((code) => byCode(code));
+  const clean = (text) => (text || "").split(",").filter((code) => state.byCode.has(code));
   return {
     screen: SCREENS.includes(screenPart) ? screenPart : "degree",
     program: state.programs.some((p) => p.id === params.get("d")) ? params.get("d") : null,
@@ -117,230 +207,408 @@ function parseHash() {
 }
 
 // Move to a screen (adds a history entry so the Back button works).
-function go(screen) {
-  location.hash = screen + "?" + hashParams().toString();
+function go(screen) { location.hash = screen + "?" + hashParams().toString(); }
+
+function startClock() { if (!state.startTime) state.startTime = Date.now(); }
+
+// Drop picks that are no longer allowed (passed list changed, degree changed).
+function prunePicks() {
+  state.picked = state.picked.filter((code) => {
+    const course = byCode(code);
+    return course && !state.passed.has(code) && L.isEligible(course, state.passed);
+  }).slice(0, MAX_PICKS);
 }
 
 // Show the screen named in the URL and draw it.
-function route() {
+function route(initial = false) {
   const parsed = parseHash();
   state.programId = parsed.program;
-  // Keep only courses that belong to the chosen degree.
   const inDegree = new Set(visibleCourses().map((c) => c.code));
   state.passed = new Set(parsed.passed.filter((code) => inDegree.has(code)));
-  // Ignore picks the student isn't eligible for (e.g. an edited share link).
-  state.picked = parsed.picked.filter((code) => {
-    if (!inDegree.has(code)) return false;
-    const course = byCode(code);
-    return !state.passed.has(code) && L.isEligible(course, state.passed);
-  });
+  state.picked = parsed.picked.filter((code) => inDegree.has(code));
+  prunePicks();
 
   let screen = parsed.screen;
-  // Every screen after the first needs a degree.
   if (screen !== "degree" && !state.programId) screen = "degree";
-  // A schedules link with nothing picked makes no sense: send them back.
   if (screen === "schedules" && state.picked.length === 0) screen = "options";
+  state.screen = screen;
 
   for (const name of SCREENS) {
-    document.getElementById("screen-" + name).hidden = name !== screen;
-    const step = document.getElementById("step-" + name);
-    step.classList.toggle("current", name === screen);
-    if (name === screen) step.setAttribute("aria-current", "step");
-    else step.removeAttribute("aria-current");
+    const section = $("screen-" + name);
+    const show = name === screen;
+    if (show && section.hidden) {
+      section.hidden = false;
+      section.style.animation = "none"; void section.offsetWidth; section.style.animation = "";
+    } else if (!show) {
+      section.hidden = true;
+    }
   }
   if (screen === "degree") renderDegree();
   if (screen === "passed") renderPassed();
   if (screen === "options") renderOptions();
   if (screen === "schedules") renderSchedules();
-  document.getElementById("main").focus();
-  window.scrollTo(0, 0);
+  renderChrome();
+  if (!initial) {
+    const heading = $("screen-" + screen).querySelector("h2");
+    if (heading) heading.focus({ preventScroll: true });
+    window.scrollTo(0, 0);
+  }
+}
+
+// ---------- chrome: steps rail, summary panel, clock, theme ----------
+
+function renderChrome() {
+  renderSteps();
+  renderSummary();
+  const hasWork = state.programId || state.passed.size || state.picked.length;
+  $("restart").disabled = !hasWork;
+  tickClock();
+}
+
+function renderSteps() {
+  const program = currentProgram();
+  const hasPicks = state.picked.length > 0;
+  const currentIdx = SCREENS.indexOf(state.screen);
+  const sub = {
+    degree: program ? `${program.code} · ${program.years}-year` : "Choose yours",
+    passed: program ? `${state.passed.size} passed · ${L.creditsPassed(visibleCourses(), state.passed)} cr` : "Pick a degree first",
+    options: program ? `${state.picked.length} of ${MAX_PICKS} picked` : "Pick a degree first",
+    schedules: hasPicks ? "Ready to build" : "Pick courses first",
+  };
+  const enabled = { degree: true, passed: !!program, options: !!program, schedules: !!program && hasPicks };
+  $("steps").replaceChildren(...STEPS.map((step, i) => {
+    const done = enabled[step.id] && i < currentIdx;
+    return el("button", {
+      type: "button", class: "step" + (step.id === state.screen ? " is-current" : "") + (done ? " is-done" : ""),
+      disabled: !enabled[step.id], "aria-current": step.id === state.screen ? "step" : null,
+      "data-step": step.id, onclick: () => go(step.id),
+    },
+    el("span", { class: "step-dot" }, done ? icon("check") : String(i + 1)),
+    el("span", {}, el("span", { class: "step-title" }, step.title), el("span", { class: "step-sub" }, sub[step.id])));
+  }));
+}
+
+function meter(label, value, max, green = false) {
+  const fill = el("div", { class: "meter-fill" + (green ? " green" : "") });
+  requestAnimationFrame(() => { fill.style.transform = `scaleX(${max ? Math.min(1, value / max) : 0})`; });
+  return el("div", {},
+    el("div", { class: "meter-label" }, el("span", {}, label), el("strong", {}, `${value} of ${max}`)),
+    el("div", { class: "meter-bar", role: "progressbar", "aria-label": label, "aria-valuemin": 0, "aria-valuemax": max, "aria-valuenow": value }, fill));
+}
+
+function progressMeters() {
+  const program = currentProgram();
+  const required = requiredList();
+  const done = required.filter((code) => state.passed.has(code)).length;
+  return [
+    meter("Credits earned", L.creditsPassed(visibleCourses(), state.passed), program.totalCredits),
+    meter("Required courses passed", done, required.length, true),
+  ];
+}
+
+function renderSummary() {
+  const aside = $("summary");
+  const program = currentProgram();
+  if (!program || state.screen === "degree") { aside.hidden = true; return; }
+  aside.hidden = false;
+  const picks = state.picked.map(byCode);
+  aside.replaceChildren(
+    el("div", {}, el("h2", {}, "Your plan"), el("p", { class: "degree" }, program.name),
+      el("p", { class: "code" }, `${program.code} · ${program.years}-year · ${program.totalCredits} credits`)),
+    ...progressMeters(),
+    el("div", {},
+      el("h3", {}, `This term (${picks.length} of ${MAX_PICKS})`),
+      picks.length
+        ? el("ul", { class: "pick-list" }, picks.map((c) => el("li", {},
+          el("span", { class: "pick-text" }, el("b", {}, c.code), c.title),
+          el("button", { type: "button", "aria-label": `Remove ${c.code}`, onclick: () => togglePick(c.code, false) }, icon("x")))))
+        : el("p", { class: "muted" }, "Nothing picked yet. Choose up to five courses on the next step.")));
+}
+
+function tickClock() {
+  const clock = $("clock");
+  if (state.elapsed !== null) {
+    $("clock-time").textContent = formatElapsed(state.elapsed);
+    $("clock-label").textContent = "Plan ready in";
+    clock.classList.add("is-done");
+  } else {
+    $("clock-time").textContent = state.startTime ? formatElapsed((Date.now() - state.startTime) / 1000) : "0:00";
+    $("clock-label").textContent = "Plan clock";
+    clock.classList.remove("is-done");
+  }
+}
+
+function formatElapsed(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = String(Math.floor(seconds % 60)).padStart(2, "0");
+  return `${m}:${s}`;
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  const dark = theme === "dark";
+  const button = $("theme-toggle");
+  button.replaceChildren(icon(dark ? "sun" : "moon", "lg"));
+  button.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+}
+
+function systemTheme() { return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; }
+
+function restart() {
+  const hasWork = state.programId || state.passed.size || state.picked.length;
+  if (hasWork && !window.confirm("Start over? This clears your degree, passed courses and picks.")) return;
+  state.programId = null; state.passed = new Set(); state.picked = [];
+  state.startTime = null; state.elapsed = null; state.scheduleIndex = 0;
+  state.filters = { noBefore: null, noAfter: null, fridaysOff: false };
+  state.queries = { passed: "", options: "" }; state.tag = "all";
+  store.remove(KEY_SESSION);
+  history.replaceState(null, "", "#degree?d=&p=&k=");
+  route();
+  toast("Started over. Choose your degree to begin.");
+}
+
+// ---------- shared pieces ----------
+
+function searchBox(id, label, value, onInput) {
+  const input = el("input", { id, type: "search", placeholder: label, "aria-label": label, value, autocomplete: "off", spellcheck: "false", maxlength: "60" });
+  const clear = el("button", { type: "button", class: "icon-btn small clear", "aria-label": "Clear search", hidden: !value, onclick: () => { input.value = ""; sync(); input.focus(); } }, icon("x"));
+  const sync = () => { clear.hidden = !input.value; onInput(input.value); };
+  input.addEventListener("input", sync);
+  return el("div", { class: "search" }, icon("search"), input, clear);
+}
+
+function degreeChip() {
+  const program = currentProgram();
+  return el("p", { class: "lead" }, el("strong", {}, program.name), " · ",
+    el("button", { type: "button", class: "btn quiet", style: { minHeight: "2.25rem", padding: "0 0.6rem" }, onclick: () => go("degree") }, "Change degree"));
 }
 
 // ---------- screen 1: your degree ----------
 
 function renderDegree() {
-  const root = document.getElementById("screen-degree");
+  const root = $("screen-degree");
+  const areas = [...new Set(state.programs.map((p) => p.area))];
+  const next = el("button", { type: "button", class: "btn primary", disabled: !state.programId, id: "degree-next", onclick: () => go("passed") }, "Continue", icon("right"));
   root.replaceChildren(
-    el("h2", {}, "What degree are you in?"),
-    el("p", {}, "Pick your degree. It decides which years and courses we show you, and which courses count toward it."));
-
-  const group = el("fieldset", {}, el("legend", {}, "Degree"));
-  for (const program of state.programs) {
-    const id = "degree-" + program.id;
-    group.append(el("div", { class: "check-row" },
-      el("input", {
-        type: "radio", name: "degree", id, checked: program.id === state.programId,
-        onchange: () => {
-          state.programId = program.id;
-          if (!state.startTime) state.startTime = Date.now(); // demo timer starts
-          saveToHash("degree");
-          renderDegree();
-          document.getElementById(id).focus();
-        },
-      }),
-      el("label", { for: id }, program.name)));
-  }
-  root.append(group, el("button", {
-    class: "primary", disabled: !state.programId, onclick: () => go("passed"),
-  }, "Continue: what have I passed?"));
-  if (!state.programId) announce("Choose your degree to continue.");
+    el("div", {}, el("h2", { tabindex: "-1" }, "Choose your degree"),
+      el("p", { class: "lead" }, "This decides which courses we show you and which of them count toward your degree. The plan clock starts when you pick one.")),
+    el("fieldset", { class: "areas", style: { border: "0", padding: "0", margin: "1.25rem 0 0", minWidth: "0" } },
+      el("legend", { class: "sr-only" }, "Degree"),
+      areas.map((area) => el("div", { class: "area" },
+        el("h3", {}, area),
+        el("div", { class: "choice-grid" }, state.programs.filter((p) => p.area === area).map((program) => {
+          const id = "degree-" + program.id;
+          return el("label", { class: "choice", for: id },
+            el("input", {
+              type: "radio", name: "degree", id, value: program.id, checked: program.id === state.programId,
+              onchange: () => {
+                state.programId = program.id;
+                startClock();
+                const inDegree = new Set(visibleCourses().map((c) => c.code));
+                state.passed = new Set([...state.passed].filter((code) => inDegree.has(code)));
+                prunePicks();
+                syncHash("degree");
+                next.disabled = false;
+                announce(`${program.name} selected.`);
+              },
+            }),
+            el("span", {}, el("span", { class: "choice-name", style: { display: "block" } }, program.name),
+              el("span", { class: "choice-meta" }, el("span", {}, `${program.years}-year`), el("span", {}, `${program.totalCredits} credits`), el("span", {}, program.code))));
+        }))))),
+    el("div", { class: "actionbar" }, el("span", { class: "hint" }, "Next: tick the courses you've already passed."), next));
 }
 
 // ---------- screen 2: what have you passed? ----------
 
 function renderPassed() {
-  const root = document.getElementById("screen-passed");
+  const root = $("screen-passed");
+  const counter = el("span", { class: "counter", id: "passed-counter" });
+  const list = el("div", { id: "passed-list" });
+  const fill = () => fillPassedList(list, counter);
   root.replaceChildren(
-    el("h2", {}, "What have you passed?"),
-    el("p", {}, `Degree: ${currentProgram().name}. Tick every course you have already completed. If you haven't taken any yet, just continue.`)
-  );
+    el("div", {}, el("h2", { tabindex: "-1" }, "What have you passed?"), degreeChip(),
+      el("p", { class: "lead" }, "Tick every course you have already completed. Not sure about one? Leave it unticked; you can come back.")),
+    el("div", { class: "toolbar" }, searchBox("passed-search", "Search by code or title", state.queries.passed, (q) => { state.queries.passed = q; fill(); }), counter),
+    list,
+    el("div", { class: "actionbar" },
+      el("button", { type: "button", class: "btn", onclick: () => go("degree") }, icon("left"), "Back"),
+      el("button", { type: "button", class: "btn primary", onclick: () => go("options") }, "Continue", icon("right"))));
+  fill();
+}
 
-  const years = [...new Set(visibleCourses().map(L.yearOf))].sort();
-  for (const year of years) {
-    const group = el("fieldset", {}, el("legend", {}, "Year " + year));
-    for (const course of visibleCourses().filter((c) => L.yearOf(c) === year)) {
-      const id = "passed-" + course.code.replace(/\s/g, "");
-      group.append(
-        el("div", { class: "check-row" },
+function updatePassedCounter(counter) {
+  const total = visibleCourses().length;
+  counter.textContent = `${state.passed.size} of ${total} passed · ${L.creditsPassed(visibleCourses(), state.passed)} credits`;
+}
+
+function fillPassedList(list, counter) {
+  const query = state.queries.passed;
+  const found = visibleCourses().filter((c) => matches(c, query));
+  updatePassedCounter(counter);
+  if (found.length === 0) {
+    list.replaceChildren(el("div", { class: "empty" }, el("strong", {}, "No courses match that search"), "Try a course code like COSC 2006 or a word from the title."));
+    return;
+  }
+  const years = [...new Set(found.map(L.yearOf))].sort();
+  list.replaceChildren(...years.map((year) => {
+    const inYear = found.filter((c) => L.yearOf(c) === year);
+    const count = el("span", { class: "count" });
+    const refresh = () => { count.textContent = `${inYear.filter((c) => state.passed.has(c.code)).length} of ${inYear.length} passed`; };
+    refresh();
+    const details = el("details", { class: "year", open: query || state.openYears.has(year) },
+      el("summary", {}, `Year ${year}`, count, el("span", { class: "chev" }, icon("right"))),
+      el("ul", { class: "rows" }, inYear.map((course) => {
+        const id = "passed-" + course.code.replace(/\s/g, "");
+        return el("li", {}, el("label", { class: "row", for: id },
           el("input", {
             type: "checkbox", id, checked: state.passed.has(course.code),
             onchange: (e) => {
-              if (!state.startTime) state.startTime = Date.now(); // demo timer starts
-              if (e.target.checked) state.passed.add(course.code);
-              else state.passed.delete(course.code);
-              saveToHash("passed");
+              startClock();
+              if (e.target.checked) state.passed.add(course.code); else state.passed.delete(course.code);
+              prunePicks();
+              syncHash("passed");
+              refresh();
+              updatePassedCounter(counter);
             },
           }),
-          el("label", { for: id }, `${course.code} ${course.title}`))
-      );
-    }
-    root.append(group);
-  }
-
-  root.append(el("div", { class: "button-row" },
-    el("button", { onclick: () => go("degree") }, "Back"),
-    el("button", { class: "primary", onclick: () => go("options") }, "Continue: see what I can take")));
+          el("span", { class: "row-body" },
+            el("span", {}, el("span", { class: "row-code" }, course.code), course.title),
+            el("span", { class: "row-meta" }, el("span", {}, `${creditsOf(course)} credits`))),
+          tagFor(course)));
+      })));
+    details.addEventListener("toggle", () => { if (!query) { if (details.open) state.openYears.add(year); else state.openYears.delete(year); } });
+    return details;
+  }));
 }
 
-// ---------- screen 2: what can you take? ----------
+// ---------- screen 3: what can you take? ----------
 
-function renderOptions() {
-  const root = document.getElementById("screen-options");
-  const eligible = visibleCourses().filter((c) => !state.passed.has(c.code) && L.isEligible(c, state.passed));
-  const blocked = visibleCourses().filter((c) => !state.passed.has(c.code) && !L.isEligible(c, state.passed));
-  // Drop picks that are no longer eligible (e.g. the passed list changed).
-  state.picked = state.picked.filter((code) => eligible.some((c) => c.code === code));
+function togglePick(code, on) {
+  if (on && !state.picked.includes(code) && state.picked.length < MAX_PICKS) state.picked.push(code);
+  if (!on) state.picked = state.picked.filter((c) => c !== code);
+  state.scheduleIndex = 0;
+  syncHash(state.screen);
+  if (state.screen === "options") renderOptions(code);
+  if (state.screen === "schedules" && state.picked.length === 0) go("options");
+  else if (state.screen === "schedules") renderSchedules();
+  announce(`${plural(state.picked.length, "course", "courses")} picked.`);
+}
 
-  const required = requiredList();
-  const requiredDone = required.filter((code) => state.passed.has(code)).length;
+function renderOptions(focusCode) {
+  const root = $("screen-options");
+  const open = root.querySelector("details.blocked")?.open ?? false;
+  const all = visibleCourses().filter((c) => !state.passed.has(c.code));
+  const order = { required: 0, elective: 1, none: 2 };
+  const sortCourses = (a, b) => order[countsFor(a)] - order[countsFor(b)] || a.code.localeCompare(b.code);
+  const eligibleAll = all.filter((c) => L.isEligible(c, state.passed)).sort(sortCourses);
+  const blockedAll = all.filter((c) => !L.isEligible(c, state.passed));
+  const query = state.queries.options;
+  const keep = (c) => matches(c, query) && (state.tag === "all" || countsFor(c) === state.tag);
+  const eligible = eligibleAll.filter(keep);
+  const blocked = blockedAll.filter(keep)
+    .sort((a, b) => L.missingPrereqs(a, state.passed).length - L.missingPrereqs(b, state.passed).length || a.code.localeCompare(b.code));
+  const full = state.picked.length >= MAX_PICKS;
 
-  root.replaceChildren(
-    el("h2", {}, "What can you take?"),
-    el("div", { class: "progress-box" },
-      el("label", { for: "degree-progress" },
-        `Degree progress: ${requiredDone} of ${required.length} required courses passed`),
-      el("progress", { id: "degree-progress", max: required.length || 1, value: requiredDone },
-        `${requiredDone} of ${required.length}`)),
-    el("h3", {}, "You can take these (pick 1 to " + MAX_PICKS + ")")
-  );
+  const filterCount = (tag) => eligibleAll.filter((c) => matches(c, query) && (tag === "all" || countsFor(c) === tag)).length;
+  const segment = (tag, label) => el("button", {
+    type: "button", "aria-pressed": String(state.tag === tag),
+    onclick: () => { state.tag = tag; renderOptions(); },
+  }, `${label} (${filterCount(tag)})`);
 
-  if (eligible.length === 0) root.append(el("p", {}, "No courses available with your current passed list."));
-
-  const list = el("ul", { class: "course-list" });
-  for (const course of eligible) {
+  const optionsRow = (course) => {
     const id = "pick-" + course.code.replace(/\s/g, "");
     const isPicked = state.picked.includes(course.code);
-    list.append(el("li", {},
-      el("input", {
-        type: "checkbox", id, checked: isPicked,
-        disabled: !isPicked && state.picked.length >= MAX_PICKS,
-        onchange: (e) => {
-          if (e.target.checked) state.picked.push(course.code);
-          else state.picked = state.picked.filter((c) => c !== course.code);
-          saveToHash("options");
-          renderOptions();
-          document.getElementById(id).focus();
-        },
-      }),
-      el("label", { for: id }, `${course.code} ${course.title} `, tagFor(course))));
-  }
-  root.append(list);
+    return el("li", {}, el("label", { class: "row", for: id },
+      el("input", { type: "checkbox", id, checked: isPicked, disabled: !isPicked && full, onchange: (e) => togglePick(course.code, e.target.checked) }),
+      el("span", { class: "row-body" },
+        el("span", {}, el("span", { class: "row-code" }, course.code), course.title),
+        el("span", { class: "row-meta" }, el("span", {}, `${creditsOf(course)} credits`), el("span", {}, plural(course.sections.length, "section", "sections"))),
+        course.note ? el("span", { class: "row-note" }, "Calendar also says: " + course.note) : null),
+      tagFor(course)));
+  };
 
-  const count = state.picked.length;
-  const message = count === 0 ? "Pick at least one course to continue."
-    : count >= MAX_PICKS ? `You picked ${count}, the maximum.` : `You picked ${count}.`;
-  root.append(el("p", { class: "pick-count" }, message));
-  announce(message);
+  const dots = el("span", { class: "dots", "aria-hidden": "true" }, Array.from({ length: MAX_PICKS }, (_, i) => el("span", { class: i < state.picked.length ? "on" : "" })));
+  const ready = state.picked.length > 0;
 
-  // Why can't I take this? One reason per blocked course.
-  if (blocked.length) {
-    const reasons = el("ul", { class: "course-list blocked" });
-    for (const course of blocked) {
-      const missing = L.missingPrereqs(course, state.passed).map(describeGroup).join(" AND ");
-      reasons.append(el("li", {}, el("strong", {}, `${course.code} ${course.title} `), tagFor(course),
-        el("div", { class: "reason" }, "Needs: " + missing)));
-    }
-    root.append(el("h3", {}, "Not yet (missing prerequisites)"), reasons);
-  }
+  root.replaceChildren(
+    el("div", {}, el("h2", { tabindex: "-1" }, "What can you take?"), degreeChip(),
+      el("p", { class: "lead" }, `${plural(eligibleAll.length, "course", "courses")} you can take right now. Pick up to ${MAX_PICKS} for this term.`)),
+    el("div", { class: "panel panel-pad inline-progress", style: { display: "grid", gap: "0.85rem" } }, ...progressMeters()),
+    el("div", { class: "toolbar" },
+      searchBox("options-search", "Search by code or title", query, (q) => { state.queries.options = q; renderOptions(); document.getElementById("options-search").focus(); }),
+      el("div", { class: "segmented", role: "group", "aria-label": "Show" }, segment("all", "All"), segment("required", "Required"), segment("elective", "Elective")),
+      el("span", { class: "counter" }, dots, " ", `${state.picked.length} of ${MAX_PICKS} picked`)),
+    eligible.length
+      ? el("div", { class: "panel" }, el("ul", { class: "rows", style: { borderTop: "0" } }, eligible.map(optionsRow)))
+      : el("div", { class: "empty" }, el("strong", {}, eligibleAll.length ? "Nothing matches your search or filter" : "No courses are available yet"),
+        eligibleAll.length ? "Try clearing the search or choosing All." : "Go back and tick the courses you've already passed to unlock more."),
+    blockedAll.length ? el("details", { class: "year blocked", open: open || !!query },
+      el("summary", {}, "Not available yet", el("span", { class: "count" }, plural(blocked.length, "course needs", "courses need") + " more prerequisites"), el("span", { class: "chev" }, icon("right"))),
+      blocked.length ? el("ul", { class: "blocked-list" }, blocked.map((course) => {
+        const missing = L.missingPrereqs(course, state.passed);
+        return el("li", {},
+          el("div", {}, el("span", { class: "row-code" }, course.code), course.title, " ", tagFor(course),
+            missing.length === 1 ? el("span", { class: "steps-away" }, "1 step away") : null),
+          el("p", { class: "reason" }, icon("lock"), el("span", {}, "Needs " + missing.map(describeGroup).join(", and "))),
+          course.note ? el("p", { class: "row-note" }, "Calendar also says: " + course.note) : null);
+      })) : el("p", { class: "muted", style: { padding: "0.8rem 1.1rem" } }, "Nothing matches your search.")) : null,
+    el("div", { class: "actionbar" },
+      el("button", { type: "button", class: "btn", onclick: () => go("passed") }, icon("left"), "Back"),
+      el("span", { class: "hint" }, ready ? "Ready when you are." : "Pick at least one course to continue."),
+      el("button", { type: "button", class: "btn primary", id: "build", disabled: !ready, onclick: () => go("schedules") }, "Build my schedules", icon("right"))));
 
-  root.append(el("div", { class: "button-row" },
-    el("button", { onclick: () => go("passed") }, "Back"),
-    el("button", { class: "primary", disabled: count === 0, onclick: () => go("schedules") }, "See my schedules")));
+  if (focusCode) { const node = document.getElementById("pick-" + focusCode.replace(/\s/g, "")); if (node && !node.disabled) node.focus(); }
 }
 
-// ---------- screen 3: schedules ----------
+// ---------- screen 4: schedules ----------
 
 function renderSchedules() {
-  const root = document.getElementById("screen-schedules");
+  const root = $("screen-schedules");
   const picked = state.picked.map(byCode);
   const all = L.buildSchedules(picked);
   const shown = L.filterSchedules(all, state.filters);
   if (state.scheduleIndex >= shown.length) state.scheduleIndex = 0;
+  if (state.elapsed === null && state.startTime && all.length) state.elapsed = (Date.now() - state.startTime) / 1000;
 
-  // Stop the demo timer the first time results appear.
-  if (state.elapsed === null && state.startTime) {
-    state.elapsed = (Date.now() - state.startTime) / 1000;
-  }
+  const switchBox = (id, label, checked, onChange) => el("label", { class: "switch", for: id },
+    el("input", { type: "checkbox", role: "switch", id, checked, onchange: (e) => { onChange(e.target.checked); state.scheduleIndex = 0; renderSchedules(); renderChrome(); document.getElementById(id).focus(); } }),
+    label);
 
-  root.replaceChildren(el("h2", {}, "Your schedules"));
-
-  root.append(el("fieldset", { class: "filters" },
-    el("legend", {}, "Filters"),
-    filterBox("filter-early", "No classes before 10 AM", state.filters.noBefore === "10:00", (on) => {
-      state.filters.noBefore = on ? "10:00" : null;
-    }),
-    filterBox("filter-fri", "Fridays off", state.filters.fridaysOff, (on) => {
-      state.filters.fridaysOff = on;
-    })));
+  const head = el("div", {},
+    el("h2", { tabindex: "-1" }, "Your timetable"),
+    el("p", { class: "lead" }, all.length
+      ? `${all.length >= 50 ? "50 or more" : all.length} conflict-free ${all.length === 1 ? "combination" : "combinations"} for ${plural(picked.length, "course", "courses")}.${shown.length !== all.length ? ` ${shown.length} match your filters.` : ""}`
+      : "We checked every section combination."));
+  const filters = el("div", { class: "switches", role: "group", "aria-label": "Filters" },
+    switchBox("filter-early", "No classes before 10 AM", state.filters.noBefore === "10:00", (on) => { state.filters.noBefore = on ? "10:00" : null; }),
+    switchBox("filter-late", "Done by 5 PM", state.filters.noAfter === "17:00", (on) => { state.filters.noAfter = on ? "17:00" : null; }),
+    switchBox("filter-fri", "Fridays off", state.filters.fridaysOff, (on) => { state.filters.fridaysOff = on; }));
 
   if (shown.length === 0) {
-    root.append(emptyMessage(picked, all.length));
-  } else {
-    const sched = shown[state.scheduleIndex];
-    const status = `Schedule ${state.scheduleIndex + 1} of ${shown.length}`;
-    announce(status);
-    root.append(
-      el("div", { class: "button-row" },
-        el("button", { disabled: shown.length < 2, onclick: () => stepSchedule(-1, shown.length) }, "Previous"),
-        el("strong", {}, status),
-        el("button", { disabled: shown.length < 2, onclick: () => stepSchedule(1, shown.length) }, "Next")),
-      weeklyGrid(sched),
-      scheduleList(sched),
-      comparisonPanel(),
-      el("div", { class: "button-row" },
-        el("button", { onclick: () => go("options") }, "Back"),
-        el("button", { class: "primary", onclick: () => printSummary(sched) }, "Bring to advisor (print)"),
-        el("button", { onclick: copyLink }, "Copy share link")));
+    root.replaceChildren(head, filters, emptySchedules(picked, all.length),
+      el("div", { class: "actionbar" }, el("button", { type: "button", class: "btn", onclick: () => go("options") }, icon("left"), "Change my courses")));
+    return;
   }
-  if (shown.length === 0) {
-    root.append(el("div", { class: "button-row" }, el("button", { onclick: () => go("options") }, "Back")));
-  }
-}
-
-function filterBox(id, label, checked, onChange) {
-  return el("div", { class: "check-row" },
-    el("input", { type: "checkbox", id, checked, onchange: (e) => { onChange(e.target.checked); state.scheduleIndex = 0; renderSchedules(); document.getElementById(id).focus(); } }),
-    el("label", { for: id }, label));
+  const sched = shown[state.scheduleIndex];
+  const label = `Schedule ${state.scheduleIndex + 1} of ${shown.length}`;
+  announce(label);
+  root.replaceChildren(
+    head, filters,
+    el("div", { class: "toolbar", style: { justifyContent: "space-between" } },
+      el("div", { class: "pager" },
+        el("button", { type: "button", class: "btn", "aria-label": "Previous schedule", disabled: shown.length < 2, onclick: () => stepSchedule(-1, shown.length) }, icon("left")),
+        el("strong", {}, label),
+        el("button", { type: "button", class: "btn", "aria-label": "Next schedule", disabled: shown.length < 2, onclick: () => stepSchedule(1, shown.length) }, icon("right"))),
+      el("span", { class: "counter" }, shown.length > 1 ? "Tip: use the ← and → keys." : "Only one option fits.")),
+    weeklyGrid(sched),
+    planTable(sched),
+    comparePanel(),
+    el("div", { class: "actionbar flow" },
+      el("button", { type: "button", class: "btn", onclick: () => go("options") }, icon("left"), "Back"),
+      el("div", { class: "actions" },
+        el("button", { type: "button", class: "btn", id: "copy-text", onclick: () => copyPlanText(sched) }, icon("copy"), "Copy as text"),
+        el("button", { type: "button", class: "btn", id: "copy-link", onclick: copyLink }, icon("link"), "Copy share link"),
+        el("button", { type: "button", class: "btn primary", id: "print", onclick: () => printSummary(sched) }, icon("printer"), "Bring to advisor"))));
 }
 
 function stepSchedule(delta, total) {
@@ -349,121 +617,190 @@ function stepSchedule(delta, total) {
 }
 
 // Explain an empty result instead of showing a blank page.
-function emptyMessage(picked, totalBeforeFilters) {
+function emptySchedules(picked, totalBeforeFilters) {
   if (totalBeforeFilters > 0) {
     announce("No schedules match your filters.");
-    return el("p", { class: "notice" }, "No schedules match your filters. Try turning one off.");
+    return el("div", { class: "empty" }, el("strong", {}, "No schedule fits all your filters"), "Turn one off to see the options.",
+      el("div", { style: { marginTop: "0.75rem" } }, el("button", { type: "button", class: "btn", onclick: () => { state.filters = { noBefore: null, noAfter: null, fridaysOff: false }; renderSchedules(); } }, "Clear filters")));
   }
   const clashes = L.findClashes(picked);
   const text = clashes.length
-    ? "These courses always clash: " + clashes.join(", ") + ". Go back and swap one."
-    : "No conflict-free combination exists for these courses. Go back and swap one.";
+    ? `These courses always meet at the same time: ${clashes.join(", ")}. Swap one of them.`
+    : "No combination of sections avoids a clash for this set of courses. Try swapping one course.";
   announce(text);
-  return el("p", { class: "notice" }, text);
+  return el("div", { class: "notice" }, icon("alert", "lg"), el("p", {}, text));
 }
 
-// Weekly grid: a column per day, a row per 5 minutes (so odd times like 10:00-11:20 fit).
-// Hidden from screen readers because the list below says the same thing in plain text.
-const GRID_STEP = 5; // minutes per grid row
+// Weekly grid: a column per day, a row per 5 minutes (so times like 10:00-11:20 fit).
+// Hidden from screen readers because the table below says the same thing in text.
 function weeklyGrid(sched) {
   const meetings = sched.flatMap((p) => p.section.meetings);
   const startMin = Math.floor(Math.min(...meetings.map((m) => L.toMinutes(m.start))) / 60) * 60;
   const endMin = Math.ceil(Math.max(...meetings.map((m) => L.toMinutes(m.end))) / 60) * 60;
   const rows = (endMin - startMin) / GRID_STEP;
-  const rowOf = (minutes) => Math.round((minutes - startMin) / GRID_STEP) + 2; // row 1 is the day names
-
-  const grid = el("div", { class: "grid", "aria-hidden": "true", style: `grid-template-rows: auto repeat(${rows}, 0.3rem)` });
-  DAYS.forEach((d, i) => grid.append(el("div", { class: "grid-head", style: `grid-column:${i + 2};grid-row:1` }, d)));
+  const rowOf = (minutes) => Math.round((minutes - startMin) / GRID_STEP) + 2; // row 1 holds the day names
+  const grid = el("div", { class: "grid", "aria-hidden": "true", style: { gridTemplateRows: `auto repeat(${rows}, 0.3rem)` } });
+  DAYS.forEach((d, i) => {
+    grid.append(el("div", { class: "grid-head", style: { gridColumn: String(i + 2), gridRow: "1" } }, d));
+    grid.append(el("div", { class: "day-col", style: { gridColumn: String(i + 2), gridRow: `2 / span ${rows}` } }));
+  });
   for (let mins = startMin; mins < endMin; mins += 60) {
-    const label = String(mins / 60).padStart(2, "0") + ":00";
-    grid.append(el("div", { class: "grid-time", style: `grid-column:1;grid-row:${rowOf(mins)}/span ${60 / GRID_STEP}` }, label));
+    const row = rowOf(mins);
+    grid.append(el("div", { class: "grid-time", style: { gridColumn: "1", gridRow: `${row} / span ${60 / GRID_STEP}` } }, String(mins / 60).padStart(2, "0") + ":00"));
+    grid.append(el("div", { class: "hour-line", style: { gridColumn: "2 / -1", gridRow: `${row} / span ${60 / GRID_STEP}` } }));
   }
+  let n = 0;
   sched.forEach((p, idx) => {
     for (const m of p.section.meetings) {
       const start = L.toMinutes(m.start);
       const span = Math.max(1, Math.round((L.toMinutes(m.end) - start) / GRID_STEP));
       grid.append(el("div", {
-        class: "block color-" + (idx % 5),
-        style: `grid-column:${DAYS.indexOf(m.day) + 2};grid-row:${rowOf(start)}/span ${span}`,
-      }, `${p.course.code} (${p.section.id})`));
+        class: "block c" + (idx % 6),
+        style: { gridColumn: String(DAYS.indexOf(m.day) + 2), gridRow: `${rowOf(start)} / span ${span}`, animationDelay: `${n++ * 45}ms` },
+      }, el("b", {}, p.course.code), el("span", {}, `${p.section.id} · ${m.start}–${m.end}`)));
     }
   });
   return el("div", { class: "grid-wrap" }, grid);
 }
 
-// The same schedule as plain text.
-function scheduleList(sched) {
-  const list = el("ul", { class: "schedule-list", "aria-label": "Schedule as a list" });
-  for (const p of sched) {
-    list.append(el("li", {}, el("strong", {}, `${p.course.code} section ${p.section.id}: `), describeSection(p.section)));
-  }
-  return list;
+// The same schedule as a real table (also what screen readers use).
+function planTable(sched) {
+  const total = sched.reduce((sum, p) => sum + creditsOf(p.course), 0);
+  return el("div", { class: "panel", style: { overflowX: "auto" } },
+    el("table", { class: "plan-table" },
+      el("caption", { class: "sr-only" }, "Your selected schedule"),
+      el("thead", {}, el("tr", {}, ["Course", "Section", "Meets", "Credits"].map((h) => el("th", { scope: "col" }, h)))),
+      el("tbody", {}, sched.map((p, idx) => el("tr", {},
+        el("th", { scope: "row" }, el("span", { class: "swatch c" + (idx % 6) }), el("strong", {}, p.course.code), " ", p.course.title),
+        el("td", {}, p.section.id),
+        el("td", {}, formatMeetings(p.section.meetings)),
+        el("td", {}, String(creditsOf(p.course))))),
+        el("tr", {}, el("td", { colspan: "3", style: { textAlign: "right", fontWeight: "700" } }, "Total credits this term"), el("td", {}, el("strong", {}, String(total)))))));
 }
 
-// Before / after, shown with the real timer once results exist.
-function comparisonPanel() {
-  const after = state.elapsed !== null
-    ? `${formatElapsed(state.elapsed)} (from your first click to this plan)`
-    : "Your plan is ready now";
+// Before / after, with the real clock once results exist.
+function comparePanel() {
+  const after = state.elapsed !== null ? formatElapsed(state.elapsed) : "Instant";
+  const note = state.elapsed !== null ? "From choosing your degree to this timetable." : "This plan was opened from a saved or shared link.";
   return el("div", { class: "compare" },
-    el("div", { class: "compare-col before" }, el("h3", {}, "Version 1.0"), el("p", {}, V1_WAIT)),
-    el("div", { class: "compare-col after" }, el("h3", {}, "Version 2.0"), el("p", {}, after)));
+    el("div", { class: "compare-col before" },
+      el("span", { class: "kicker" }, "Version 1.0: email an advisor"),
+      el("span", { class: "big" }, "2–3 business days"),
+      el("p", { class: "small" }, "Reply time on Algoma's course registration support page, plus the manual cross-checking.")),
+    el("div", { class: "compare-col after" },
+      el("span", { class: "kicker" }, "Version 2.0: this planner"),
+      el("span", { class: "big" }, after),
+      el("p", { class: "small" }, note)));
 }
 
-// ---------- share and print ----------
+// ---------- share, copy, print ----------
 
-function copyLink() {
-  saveToHash("schedules");
-  const url = location.href;
-  const done = () => announce("Link copied. Anyone who opens it sees your plan.");
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(url).then(done, () => window.prompt("Copy this link:", url));
-  } else {
-    window.prompt("Copy this link:", url);
-  }
+function copyText(text, okMessage) {
+  const done = () => toast(okMessage);
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, () => window.prompt("Copy this:", text));
+  else window.prompt("Copy this:", text);
 }
+
+function copyLink() { saveSession(); history.replaceState(null, "", "#schedules?" + hashParams().toString()); copyText(location.href, "Link copied. It opens this exact plan."); }
+
+function planAsText(sched) {
+  const program = currentProgram();
+  return [`${program.name} (${program.code})`, "My term plan:",
+    ...sched.map((p) => `- ${p.course.code} ${p.course.title}, section ${p.section.id}: ${formatMeetings(p.section.meetings)}`),
+    "Please confirm with an academic advisor before registering."].join("\n");
+}
+function copyPlanText(sched) { copyText(planAsText(sched), "Plan copied as text."); }
 
 // Fill the hidden print area, then open the print dialog.
 function printSummary(sched) {
+  const program = currentProgram();
   const required = requiredList();
   const requiredDone = required.filter((code) => state.passed.has(code)).length;
-  const passedList = [...state.passed].map((code) => el("li", {}, `${code} ${byCode(code).title}`));
-  const root = document.getElementById("print-summary");
+  const passed = [...state.passed].map(byCode).sort((a, b) => a.code.localeCompare(b.code));
+  const root = $("print-summary");
   root.replaceChildren(
     el("h1", {}, "Course plan: bring to advisor"),
-    el("p", {}, `Degree: ${currentProgram().name}`),
-    el("p", {}, `Degree progress: ${requiredDone} of ${required.length} required courses passed.`),
+    el("p", {}, el("strong", {}, program.name), ` (${program.code})`),
+    el("p", {}, `Credits passed: ${L.creditsPassed(visibleCourses(), state.passed)} of ${program.totalCredits}. Required courses passed: ${requiredDone} of ${required.length}.`),
     el("h2", {}, "Courses passed"),
-    passedList.length ? el("ul", {}, passedList) : el("p", {}, "None yet."),
+    passed.length ? el("p", {}, passed.map((c) => `${c.code} ${c.title}`).join("; ")) : el("p", {}, "None yet."),
     el("h2", {}, "Planned courses this term"),
-    el("ul", {}, sched.map((p) => el("li", {},
-      `${p.course.code} ${p.course.title} (${TAGS[countsFor(p.course)]}), section ${p.section.id}: ${describeSection(p.section)}`))),
-    el("p", {}, "Generated by Course Planner 2.0. Please confirm with your academic advisor before registering."));
+    el("table", {},
+      el("thead", {}, el("tr", {}, ["Course", "Counts as", "Section", "Meets"].map((h) => el("th", {}, h)))),
+      el("tbody", {}, sched.map((p) => el("tr", {}, el("td", {}, `${p.course.code} ${p.course.title}`), el("td", {}, TAGS[countsFor(p.course)]), el("td", {}, p.section.id), el("td", {}, formatMeetings(p.section.meetings)))))),
+    el("p", { style: { marginTop: "1rem" } }, "Generated by Course Planner 2.0 (prototype). Section times are demo data. Please confirm with your academic advisor before registering."));
   window.print();
 }
 
 // ---------- start ----------
 
-async function start() {
+async function loadJson(path) {
+  const response = await fetch(`${path}?v=${VERSION}`, { credentials: "omit", cache: "no-cache" });
+  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+  return response.json();
+}
+
+function initChrome() {
+  $("restart").replaceChildren(icon("restart"), el("span", { class: "btn-text" }, "Start over"));
+  $("restart").setAttribute("aria-label", "Start over");   // keeps a name when only the icon shows on phones
+  $("restart").setAttribute("title", "Start over");
+  $("restart").addEventListener("click", restart);
+  $("demo-icon").replaceChildren(icon("info"));
+  $("demo-dismiss").replaceChildren(icon("x"));
+  try { if (sessionStorage.getItem(KEY_NOTE)) $("demo-note").hidden = true; } catch { /* ignore */ }
+  $("demo-dismiss").addEventListener("click", () => { $("demo-note").hidden = true; try { sessionStorage.setItem(KEY_NOTE, "1"); } catch { /* ignore */ } });
+  applyTheme(document.documentElement.getAttribute("data-theme") || systemTheme());
+  $("theme-toggle").addEventListener("click", () => {
+    const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    applyTheme(next); store.set(KEY_THEME, next);
+  });
+  setInterval(tickClock, 500);
+  // Left/Right arrows flip through schedules.
+  document.addEventListener("keydown", (e) => {
+    if (state.screen !== "schedules" || e.altKey || e.ctrlKey || e.metaKey) return;
+    if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName) && e.target.type !== "checkbox") return;
+    const shown = L.filterSchedules(L.buildSchedules(state.picked.map(byCode)), state.filters);
+    if (shown.length < 2) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); stepSchedule(1, shown.length); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); stepSchedule(-1, shown.length); }
+  });
+}
+
+// A saved session is only used when it names a real degree and real courses.
+function loadSavedSession() {
   try {
-    const response = await fetch("data/courses.json");
-    if (!response.ok) throw new Error("HTTP " + response.status);
-    state.courses = await response.json();
-    const programResponse = await fetch("data/programs.json");
-    if (!programResponse.ok) throw new Error("programs.json: HTTP " + programResponse.status);
-    state.programs = await programResponse.json();
+    const saved = JSON.parse(store.get(KEY_SESSION) || "null");
+    if (!saved || !state.programs.some((p) => p.id === saved.d)) return null;
+    const ok = (list) => Array.isArray(list) ? list.filter((code) => typeof code === "string" && state.byCode.has(code)) : [];
+    return { d: saved.d, p: ok(saved.p), k: ok(saved.k) };
+  } catch { return null; }
+}
+
+async function start() {
+  initChrome();
+  try {
+    const [courses, programs] = await Promise.all([loadJson("data/courses.json"), loadJson("data/programs.json")]);
+    if (!dataIsValid(courses, programs)) throw new Error("the course data file is not in the expected format");
+    state.courses = courses; state.programs = programs;
+    state.byCode = new Map(courses.map((c) => [c.code, c]));
   } catch (error) {
-    document.getElementById("loading").textContent =
-      "Could not load the course data (" + error.message + "). " +
-      "If you opened this file directly, run 'python -m http.server' in the project folder and open http://localhost:8000 instead.";
+    $("loading").textContent = `Could not load the course data (${error.message}). If you opened this file directly, run "python -m http.server" in the project folder and open http://localhost:8000 instead.`;
     return;
   }
-  document.getElementById("loading").hidden = true;
-  // The rail buttons jump between steps (route() sends you back if a step isn't ready).
-  document.querySelectorAll(".rail button").forEach((button) =>
-    button.addEventListener("click", () => go(button.dataset.screen)));
-  window.addEventListener("hashchange", route);
-  route();
+  $("loading").hidden = true;
+
+  let welcomeBack = false;
+  if (!location.hash.includes("?")) {
+    const saved = loadSavedSession();
+    if (saved && (saved.p.length || saved.k.length)) {
+      const params = new URLSearchParams({ d: saved.d, p: saved.p.join(","), k: saved.k.join(",") });
+      history.replaceState(null, "", "#" + (saved.k.length ? "options" : "passed") + "?" + params.toString());
+      welcomeBack = true;
+    }
+  }
+  window.addEventListener("hashchange", () => route());
+  route(true);
+  if (welcomeBack) toast("Welcome back. Your last plan was restored from this device.", { label: "Start over", run: restart });
 }
 
 start();

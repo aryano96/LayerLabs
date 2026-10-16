@@ -89,6 +89,29 @@ function runTests(L, courses, programs, print) {
   check("requiredCodes lists the degree's required courses that exist",
     L.requiredCodes(courses, p3), ["COSC 1000", "MATH 1000", "COSC 2000"]);
 
+  // ---- noAfter filter ("evenings off") ----
+  const late = { code: "L 1", sections: [{ id: "A", meetings: [m("Mon", "16:00", "17:30")] }, { id: "B", meetings: [m("Mon", "13:00", "14:30")] }] };
+  const lateSchedules = L.buildSchedules([late]);
+  check("noAfter 17:00 drops a class that ends after 5 PM",
+    names(L.filterSchedules(lateSchedules, { noBefore: null, noAfter: "17:00", fridaysOff: false })).length, 1);
+  check("noAfter keeps a class that ends exactly at the limit",
+    L.filterSchedules(lateSchedules, { noBefore: null, noAfter: "17:30", fridaysOff: false }).length, 2);
+  check("missing noAfter filter keeps everything",
+    L.filterSchedules(lateSchedules, { noBefore: null, fridaysOff: false }).length, 2);
+
+  // ---- degree-specific course lists and credits ----
+  const sample = [
+    { code: "AAAA 1000", title: "A", credits: 3, prereqs: [], sections: [] },
+    { code: "BBBB 1000", title: "B", credits: 6, prereqs: [], sections: [] },
+    { code: "AAAA 4000", title: "C", prereqs: [], sections: [] },
+  ];
+  const own = { years: 3, courses: ["AAAA 1000", "AAAA 4000"], required: [], electives: [] };
+  check("program.courses limits the list to that degree (and its years)",
+    L.coursesForProgram(sample, own).map((c) => c.code), ["AAAA 1000"]);
+  check("creditsPassed adds credits (missing credits count as 3)",
+    L.creditsPassed(sample, new Set(["AAAA 1000", "BBBB 1000", "AAAA 4000"])), 12);
+  check("creditsPassed ignores courses not passed", L.creditsPassed(sample, new Set(["BBBB 1000"])), 6);
+
   return { passed, failed };
 }
 
