@@ -1,16 +1,75 @@
 [
-  {
-    "id": "example-3yr",
-    "name": "Example 3-year degree (placeholder)",
-    "years": 3,
-    "required": ["COSC 1000", "MATH 1000", "COSC 2000"],
-    "electives": ["MATH 1001", "COSC 2100", "COSC 3000"]
-  },
-  {
-    "id": "example-4yr",
-    "name": "Example 4-year honours degree (placeholder)",
-    "years": 4,
-    "required": ["COSC 1000", "MATH 1000", "COSC 2000", "COSC 3000", "COSC 4000"],
-    "electives": ["MATH 1001", "COSC 2100"]
-  }
+ {
+  "id": "cs-3yr-demo",
+  "name": "Computer Science, 3-year (demo requirements)",
+  "years": 3,
+  "required": [
+   "COSC 1046",
+   "COSC 1047",
+   "MATH 1056",
+   "COSC 2006",
+   "COSC 2007",
+   "COSC 2406",
+   "COSC 2307",
+   "MATH 2056",
+   "COSC 3106"
+  ],
+  "electives": [
+   "COSC 1056",
+   "MATH 1057",
+   "COSC 2036",
+   "COSC 2507",
+   "COSC 2596",
+   "COSC 2947",
+   "COSC 2956",
+   "COSC 3117",
+   "COSC 3127",
+   "COSC 3216",
+   "COSC 3406",
+   "COSC 3407",
+   "COSC 3506",
+   "COSC 3596",
+   "COSC 3796",
+   "COSC 3807"
+  ]
+ },
+ {
+  "id": "cs-4yr-demo",
+  "name": "Computer Science, 4-year honours (demo requirements)",
+  "years": 4,
+  "required": [
+   "COSC 1046",
+   "COSC 1047",
+   "MATH 1056",
+   "COSC 2006",
+   "COSC 2007",
+   "COSC 2406",
+   "COSC 2307",
+   "MATH 2056",
+   "COSC 3106",
+   "COSC 3127",
+   "COSC 3407",
+   "COSC 3506",
+   "COSC 4086",
+   "COSC 4106"
+  ],
+  "electives": [
+   "COSC 1056",
+   "MATH 1057",
+   "COSC 2036",
+   "COSC 2507",
+   "COSC 2596",
+   "COSC 2947",
+   "COSC 2956",
+   "COSC 3117",
+   "COSC 3216",
+   "COSC 3406",
+   "COSC 3596",
+   "COSC 3796",
+   "COSC 3807",
+   "COSC 4127",
+   "COSC 4206",
+   "COSC 4437"
+  ]
+ }
 ]

@@ -362,29 +362,29 @@ function emptyMessage(picked, totalBeforeFilters) {
   return el("p", { class: "notice" }, text);
 }
 
-// Weekly grid: a column per day, a row per 30 minutes. Hidden from screen readers
-// because the list below says the same thing in plain text.
+// Weekly grid: a column per day, a row per 5 minutes (so odd times like 10:00-11:20 fit).
+// Hidden from screen readers because the list below says the same thing in plain text.
+const GRID_STEP = 5; // minutes per grid row
 function weeklyGrid(sched) {
   const meetings = sched.flatMap((p) => p.section.meetings);
   const startMin = Math.floor(Math.min(...meetings.map((m) => L.toMinutes(m.start))) / 60) * 60;
   const endMin = Math.ceil(Math.max(...meetings.map((m) => L.toMinutes(m.end))) / 60) * 60;
-  const rows = (endMin - startMin) / 30;
+  const rows = (endMin - startMin) / GRID_STEP;
+  const rowOf = (minutes) => Math.round((minutes - startMin) / GRID_STEP) + 2; // row 1 is the day names
 
-  const grid = el("div", { class: "grid", "aria-hidden": "true", style: `grid-template-rows: auto repeat(${rows}, 1.6rem)` });
+  const grid = el("div", { class: "grid", "aria-hidden": "true", style: `grid-template-rows: auto repeat(${rows}, 0.3rem)` });
   DAYS.forEach((d, i) => grid.append(el("div", { class: "grid-head", style: `grid-column:${i + 2};grid-row:1` }, d)));
-  for (let r = 0; r < rows; r += 2) {
-    const mins = startMin + r * 30;
-    const label = String(Math.floor(mins / 60)).padStart(2, "0") + ":00";
-    grid.append(el("div", { class: "grid-time", style: `grid-column:1;grid-row:${r + 2}/span 2` }, label));
+  for (let mins = startMin; mins < endMin; mins += 60) {
+    const label = String(mins / 60).padStart(2, "0") + ":00";
+    grid.append(el("div", { class: "grid-time", style: `grid-column:1;grid-row:${rowOf(mins)}/span ${60 / GRID_STEP}` }, label));
   }
   sched.forEach((p, idx) => {
     for (const m of p.section.meetings) {
-      const row = (L.toMinutes(m.start) - startMin) / 30 + 2;
-      const span = (L.toMinutes(m.end) - L.toMinutes(m.start)) / 30;
-      const col = DAYS.indexOf(m.day) + 2;
+      const start = L.toMinutes(m.start);
+      const span = Math.max(1, Math.round((L.toMinutes(m.end) - start) / GRID_STEP));
       grid.append(el("div", {
         class: "block color-" + (idx % 5),
-        style: `grid-column:${col};grid-row:${row}/span ${span}`,
+        style: `grid-column:${DAYS.indexOf(m.day) + 2};grid-row:${rowOf(start)}/span ${span}`,
       }, `${p.course.code} (${p.section.id})`));
     }
   });

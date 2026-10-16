@@ -12,7 +12,7 @@
   <script src="tests.js"></script>
   <script>
     // Load the real course data, then run every check and show the results.
-    Promise.all([fetch("data/courses.json"), fetch("data/programs.json")])
+    Promise.all([fetch("data/test-fixtures/courses.json"), fetch("data/test-fixtures/programs.json")])
       .then((responses) => Promise.all(responses.map((r) => r.json())))
       .then(([courses, programs]) => {
         const lines = [];

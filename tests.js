@@ -96,8 +96,8 @@ function runTests(L, courses, programs, print) {
 if (typeof module !== "undefined" && require.main === module) {
   const fs = require("fs");
   const L = require("./logic.js");
-  const courses = JSON.parse(fs.readFileSync(__dirname + "/data/courses.json", "utf8"));
-  const programs = JSON.parse(fs.readFileSync(__dirname + "/data/programs.json", "utf8"));
+  const courses = JSON.parse(fs.readFileSync(__dirname + "/data/test-fixtures/courses.json", "utf8"));
+  const programs = JSON.parse(fs.readFileSync(__dirname + "/data/test-fixtures/programs.json", "utf8"));
   const result = runTests(L, courses, programs, console.log);
   console.log(`\n${result.passed} passed, ${result.failed} failed`);
   process.exit(result.failed ? 1 : 0);
