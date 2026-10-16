@@ -6,7 +6,7 @@
 // blocks inline scripts and third-party code.
 
 const L = window.CourseLogic;
-const VERSION = "4";
+const VERSION = "5";
 const SCREENS = ["degree", "passed", "options", "schedules"];
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAX_PICKS = 5;
@@ -34,7 +34,7 @@ const state = {
   scheduleIndex: 0,
   startTime: null,         // set at the first choice, drives the plan clock
   elapsed: null,           // seconds until the first timetable appeared
-  queries: { passed: "", options: "" },
+  queries: { degree: "", passed: "", options: "" },
   tag: "all",
   openYears: new Set([1, 2]),
   screen: "degree",
@@ -360,7 +360,7 @@ function restart() {
   state.programId = null; state.passed = new Set(); state.picked = [];
   state.startTime = null; state.elapsed = null; state.scheduleIndex = 0;
   state.filters = { noBefore: null, noAfter: null, fridaysOff: false };
-  state.queries = { passed: "", options: "" }; state.tag = "all";
+  state.queries = { degree: "", passed: "", options: "" }; state.tag = "all";
   store.remove(KEY_SESSION);
   history.replaceState(null, "", "#degree?d=&p=&k=");
   route();
@@ -385,18 +385,43 @@ function degreeChip() {
 
 // ---------- screen 1: your degree ----------
 
+function matchesProgram(program, query) {
+  const hay = `${program.name} ${program.code} ${program.area} ${program.years}-year ${program.years} year`.toLowerCase();
+  return query.toLowerCase().split(/\s+/).filter(Boolean).every((word) => hay.includes(word));
+}
+
 function renderDegree() {
   const root = $("screen-degree");
-  const areas = [...new Set(state.programs.map((p) => p.area))];
   const next = el("button", { type: "button", class: "btn primary", disabled: !state.programId, id: "degree-next", onclick: () => go("passed") }, "Continue", icon("right"));
+  const list = el("div", { id: "degree-list" });
+  const fill = () => fillDegreeList(list, next);
   root.replaceChildren(
     el("div", {}, el("h2", { tabindex: "-1" }, "Choose your degree"),
       el("p", { class: "lead" }, "This decides which courses we show you and which of them count toward your degree. The plan clock starts when you pick one.")),
-    el("fieldset", { class: "areas", style: { border: "0", padding: "0", margin: "1.25rem 0 0", minWidth: "0" } },
+    el("div", { class: "toolbar" },
+      searchBox("degree-search", "Search degrees, e.g. psychology, honours or BCOSC4", state.queries.degree, (q) => { state.queries.degree = q; fill(); })),
+    list,
+    el("div", { class: "actionbar" }, el("span", { class: "hint" }, "Next: tick the courses you've already passed."), next));
+  fill();
+}
+
+function fillDegreeList(list, next) {
+  const query = state.queries.degree;
+  const found = state.programs.filter((p) => matchesProgram(p, query));
+  if (found.length === 0) {
+    announce("No degrees match your search.");
+    list.replaceChildren(el("div", { class: "empty" }, el("strong", {}, "No degrees match that search"),
+      "Try a subject like Biology, a level like Honours, or a code like BSC4.BIOL."));
+    return;
+  }
+  if (query) announce(`${plural(found.length, "degree matches", "degrees match")} your search.`);
+  const areas = [...new Set(found.map((p) => p.area))];
+  list.replaceChildren(
+    el("fieldset", { class: "areas", style: { border: "0", padding: "0", margin: "0", minWidth: "0" } },
       el("legend", { class: "sr-only" }, "Degree"),
       areas.map((area) => el("div", { class: "area" },
         el("h3", {}, area),
-        el("div", { class: "choice-grid" }, state.programs.filter((p) => p.area === area).map((program) => {
+        el("div", { class: "choice-grid" }, found.filter((p) => p.area === area).map((program) => {
           const id = "degree-" + program.id;
           return el("label", { class: "choice", for: id },
             el("input", {
@@ -414,8 +439,7 @@ function renderDegree() {
             }),
             el("span", {}, el("span", { class: "choice-name", style: { display: "block" } }, program.name),
               el("span", { class: "choice-meta" }, el("span", {}, `${program.years}-year`), el("span", {}, `${program.totalCredits} credits`), el("span", {}, program.code))));
-        }))))),
-    el("div", { class: "actionbar" }, el("span", { class: "hint" }, "Next: tick the courses you've already passed."), next));
+        }))))));
 }
 
 // ---------- screen 2: what have you passed? ----------
